@@ -89,6 +89,131 @@
                     <view key="view" contentMode="scaleToFill" id="CNi-mZ-IhN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="O78-Vf-xTg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5t3-Xw-D9K">
+                                        <rect key="frame" x="36" y="109" width="343" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Hari"/>
+                                            <segment title="Minggu"/>
+                                            <segment title="Bulan"/>
+                                            <segment title="Tahun"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="If2-Ne-kbm">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem title="Detak Jantung" id="k50-0d-zS6"/>
+                                        </items>
+                                    </navigationBar>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tod-CJ-De0">
+                                        <rect key="frame" x="56" y="684.5" width="323" height="83"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="83" id="6zr-l8-lpk"/>
+                                            <constraint firstAttribute="width" constant="323" id="cQk-QK-yTH"/>
+                                        </constraints>
+                                        <string key="text">
+
+Mulai ada tanda detak jantung lemah, segera cek bayi anda</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Azw-hY-HOk">
+                                        <rect key="frame" x="56" y="578" width="323" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">
+
+Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-P8-ctv">
+                                        <rect key="frame" x="61" y="687" width="68" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="137 BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-Ua-NjS">
+                                        <rect key="frame" x="57.5" y="579" width="117" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="11 Juli 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-Rq-3fX">
+                                        <rect key="frame" x="283" y="690" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Juli 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np6-FY-AZY">
+                                        <rect key="frame" x="282" y="580" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvR-8q-5Gc">
+                                        <rect key="frame" x="56" y="541" width="72" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ringkasan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-bd-9Gd">
+                                        <rect key="frame" x="56" y="322" width="115" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detak jantung hari ini sama dengan rata-rata detak jantung kemarin" textAlignment="natural" id="hva-ly-ME7">
+                                        <rect key="frame" x="56" y="365" width="323" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89811486009999997" green="0.9215453267" blue="0.92156994339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="AOQ-Ua-NjS" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="149" id="7hK-Bn-VoZ"/>
+                                    <constraint firstItem="Np6-FY-AZY" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="142.5" id="GKr-WF-BMT"/>
+                                    <constraint firstItem="q0f-P8-ctv" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="-125" id="Ndz-7G-Ibd"/>
+                                    <constraint firstItem="AOQ-Ua-NjS" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="-117" id="OW2-CP-3hx"/>
+                                    <constraint firstItem="tod-CJ-De0" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="278" id="Pcn-Ys-A9O"/>
+                                    <constraint firstItem="Np6-FY-AZY" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="120.5" id="cb9-ot-nMh"/>
+                                    <constraint firstItem="eqb-Rq-3fX" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="254.5" id="dXH-YN-02M"/>
+                                    <constraint firstItem="q0f-P8-ctv" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="255.5" id="ed5-qk-Llh"/>
+                                    <constraint firstItem="eqb-Rq-3fX" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="120.5" id="fFc-o1-mFc"/>
+                                    <constraint firstItem="tod-CJ-De0" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="10.5" id="m2h-OQ-bpa"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="FfB-Yx-fVT"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rgn-Kd-6fk"/>
                     </view>
@@ -149,7 +274,124 @@
                     <view key="view" contentMode="scaleToFill" id="ZT7-ow-7ts">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SST-Uh-Yfg">
+                                <rect key="frame" x="36" y="130" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Hari"/>
+                                    <segment title="Minggu"/>
+                                    <segment title="Bulan"/>
+                                    <segment title="Tahun"/>
+                                </segments>
+                            </segmentedControl>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-de-bcl">
+                                <rect key="frame" x="0.0" y="65" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Suhu" id="R0p-VF-eIJ"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-a7-nBP">
+                                <rect key="frame" x="76" y="696" width="323" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="h5i-2J-hNQ"/>
+                                    <constraint firstAttribute="height" constant="80" id="swt-0t-Buh"/>
+                                </constraints>
+                                <string key="text">
+
+Mulai Ada Kenaikan Suhu,Segera cek bayi anda</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-mm-UEC">
+                                <rect key="frame" x="56" y="599" width="323" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">
+
+Segera lakukan tindakan demam</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22M-bc-RsM">
+                                <rect key="frame" x="56" y="707" width="68" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="39ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9r-Tp-INL">
+                                <rect key="frame" x="56" y="600" width="68" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="11 Juli 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-uI-KQw">
+                                <rect key="frame" x="283" y="711" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="11 Juli 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvF-UJ-Fea">
+                                <rect key="frame" x="282" y="601" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hc-ph-LYh">
+                                <rect key="frame" x="56" y="562" width="72" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ringkasan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-XK-LgT">
+                                <rect key="frame" x="56" y="343" width="115" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Suhu Hari Ini Lebih Tinggi dari rata rata suhu kemarin" textAlignment="natural" id="hkj-Xd-lTN">
+                                <rect key="frame" x="56" y="386" width="323" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89420515300000003" green="0.92154330019999997" blue="0.92157012220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oK1-a7-nBP" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="288" id="CSo-H6-DGR"/>
+                            <constraint firstItem="Y9r-Tp-INL" firstAttribute="centerX" secondItem="ZT7-ow-7ts" secondAttribute="centerX" constant="-97" id="HFR-hQ-mXe"/>
+                            <constraint firstItem="vyc-uI-KQw" firstAttribute="centerX" secondItem="ZT7-ow-7ts" secondAttribute="centerX" constant="141.5" id="Jzc-pH-jZb"/>
+                            <constraint firstItem="22M-bc-RsM" firstAttribute="centerX" secondItem="ZT7-ow-7ts" secondAttribute="centerX" constant="-97" id="M9F-7w-nRj"/>
+                            <constraint firstItem="zvF-UJ-Fea" firstAttribute="centerX" secondItem="ZT7-ow-7ts" secondAttribute="centerX" constant="140.5" id="Qow-jE-ZRe"/>
+                            <constraint firstItem="Y9r-Tp-INL" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="159" id="Scu-sy-MyP"/>
+                            <constraint firstItem="22M-bc-RsM" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="266" id="ViW-g2-1xX"/>
+                            <constraint firstItem="oK1-a7-nBP" firstAttribute="centerX" secondItem="ZT7-ow-7ts" secondAttribute="centerX" constant="30.5" id="fP4-Gx-dxv"/>
+                            <constraint firstItem="vyc-uI-KQw" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="262.5" id="fs3-ki-zmB"/>
+                            <constraint firstItem="zvF-UJ-Fea" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="152.5" id="p07-qO-iqk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0jx-xj-GL3"/>
                     </view>
                 </viewController>
