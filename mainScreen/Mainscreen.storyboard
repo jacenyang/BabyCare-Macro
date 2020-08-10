@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Screen-->
         <scene sceneID="ShA-XM-diP">
             <objects>
-                <viewController id="bHY-jD-cAw" sceneMemberID="viewController">
+                <viewController id="bHY-jD-cAw" customClass="mainScreen" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RVR-zr-DoF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ilS-mX-tL8"/>
                     </view>
+                    <connections>
+                        <outlet property="sorotanTableView" destination="IaU-ex-Yi8" id="vAf-GK-Eud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWB-if-UAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

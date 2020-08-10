@@ -22,8 +22,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tub-us-gMl">
                                 <rect key="frame" x="8" y="9" width="304" height="94.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-HJ-od7">
-                                        <rect key="frame" x="0.0" y="0.0" width="43" height="31.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suhu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-HJ-od7">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -59,6 +59,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="angkaLabel" destination="6Oh-0T-aT7" id="9cZ-kk-BsW"/>
+                <outlet property="cardView" destination="3gj-0e-shI" id="Eoj-mh-bIj"/>
+                <outlet property="statusLabel" destination="AKK-aj-MCh" id="tyF-kA-UqG"/>
+            </connections>
             <point key="canvasLocation" x="113.04347826086958" y="173.4375"/>
         </tableViewCell>
     </objects>

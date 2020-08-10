@@ -10,11 +10,20 @@ import UIKit
 
 class SorotanTableViewCell: UITableViewCell {
 
-    
+    @IBOutlet weak var angkaLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        cardView.clipsToBounds = false
+        cardView.layer.cornerRadius = 11
+        cardView.backgroundColor = UIColor.white
+        
+        self.layer.cornerRadius = 11
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
