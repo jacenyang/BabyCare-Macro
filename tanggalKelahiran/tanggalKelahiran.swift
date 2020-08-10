@@ -22,6 +22,7 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
     let darkGreyColor: UIColor = UIColor(red: 52 / 255, green: 42 / 255, blue: 61 / 255, alpha: 1.0)
     let overcastBlueColor: UIColor = UIColor(red: 0, green: 187 / 255, blue: 204 / 255, alpha: 1.0)
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +38,25 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
 
         //departureCityField.becomeFirstResponder()
     }
+    
+    
+    
+    @objc func tapDone() {
+        if let datePicker = self.estimasiKelahiran.inputView as? UIDatePicker { // 2-1
+            let dateformatter = DateFormatter() // 2-2
+            dateformatter.dateStyle = .medium // 2-3
+            self.estimasiKelahiran.text = dateformatter.string(from: datePicker.date) //2-4
+        }
+        self.estimasiKelahiran.resignFirstResponder() // 2-5
+    }
+    @objc func tapDone() {
+           if let datePicker = self.tanggalLahir.inputView as? UIDatePicker { // 2-1
+               let dateformatter = DateFormatter() // 2-2
+               dateformatter.dateStyle = .medium // 2-3
+               self.tanggalLahir.text = dateformatter.string(from: datePicker.date) //2-4
+           }
+           self.tanggalLahir.resignFirstResponder() // 2-5
+       }
 
     // MARK: - Creating the form elements
 
