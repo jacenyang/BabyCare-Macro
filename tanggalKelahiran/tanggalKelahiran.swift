@@ -10,7 +10,7 @@ import UIKit
 
 let isLTRLanguage = UIApplication.shared.userInterfaceLayoutDirection == .leftToRight
 
-class ShowcaseExampleViewController: UIViewController, UITextFieldDelegate {
+class tanggalKelahiran: UIViewController, UITextFieldDelegate {
    
     @IBOutlet weak var estimasiKelahiran: SkyFloatingLabelTextField!
     @IBOutlet weak var tanggalLahir: SkyFloatingLabelTextField!
