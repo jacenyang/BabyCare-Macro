@@ -21,6 +21,8 @@
 		0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB824E0FAA8005E893E /* onBoarding.swift */; };
 		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
 		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
+		D56D4C1924E0FE8600A084AE /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */; };
+		D56D4C1B24E0FEA800A084AE /* FixTextCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D4C1A24E0FEA800A084AE /* FixTextCare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0D748EB824E0FAA8005E893E /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
 		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
+		D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
+		D56D4C1A24E0FEA800A084AE /* FixTextCare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTextCare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */,
+				D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */,
+				D56D4C1A24E0FEA800A084AE /* FixTextCare.swift */,
 			);
 			path = tanggalKelahiran;
 			sourceTree = "<group>";
@@ -329,7 +335,9 @@
 				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
+				D56D4C1924E0FE8600A084AE /* FloatingLabelTextField.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
+				D56D4C1B24E0FEA800A084AE /* FixTextCare.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
