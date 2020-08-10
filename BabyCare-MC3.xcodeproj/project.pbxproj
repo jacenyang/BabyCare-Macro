@@ -22,6 +22,8 @@
 		0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB824E0FAA8005E893E /* onBoarding.swift */; };
 		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
 		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
+		C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54324E10ACB00B878E4 /* Suhu.storyboard */; };
+		C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */; };
 		D56D4C1924E0FE8600A084AE /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */; };
 		D56D4C1B24E0FEA800A084AE /* FixTextCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D4C1A24E0FEA800A084AE /* FixTextCare.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		0D748EB824E0FAA8005E893E /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
 		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
+		C048B54324E10ACB00B878E4 /* Suhu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suhu.storyboard; sourceTree = "<group>"; };
+		C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetakJantung.storyboard; sourceTree = "<group>"; };
 		D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
 		D56D4C1A24E0FEA800A084AE /* FixTextCare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTextCare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0D748EB624E0FA91005E893E /* suhu.swift */,
+				C048B54324E10ACB00B878E4 /* Suhu.storyboard */,
 			);
 			path = suhu;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				0D748EB324E0FA6E005E893E /* detakJantung.swift */,
+				C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */,
 			);
 			path = detakJantung;
 			sourceTree = "<group>";
@@ -308,8 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */,
+				C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */,
 				0D748E8624E0F823005E893E /* Assets.xcassets in Resources */,
 				0D748E8424E0F821005E893E /* Main.storyboard in Resources */,
+				C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */,
 				0D2087BD24E109C3004E4E0C /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
