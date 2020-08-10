@@ -40,6 +40,7 @@
             <connections>
                 <outlet property="judulImage" destination="TrH-xZ-d08" id="4Rk-qu-8Mu"/>
                 <outlet property="judulLabel" destination="yvM-WA-Ja2" id="HqH-V3-C8j"/>
+                <outlet property="judulView" destination="571-vA-hi4" id="6HO-JT-ruf"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="179.46428571428569"/>
         </tableViewCell>

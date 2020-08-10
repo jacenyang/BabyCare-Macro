@@ -102,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="sorotanTableView" destination="IaU-ex-Yi8" id="vAf-GK-Eud"/>
+                        <outlet property="tipsTableView" destination="f3w-Es-BMZ" id="s3S-TD-3ZK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWB-if-UAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
