@@ -23,6 +23,8 @@
 		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
 		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
+		B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */; };
+		B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */; };
 		C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54324E10ACB00B878E4 /* Suhu.storyboard */; };
 		C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */; };
 		D56D4C1924E0FE8600A084AE /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */; };
@@ -69,6 +71,8 @@
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
 		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
 		B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mainscreen.storyboard; sourceTree = "<group>"; };
+		B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorotanTableViewCell.swift; sourceTree = "<group>"; };
+		B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SorotanTableViewCell.xib; sourceTree = "<group>"; };
 		C048B54324E10ACB00B878E4 /* Suhu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suhu.storyboard; sourceTree = "<group>"; };
 		C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetakJantung.storyboard; sourceTree = "<group>"; };
 		D56D4C1824E0FE8600A084AE /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
@@ -182,7 +186,7 @@
 		0D748EAE24E0FA1F005E893E /* mainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B3EE63E224E11C4A00FBAFB5 /* New Group */,
+				B3EE63E224E11C4A00FBAFB5 /* Sorotan */,
 				0D748EB124E0FA57005E893E /* mainScreen.swift */,
 				B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */,
 			);
@@ -215,11 +219,13 @@
 			path = tips;
 			sourceTree = "<group>";
 		};
-		B3EE63E224E11C4A00FBAFB5 /* New Group */ = {
+		B3EE63E224E11C4A00FBAFB5 /* Sorotan */ = {
 			isa = PBXGroup;
 			children = (
+				B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */,
+				B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */,
 			);
-			path = "New Group";
+			path = Sorotan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +334,7 @@
 			files = (
 				0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */,
 				C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */,
+				B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */,
 				0D748E8624E0F823005E893E /* Assets.xcassets in Resources */,
 				B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */,
 				0D748E8424E0F821005E893E /* Main.storyboard in Resources */,
@@ -367,6 +374,7 @@
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
+				B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */,
 				0D748EBE24E0FADE005E893E /* tips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
