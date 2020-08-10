@@ -12,6 +12,7 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var sorotanTableView: UITableView!
     
+    let nama = ["suhu"]
     let angka = ["32 C"]
     let status = ["demam bgt nih"]
     
@@ -29,16 +30,13 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.sorotanTableView.separatorStyle = .none
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return angka.count
+        return nama.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sorotanCell = Bundle(for: SorotanTableViewCell.self).loadNibNamed("SorotanTableViewCell", owner: self, options: nil)?.first as! SorotanTableViewCell
+        sorotanCell.namaLabel.text = nama[indexPath.row]
         sorotanCell.angkaLabel.text = angka[indexPath.row]
         sorotanCell.statusLabel.text = status[indexPath.row]
         return sorotanCell

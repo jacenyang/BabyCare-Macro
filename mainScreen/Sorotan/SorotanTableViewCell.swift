@@ -10,6 +10,7 @@ import UIKit
 
 class SorotanTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var namaLabel: UILabel!
     @IBOutlet weak var angkaLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var cardView: UIView!
@@ -23,7 +24,6 @@ class SorotanTableViewCell: UITableViewCell {
         cardView.backgroundColor = UIColor.white
         
         self.layer.cornerRadius = 11
-        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
