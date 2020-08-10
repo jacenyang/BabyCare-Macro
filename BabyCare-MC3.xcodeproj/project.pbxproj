@@ -15,6 +15,12 @@
 		0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D748E8724E0F823005E893E /* LaunchScreen.storyboard */; };
 		0D748E9424E0F823005E893E /* BabyCare_MC3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748E9324E0F823005E893E /* BabyCare_MC3Tests.swift */; };
 		0D748E9F24E0F823005E893E /* BabyCare_MC3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748E9E24E0F823005E893E /* BabyCare_MC3UITests.swift */; };
+		0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB124E0FA57005E893E /* mainScreen.swift */; };
+		0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB324E0FA6E005E893E /* detakJantung.swift */; };
+		0D748EB724E0FA91005E893E /* suhu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB624E0FA91005E893E /* suhu.swift */; };
+		0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB824E0FAA8005E893E /* onBoarding.swift */; };
+		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
+		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		0D748E9A24E0F823005E893E /* BabyCare-MC3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BabyCare-MC3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D748E9E24E0F823005E893E /* BabyCare_MC3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyCare_MC3UITests.swift; sourceTree = "<group>"; };
 		0D748EA024E0F823005E893E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D748EB124E0FA57005E893E /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		0D748EB324E0FA6E005E893E /* detakJantung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detakJantung.swift; sourceTree = "<group>"; };
+		0D748EB624E0FA91005E893E /* suhu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suhu.swift; sourceTree = "<group>"; };
+		0D748EB824E0FAA8005E893E /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
+		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
+		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				0D748EBC24E0FACC005E893E /* tips */,
+				0D748EAE24E0FA1F005E893E /* mainScreen */,
+				0D748EB024E0FA3A005E893E /* detakJantung */,
+				0D748EAF24E0FA2C005E893E /* suhu */,
+				0D748EAC24E0F9F2005E893E /* onBoarding */,
+				0D748EAD24E0FA02005E893E /* tanggalKelahiran */,
 				0D748E7B24E0F821005E893E /* BabyCare-MC3 */,
 				0D748E9224E0F823005E893E /* BabyCare-MC3Tests */,
 				0D748E9D24E0F823005E893E /* BabyCare-MC3UITests */,
@@ -126,6 +144,54 @@
 				0D748EA024E0F823005E893E /* Info.plist */,
 			);
 			path = "BabyCare-MC3UITests";
+			sourceTree = "<group>";
+		};
+		0D748EAC24E0F9F2005E893E /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EB824E0FAA8005E893E /* onBoarding.swift */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
+		0D748EAD24E0FA02005E893E /* tanggalKelahiran */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */,
+			);
+			path = tanggalKelahiran;
+			sourceTree = "<group>";
+		};
+		0D748EAE24E0FA1F005E893E /* mainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EB124E0FA57005E893E /* mainScreen.swift */,
+			);
+			path = mainScreen;
+			sourceTree = "<group>";
+		};
+		0D748EAF24E0FA2C005E893E /* suhu */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EB624E0FA91005E893E /* suhu.swift */,
+			);
+			path = suhu;
+			sourceTree = "<group>";
+		};
+		0D748EB024E0FA3A005E893E /* detakJantung */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EB324E0FA6E005E893E /* detakJantung.swift */,
+			);
+			path = detakJantung;
+			sourceTree = "<group>";
+		};
+		0D748EBC24E0FACC005E893E /* tips */ = {
+			isa = PBXGroup;
+			children = (
+				0D748EBD24E0FADE005E893E /* tips.swift */,
+			);
+			path = tips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
+				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
+				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
+				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
+				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
+				0D748EBE24E0FADE005E893E /* tips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
