@@ -347,26 +347,23 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiS-WN-ILK">
-                                <rect key="frame" x="20" y="102" width="267" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiS-WN-ILK">
+                                <rect key="frame" x="32" y="119" width="234" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masukkan data berikut untuk mengetahui usia koreksi bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfO-7p-huq">
-                                <rect key="frame" x="20" y="151" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Masukkan data berikut untuk mengetahui usia koreksi bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfO-7p-huq">
+                                <rect key="frame" x="32" y="170" width="347" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-HW-HoN">
-                                <rect key="frame" x="55" y="772" width="310" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-HW-HoN">
+                                <rect key="frame" x="55" y="772" width="310" height="44"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Simpan"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -376,20 +373,31 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                     <action selector="simpan:" destination="FYP-Iq-n4U" eventType="touchUpInside" id="jyf-kv-Jn2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal Lahir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebi-lb-91m" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="20" y="323" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal Lahir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebi-lb-91m" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
+                                <rect key="frame" x="32" y="295" width="347" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimasi Kelahiran Bayi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNy-lK-oRR" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="20" y="253" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimasi Kelahiran Bayi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNy-lK-oRR" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
+                                <rect key="frame" x="32" y="242" width="347" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kNy-lK-oRR" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="32" id="4z9-jl-QN6"/>
+                            <constraint firstItem="kNy-lK-oRR" firstAttribute="top" secondItem="pfO-7p-huq" secondAttribute="bottom" constant="10" id="5Cu-cS-2vm"/>
+                            <constraint firstItem="tiS-WN-ILK" firstAttribute="top" secondItem="zFs-bJ-VZe" secondAttribute="top" constant="75" id="OaE-EY-REi"/>
+                            <constraint firstItem="tiS-WN-ILK" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="32" id="R1c-Tc-2od"/>
+                            <constraint firstItem="zFs-bJ-VZe" firstAttribute="trailing" secondItem="Ebi-lb-91m" secondAttribute="trailing" constant="35" id="ae3-En-e99"/>
+                            <constraint firstItem="zFs-bJ-VZe" firstAttribute="trailing" secondItem="kNy-lK-oRR" secondAttribute="trailing" constant="35" id="eWH-Qk-yVy"/>
+                            <constraint firstItem="Ebi-lb-91m" firstAttribute="top" secondItem="kNy-lK-oRR" secondAttribute="bottom" constant="20" id="ej0-TU-0pj"/>
+                            <constraint firstItem="8uk-HW-HoN" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="55" id="gAw-8J-xj0"/>
+                            <constraint firstItem="zFs-bJ-VZe" firstAttribute="trailing" secondItem="tiS-WN-ILK" secondAttribute="trailing" constant="148" id="nEN-5N-oQR"/>
+                            <constraint firstItem="zFs-bJ-VZe" firstAttribute="trailing" secondItem="8uk-HW-HoN" secondAttribute="trailing" constant="49" id="vDd-Ur-okb"/>
+                            <constraint firstItem="Ebi-lb-91m" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="32" id="yIi-Zf-Dln"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zFs-bJ-VZe"/>
                     </view>
                     <connections>
