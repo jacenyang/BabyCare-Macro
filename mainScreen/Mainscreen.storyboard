@@ -55,6 +55,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorotan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVJ-9C-KtP">
+                                <rect key="frame" x="30" y="312" width="78" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92165362829999997" green="0.94508570430000005" blue="0.94509893659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -62,13 +68,16 @@
                             <constraint firstItem="ilS-mX-tL8" firstAttribute="trailing" secondItem="cyH-MV-auT" secondAttribute="trailing" constant="342" id="28D-QC-Awy"/>
                             <constraint firstItem="QxC-ly-OKq" firstAttribute="leading" secondItem="ilS-mX-tL8" secondAttribute="leading" constant="30" id="3Uz-Zd-vPb"/>
                             <constraint firstItem="ilS-mX-tL8" firstAttribute="trailing" secondItem="zHF-2n-Bbk" secondAttribute="trailing" constant="274" id="8oO-3p-ZRM"/>
+                            <constraint firstItem="ilS-mX-tL8" firstAttribute="trailing" secondItem="HVJ-9C-KtP" secondAttribute="trailing" constant="306" id="BMr-S2-6nM"/>
                             <constraint firstItem="zHF-2n-Bbk" firstAttribute="top" secondItem="cyH-MV-auT" secondAttribute="bottom" constant="28" id="Fg4-VX-ijY"/>
                             <constraint firstItem="cyH-MV-auT" firstAttribute="leading" secondItem="ilS-mX-tL8" secondAttribute="leading" constant="30" id="IgV-fI-RAI"/>
                             <constraint firstItem="cyH-MV-auT" firstAttribute="top" secondItem="StR-tX-LNa" secondAttribute="bottom" constant="8" id="NK8-RX-J8p"/>
                             <constraint firstItem="QxC-ly-OKq" firstAttribute="top" secondItem="zHF-2n-Bbk" secondAttribute="bottom" constant="8" id="OEW-P3-NZK"/>
+                            <constraint firstItem="HVJ-9C-KtP" firstAttribute="leading" secondItem="ilS-mX-tL8" secondAttribute="leading" constant="30" id="R7a-pQ-iK1"/>
                             <constraint firstItem="ilS-mX-tL8" firstAttribute="trailing" secondItem="QxC-ly-OKq" secondAttribute="trailing" constant="30" id="YYW-9L-0Bo"/>
                             <constraint firstItem="zHF-2n-Bbk" firstAttribute="leading" secondItem="ilS-mX-tL8" secondAttribute="leading" constant="30" id="cGR-Ag-uUb"/>
                             <constraint firstItem="StR-tX-LNa" firstAttribute="leading" secondItem="ilS-mX-tL8" secondAttribute="leading" constant="30" id="jPp-Rq-ewL"/>
+                            <constraint firstItem="HVJ-9C-KtP" firstAttribute="top" secondItem="QxC-ly-OKq" secondAttribute="bottom" constant="29" id="kfi-Ja-XnL"/>
                             <constraint firstItem="ilS-mX-tL8" firstAttribute="bottom" secondItem="QxC-ly-OKq" secondAttribute="bottom" constant="579" id="rw8-F4-HtX"/>
                             <constraint firstItem="StR-tX-LNa" firstAttribute="top" secondItem="ilS-mX-tL8" secondAttribute="top" constant="33" id="sdH-pr-Dqf"/>
                         </constraints>
