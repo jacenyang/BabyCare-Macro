@@ -1,301 +1,135 @@
 //
-//  tanggalKelahiran.swift
-//  BabyCare-MC3
+//  ViewController.swift
+//  apaajalah
 //
-//  Created by Ivan Winata on 10/08/20.
-//  Copyright © 2020 Ivan Winata. All rights reserved.
+//  Created by Rian Anjasmara on 10/08/20.
+//  Copyright © 2020 Rian Anjasmara. All rights reserved.
 //
 
 import UIKit
 
-let isLTRLanguage = UIApplication.shared.userInterfaceLayoutDirection == .leftToRight
+class tanggalKelahiran: UIViewController {
 
-class tanggalKelahiran: UIViewController, UITextFieldDelegate {
-   
-    @IBOutlet weak var estimasiKelahiran: SkyFloatingLabelTextField!
-    @IBOutlet weak var tanggalLahir: SkyFloatingLabelTextField!
-    @IBOutlet weak var submitButton: UIButton!
     
-    var textFields: [SkyFloatingLabelTextField] = []
-
-    let lightGreyColor: UIColor = UIColor(red: 197 / 255, green: 205 / 255, blue: 205 / 255, alpha: 1.0)
-    let darkGreyColor: UIColor = UIColor(red: 52 / 255, green: 42 / 255, blue: 61 / 255, alpha: 1.0)
-    let overcastBlueColor: UIColor = UIColor(red: 0, green: 187 / 255, blue: 204 / 255, alpha: 1.0)
-
+    @IBOutlet var estimasiLahir: UITextField!
+    
+    let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        textFields = [estimasiKelahiran, tanggalLahir]
-
-        setupButton()
-//        setupCities()
-//        setupUser()
-
-        for textField in textFields {
-            textField.delegate = self
-        }
-
-        //departureCityField.becomeFirstResponder()
+        // Do any additional setup after loading the view.
+        bottomline()
+       
+        createDatePicker()
+      //  createDatePicker1()
     }
     
     
     
-    @objc func tapDone() {
-        if let datePicker = self.estimasiKelahiran.inputView as? UIDatePicker { // 2-1
-            let dateformatter = DateFormatter() // 2-2
-            dateformatter.dateStyle = .medium // 2-3
-            self.estimasiKelahiran.text = dateformatter.string(from: datePicker.date) //2-4
-        }
-        self.estimasiKelahiran.resignFirstResponder() // 2-5
+    
+    
+    func bottomline (){
+        let bottomLine = CALayer()
+     // let bottomLine1 = CALayer()
+        
+        bottomLine.frame = CGRect(x: 0, y: estimasiLahir.frame.height - 2 , width: estimasiLahir.frame.width , height: 2)
+        
+     //   bottomLine1.frame = CGRect(x: 0, y: tanggalLahir.frame.height - 2 , width: tanggalLahir.frame.width , height: 2)
+        
+        bottomLine.backgroundColor = UIColor.init(red: 56/255, green: 87/255, blue: 81/255, alpha: 1).cgColor
+    //  bottomLine1.backgroundColor = UIColor.init(red: 51/255, green: 75/255, blue: 72/255, alpha: 1).cgColor
+        
+        estimasiLahir.borderStyle = .none
+      //  tanggalLahir.borderStyle = .none
+        
+        estimasiLahir.layer.addSublayer(bottomLine)
+      //  tanggalLahir.layer.addSublayer(bottomLine1)
+        
     }
-    @objc func tapDone() {
-           if let datePicker = self.tanggalLahir.inputView as? UIDatePicker { // 2-1
-               let dateformatter = DateFormatter() // 2-2
-               dateformatter.dateStyle = .medium // 2-3
-               self.tanggalLahir.text = dateformatter.string(from: datePicker.date) //2-4
-           }
-           self.tanggalLahir.resignFirstResponder() // 2-5
-       }
-
-    // MARK: - Creating the form elements
-
-    func setupButton() {
-        submitButton.layer.borderColor = darkGreyColor.cgColor
-        submitButton.layer.borderWidth = 1
-        submitButton.layer.cornerRadius = 5
-        submitButton.setTitleColor(overcastBlueColor, for: .highlighted)
+    
+    func createDatePicker (){
+        //Toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar Button
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePress))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        //assign toolbar
+        estimasiLahir.inputAccessoryView = toolbar
+       
+        //assign Datepicker
+        estimasiLahir.inputView = datePicker
+        
+        //date picker Mode
+        datePicker.datePickerMode = .date
+        
+    }
+    @objc func donePress(){
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d MMMM yyyy"
+        let estimasiLhr = datePicker.date
+        estimasiLahir.text = formatter.string(from: estimasiLhr)
+                self.view.endEditing(true)
     }
 
-//    func setupCities() {
+    
+//    func createDatePicker1 (){
+//        //Toolbar
+//        let toolbar = UIToolbar()
+//        toolbar.sizeToFit()
 //
-//        applySkyscannerThemeWithIcon(textField: self.departureCityField)
+//        //bar Button
+//        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePress1))
+//        toolbar.setItems([doneBtn], animated: true)
 //
-//        // plane icon as per https://fortawesome.github.io/Font-Awesome/cheatsheet/
-//        //departureCityField.iconText = "\u{f072}"
-//        departureCityField.placeholder = NSLocalizedString(
-//            "Departure City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "placeholder for the departure city field"
-//        )
-//        departureCityField.selectedTitle = NSLocalizedString(
-//            "Departure City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for the departure city field"
-//        )
-//        departureCityField.title = NSLocalizedString(
-//            "Departure City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for the departure city field"
-//        )
+//        //assign toolbar
+//        tanggalLahir.inputAccessoryView = toolbar
 //
-//        applySkyscannerThemeWithIcon(textField: arrivalCityField)
-      //  arrivalCityField.iconWidth = 12.5 // Control the size of the image
+//        //assign Datepicker
+//        tanggalLahir.inputView = datePicker
+//
+//        //date picker Mode
+//        datePicker.datePickerMode = .date
+//
+//    }
+//    @objc func donePress1(){
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "d MMMM yyyy"
+//        let tanggalLhr = datePicker.date
+//        tanggalLahir.text = formatter.string(from: tanggalLhr)
+//        self.view.endEditing(true)
+//    }
+    
+    
+    @IBOutlet var lblAge: UILabel!
+    
+    @IBAction func btnCalculateHandler(_ sender: UIButton) {
+    
+        //1 - get selected date from date picker
+        let estimasilahir = datePicker.date
+        
+           //2 - get estimate date
+        let hariini = Date()
+        
 
-      //  if isLTRLanguage {
-      //      arrivalCityField.iconRotationDegrees = 90
-       // } else { // In RTL languages the plane should point to the other side
-      //      arrivalCityField.iconRotationDegrees = 180
-      //      departureCityField.iconRotationDegrees = 270
-        }
+           //3 - create an instance of the user's current calendar
+           let calendar = Calendar.current
 
-       // arrivalCityField.iconType = .image
-      //  arrivalCityField.iconImage = #imageLiteral(resourceName: "PlaneIcon")
+           //4 - use calendar to get difference between two dates
+           let components = calendar.dateComponents([.year, .month, .day], from: estimasilahir, to: hariini)
 
-//        arrivalCityField.placeholder = NSLocalizedString(
-//            "Arrival City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "placeholder for the arrival city field"
-//        )
-//        arrivalCityField.selectedTitle = NSLocalizedString(
-//            "Arrival City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for the arrival city field"
-//        )
-//        arrivalCityField.title = NSLocalizedString(
-//            "Arrival City",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for the arrival city field"
-//        )
-//    }
-//
-//    func setupUser() {
-//
-//        titleField.placeholder = NSLocalizedString(
-//            "Title",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "placeholder for person title field"
-//        )
-//        titleField.selectedTitle = NSLocalizedString(
-//            "Title",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "selected title for person title field"
-//        )
-//        titleField.title = NSLocalizedString(
-//            "Title",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for person title field"
-//        )
-//
-//        nameField.placeholder = NSLocalizedString(
-//            "Name",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "placeholder for traveler name field"
-//        )
-//        nameField.selectedTitle = NSLocalizedString(
-//            "Name",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "selected title for traveler name field"
-//        )
-//        nameField.title = NSLocalizedString(
-//            "Name",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "title for traveler name field"
-//        )
-//
-//        emailField.placeholder = NSLocalizedString(
-//            "Email",
-//            tableName: "SkyFloatingLabelTextField",
-//            comment: "placeholder for Email field"
-//        )
-////        emailField.selectedTitle = NSLocalizedString(
-////            "Email",
-////            tableName: "SkyFloatingLabelTextField",
-////            comment: "selected title for Email field"
-////        )
-////        emailField.title = NSLocalizedString(
-////            "Email",
-////            tableName: "SkyFloatingLabelTextField",
-////            comment: "title for Email field"
-////        )
-////
-////        applySkyscannerTheme(textField: titleField)
-////        applySkyscannerTheme(textField: nameField)
-////        applySkyscannerTheme(textField: emailField)
-////
-////    }
-//
-//    // MARK: - Styling the text fields to the Skyscanner theme
-//
-////    func applySkyscannerThemeWithIcon(textField: SkyFloatingLabelTextField) {
-////        self.applySkyscannerTheme(textField: textField)
-////
-////
-////    }
-////
-////    func applySkyscannerTheme(textField: SkyFloatingLabelTextField) {
-////
-////        textField.tintColor = overcastBlueColor
-////
-////        textField.textColor = darkGreyColor
-////        textField.lineColor = lightGreyColor
-////
-////        textField.selectedTitleColor = overcastBlueColor
-////        textField.selectedLineColor = overcastBlueColor
-////
-////        // Set custom fonts for the title, placeholder and textfield labels
-////        textField.titleLabel.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 12)
-////        textField.placeholderFont = UIFont(name: "AppleSDGothicNeo-Light", size: 18)
-////        textField.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 18)
-////    }
-////
-////    // MARK: - Validating the fields when "submit" is pressed
-////
-////    var isSubmitButtonPressed: Bool = false
-////
-////    var showingTitleInProgress: Bool = false
-////
-////func submitButtonDown(_ sender: AnyObject) {
-////        self.isSubmitButtonPressed = true
-////
-////        for textField in textFields where !textField.hasText {
-////            showingTitleInProgress = true
-////            textField.setTitleVisible(
-////                true,
-////                animated: true,
-////                animationCompletion: showingTitleInAnimationComplete
-////            )
-////            textField.isHighlighted = true
-////        }
-////    }
-////
-////    @IBAction func submitButtonTouchUpInside(_ sender: AnyObject) {
-////        isSubmitButtonPressed = false
-////        if !showingTitleInProgress {
-////            hideTitleVisibleFromFields()
-////        }
-////    }
-////
-////    func showingTitleInAnimationComplete(_ completed: Bool) {
-////        // If a field is not filled out, display the highlighted title for 0.3 seco
-////        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
-////            self.showingTitleInProgress = false
-////            if !self.isSubmitButtonPressed {
-////                self.hideTitleVisibleFromFields()
-////            }
-////        }
-////    }
-////
-////    func hideTitleVisibleFromFields() {
-////
-////        for textField in textFields {
-////            textField.setTitleVisible(false, animated: true)
-////            textField.isHighlighted = false
-////        }
-////
-////    }
-//
-//    // MARK: - Delegate
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        // Validate the email field
-//        if textField == emailField {
-//            validateEmailField()
-//        }
-//
-//        // When pressing return, move to the next field
-//        let nextTag = textField.tag + 1
-//        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
-//            nextResponder.becomeFirstResponder()
-//        } else {
-//            textField.resignFirstResponder()
-//        }
-//        return false
-//    }
-//
-//    @IBAction func validateEmailField() {
-//        validateEmailTextFieldWithText(email: emailField.text)
-//    }
-//
-//    func validateEmailTextFieldWithText(email: String?) {
-//        guard let email = email else {
-//            emailField.errorMessage = nil
-//            return
-//        }
-//
-//        if email.isEmpty {
-//            emailField.errorMessage = nil
-//        } else if !validateEmail(email) {
-//            emailField.errorMessage = NSLocalizedString(
-//                "Email not valid",
-//                tableName: "SkyFloatingLabelTextField",
-//                comment: " "
-//            )
-//        } else {
-//            emailField.errorMessage = nil
-//        }
-//    }
-//
-//    // MARK: - validation
-//
-//    func validateEmail(_ candidate: String) -> Bool {
-//
-//        // NOTE: validating email addresses with regex is usually not the best idea.
-//        // This implementation is for demonstration purposes only and is not recommended for production use.
-//        // Regex source and more information here: http://emailregex.com
-//
-//        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-//        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: candidate)
-//    }
-//}
+           let ageYears = components.year
+           let ageMonths = components.month
+           let ageDays = components.day
+
+           //5 - display age in label
+           self.lblAge.text = " \(ageYears!) Year,\(ageMonths!) months, \(ageDays!) days"
+
+    
+    
+}
+}
+
 

@@ -11,70 +11,85 @@
         <scene sceneID="2F4-Va-ddb">
             <objects>
                 <viewController id="LF3-Ur-hXX" customClass="tanggalKelahiran" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eCR-2H-PuG">
+                    <view key="view" contentMode="scaleToFill" id="x6a-Nt-tRG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOa-W4-cMe">
-                                <rect key="frame" x="32" y="119" width="234" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukkan data berikut untuk mengetahui usia koreksi bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AO-hR-0EG">
-                                <rect key="frame" x="32" y="170" width="347" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dV7-Oh-eQV"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFz-a3-Sdv">
+                                <rect key="frame" x="55" y="111" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XII-P8-d2h">
-                                <rect key="frame" x="55" y="772" width="310" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-OA-kcq">
+                                <rect key="frame" x="20" y="119" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan tanggal estimasi dan tanggal lahir bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-ui-cg0">
+                                <rect key="frame" x="20" y="156" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal estimasi" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-j2-3II">
+                                <rect key="frame" x="20" y="219" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uLG-JM-9sL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
+                                <rect key="frame" x="55" y="788" width="303" height="44"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="rb2-Lv-Qw5"/>
+                                    <constraint firstAttribute="height" constant="44" id="jyl-RG-2FW"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Simpan"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCalculateHandler:" destination="LF3-Ur-hXX" eventType="touchUpInside" id="KGH-ua-jKw"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal Lahir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mnn-i5-liA" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="32" y="289" width="347" height="39.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimasi Kelahiran Bayi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUS-P4-7EX" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="32" y="230" width="347" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usia Koreksi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-b0-bbv">
+                                <rect key="frame" x="20" y="438" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="OUS-P4-7EX" firstAttribute="top" secondItem="8AO-hR-0EG" secondAttribute="bottom" constant="10" id="01v-rA-bUP"/>
-                            <constraint firstItem="NpC-XU-vFO" firstAttribute="trailing" secondItem="Mnn-i5-liA" secondAttribute="trailing" constant="35" id="08x-VE-0kJ"/>
-                            <constraint firstItem="Mnn-i5-liA" firstAttribute="top" secondItem="OUS-P4-7EX" secondAttribute="bottom" constant="20" id="0St-69-aDF"/>
-                            <constraint firstItem="IOa-W4-cMe" firstAttribute="leading" secondItem="NpC-XU-vFO" secondAttribute="leading" constant="32" id="755-ky-mSd"/>
-                            <constraint firstItem="Mnn-i5-liA" firstAttribute="leading" secondItem="NpC-XU-vFO" secondAttribute="leading" constant="32" id="Cpm-nQ-5OU"/>
-                            <constraint firstItem="IOa-W4-cMe" firstAttribute="top" secondItem="NpC-XU-vFO" secondAttribute="top" constant="75" id="QUy-Rb-50t"/>
-                            <constraint firstItem="8AO-hR-0EG" firstAttribute="top" secondItem="IOa-W4-cMe" secondAttribute="bottom" constant="10" id="SzQ-t9-QOr"/>
-                            <constraint firstItem="8AO-hR-0EG" firstAttribute="trailing" secondItem="OUS-P4-7EX" secondAttribute="trailing" id="TZ9-au-um4"/>
-                            <constraint firstItem="XII-P8-d2h" firstAttribute="leading" secondItem="NpC-XU-vFO" secondAttribute="leading" constant="55" id="XNB-ZV-Zdy"/>
-                            <constraint firstItem="NpC-XU-vFO" firstAttribute="trailing" secondItem="IOa-W4-cMe" secondAttribute="trailing" constant="148" id="axp-hz-wW2"/>
-                            <constraint firstItem="NpC-XU-vFO" firstAttribute="trailing" secondItem="OUS-P4-7EX" secondAttribute="trailing" constant="35" id="bf4-h1-WyB"/>
-                            <constraint firstItem="8AO-hR-0EG" firstAttribute="leading" secondItem="IOa-W4-cMe" secondAttribute="leading" id="kuL-y8-b09"/>
-                            <constraint firstItem="NpC-XU-vFO" firstAttribute="trailing" secondItem="XII-P8-d2h" secondAttribute="trailing" constant="49" id="pa4-uv-rG6"/>
-                            <constraint firstItem="OUS-P4-7EX" firstAttribute="leading" secondItem="NpC-XU-vFO" secondAttribute="leading" constant="32" id="sg7-8g-hYl"/>
-                            <constraint firstItem="NpC-XU-vFO" firstAttribute="bottom" secondItem="XII-P8-d2h" secondAttribute="bottom" constant="46" id="vzG-X0-6h3"/>
+                            <constraint firstItem="l5n-OA-kcq" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="4CG-Ao-skD"/>
+                            <constraint firstItem="l5n-OA-kcq" firstAttribute="top" secondItem="y7b-BR-a0D" secondAttribute="top" constant="75" id="KVk-yQ-eDv"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="bottom" secondItem="kGc-En-mbE" secondAttribute="bottom" constant="30" id="PQQ-wV-Ih2"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="56" id="Tvf-Nc-1JS"/>
+                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="55" id="XOf-an-1jP"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="Apa-b0-bbv" secondAttribute="trailing" constant="20" id="Y6g-yU-qkg"/>
+                            <constraint firstItem="Apa-b0-bbv" firstAttribute="top" secondItem="qCJ-j2-3II" secondAttribute="bottom" constant="175" id="Zac-tg-CDi"/>
+                            <constraint firstItem="qCJ-j2-3II" firstAttribute="top" secondItem="JPw-ui-cg0" secondAttribute="bottom" constant="22" id="foa-H2-xwO"/>
+                            <constraint firstItem="JPw-ui-cg0" firstAttribute="top" secondItem="l5n-OA-kcq" secondAttribute="bottom" constant="8" id="giY-yU-cYO"/>
+                            <constraint firstItem="qCJ-j2-3II" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="kX9-lq-ZlT"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="JPw-ui-cg0" secondAttribute="trailing" constant="20" id="ks9-fj-T5n"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="l5n-OA-kcq" secondAttribute="trailing" constant="20" id="oEd-aK-w7m"/>
+                            <constraint firstItem="JPw-ui-cg0" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="ogZ-Nr-8ki"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="qCJ-j2-3II" secondAttribute="trailing" constant="20" id="oja-BD-f2u"/>
+                            <constraint firstItem="Apa-b0-bbv" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="p7Y-bW-MO3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NpC-XU-vFO"/>
+                        <viewLayoutGuide key="safeArea" id="y7b-BR-a0D"/>
                     </view>
+                    <connections>
+                        <outlet property="estimasiLahir" destination="qCJ-j2-3II" id="fkr-4t-GFm"/>
+                        <outlet property="lblAge" destination="Apa-b0-bbv" id="bS1-Tr-yg8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97C-Q4-y7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
