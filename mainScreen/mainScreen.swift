@@ -35,7 +35,7 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.sorotanTableView.separatorStyle = .none
         
         let nib2 = UINib(nibName: "TipsTableViewCell", bundle: nil)
-        tipsTableView.register(nib, forCellReuseIdentifier: "tipsCell")
+        tipsTableView.register(nib2, forCellReuseIdentifier: "tipsCell")
         tipsTableView.delegate = self
         tipsTableView.dataSource = self
         

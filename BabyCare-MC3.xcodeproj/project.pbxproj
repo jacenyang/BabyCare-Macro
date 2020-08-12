@@ -22,6 +22,11 @@
 		0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB824E0FAA8005E893E /* onBoarding.swift */; };
 		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
 		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
+		0DEDD50B24E3B15D00763D96 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2087BC24E109C3004E4E0C /* OnBoarding.storyboard */; };
+		0DEDD50C24E3B15E00763D96 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2087BC24E109C3004E4E0C /* OnBoarding.storyboard */; };
+		0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
+		0DEDD50E24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
+		0DEDD50F24E3B24D00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
 		B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */; };
 		B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */; };
@@ -346,6 +351,7 @@
 				0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */,
 				C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */,
 				B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */,
+				0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */,
 				0D748E8624E0F823005E893E /* Assets.xcassets in Resources */,
 				D565899924E3A7980051A45F /* tips.storyboard in Resources */,
 				B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */,
@@ -360,6 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEDD50B24E3B15D00763D96 /* OnBoarding.storyboard in Resources */,
+				0DEDD50E24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEDD50C24E3B15E00763D96 /* OnBoarding.storyboard in Resources */,
+				0DEDD50F24E3B24D00763D96 /* TanggalKelahiran.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37P7N7R8J2;
 				INFOPLIST_FILE = "BabyCare-MC3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37P7N7R8J2;
 				INFOPLIST_FILE = "BabyCare-MC3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
