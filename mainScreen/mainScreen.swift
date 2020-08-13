@@ -43,6 +43,10 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.tipsTableView.separatorStyle = .none
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated);
+    navigationController?.setNavigationBarHidden(true, animated: animated) }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == sorotanTableView{
             return nama.count
@@ -61,7 +65,7 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             let tipsCell = Bundle(for: TipsTableViewCell.self).loadNibNamed("TipsTableViewCell", owner: self, options: nil)?.first as! TipsTableViewCell
             tipsCell.judulLabel.text = nama[indexPath.row]
-            tipsCell.judulImage.image = UIImage(named: picts[indexPath.row]+".jpg")
+           // tipsCell.judulImage.image = UIImage(named: picts[indexPath.row]+".jpg")
             return tipsCell
         }
     }

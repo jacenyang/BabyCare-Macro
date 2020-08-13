@@ -24,10 +24,6 @@ class tanggalKelahiran: UIViewController {
       //  createDatePicker1()
     }
     
-    
-    
-    
-    
     func bottomline (){
         let bottomLine = CALayer()
      // let bottomLine1 = CALayer()
