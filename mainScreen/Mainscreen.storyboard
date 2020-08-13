@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cw9-Tg-feO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cw9-Tg-feO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -295,6 +295,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Kondisi Hari Ini" id="hl6-5X-hc9"/>
                     <connections>
+                        <outlet property="lblDetak" destination="x9P-gh-2zW" id="yKC-iL-QSf"/>
+                        <outlet property="lblKondisi" destination="Uot-DB-Yck" id="KP2-LF-ijE"/>
+                        <outlet property="lblSikon" destination="QN8-Nh-uoN" id="5Dz-bl-hhi"/>
+                        <outlet property="lblSuhu" destination="Hvy-wv-df6" id="N8G-Ks-HO2"/>
+                        <outlet property="lbldenyut" destination="MDY-yf-8L2" id="EYp-Hv-fY0"/>
+                        <outlet property="lblkondisidenyut" destination="5kJ-pu-H2o" id="BOg-QP-GMW"/>
                         <outlet property="tblHeight" destination="AUD-27-nho" id="JHA-Lw-TAm"/>
                         <outlet property="tipsTable" destination="Y5n-wt-9nc" id="QN1-Fa-bN7"/>
                     </connections>
