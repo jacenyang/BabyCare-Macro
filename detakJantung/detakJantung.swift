@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import Charts
 class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tblView: UITableView!
+    
+    @IBOutlet weak var listchartview: LineChartView!
     var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +23,34 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
                    DispatchQueue.main.async {
                        self.tblView.reloadData()
                        //print(self.dataAPI)
-                      // self.setChartValues()
+                       self.setChartValues()
                    }
                    
                }
         // Do any additional setup after loading the view.
     }
     
+    func setChartValues(_ count : Int = 20) {
+        let values = (0..<count).map { (i) -> ChartDataEntry in
+            let val = Double(arc4random_uniform(UInt32(count)) + 3)
+            return ChartDataEntry(x: Double(i), y: val)
+        }
+        var arr : [ChartDataEntry] = []
+        var i = 0
+        for da in dataAPI{
+            let d = Double("\(da.field2 ?? "0.0")")
+            arr.append(ChartDataEntry(x: Double(i), y: d ?? 0.0))
+            i+=1
+        }
+        print(arr)
+        let set1 = LineChartDataSet(entries: arr, label: "Suhu")
+        let data = LineChartData(dataSet: set1)
+        
+      self.listchartview.data = data
+    }
+    
     func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
-        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1111876/feeds.json?") else{return}
+        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1116535/feeds.json?api_key=3W5C5093JVUEH036") else{return}
         URLSession.shared.dataTask(with: apiURL) {(data, response, error) in
             
             
