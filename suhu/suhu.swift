@@ -51,7 +51,7 @@ var dataAPI = [feeds2]()
         self.listchartview.data = data
       }
     func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
-        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1111876/feeds.json?") else{return}
+        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1116535/feeds.json?api_key=3W5C5093JVUEH036") else{return}
         URLSession.shared.dataTask(with: apiURL) {(data, response, error) in
             
             
