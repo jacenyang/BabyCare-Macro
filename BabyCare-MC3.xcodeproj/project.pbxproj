@@ -27,6 +27,7 @@
 		0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		0DEDD50E24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		0DEDD50F24E3B24D00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
+		3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FBF6624E4FC2F00EDC927 /* API.swift */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
 		B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */; };
 		B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */; };
@@ -76,6 +77,7 @@
 		0D748EB824E0FAA8005E893E /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
 		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
+		3D3FBF6624E4FC2F00EDC927 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mainscreen.storyboard; sourceTree = "<group>"; };
 		B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorotanTableViewCell.swift; sourceTree = "<group>"; };
 		B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SorotanTableViewCell.xib; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				3D3FBF6524E4FBFF00EDC927 /* Parse JSON */,
 				0D748EBC24E0FACC005E893E /* tips */,
 				0D748EAE24E0FA1F005E893E /* mainScreen */,
 				0D748EB024E0FA3A005E893E /* detakJantung */,
@@ -224,6 +227,14 @@
 				D565899824E3A7980051A45F /* tips.storyboard */,
 			);
 			path = tips;
+			sourceTree = "<group>";
+		};
+		3D3FBF6524E4FBFF00EDC927 /* Parse JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3D3FBF6624E4FC2F00EDC927 /* API.swift */,
+			);
+			path = "Parse JSON";
 			sourceTree = "<group>";
 		};
 		B3EE63E224E11C4A00FBAFB5 /* Sorotan */ = {
@@ -397,6 +408,7 @@
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
 				B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */,
+				3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */,
 				0D748EBE24E0FADE005E893E /* tips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
