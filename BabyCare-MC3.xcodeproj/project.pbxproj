@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		0DEDD50E24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		0DEDD50F24E3B24D00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FBF6624E4FC2F00EDC927 /* API.swift */; };
+		3D3FBF9624E59A9800EDC927 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3FBF9524E59A9800EDC927 /* Charts */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
 		B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE63E324E11CC200FBAFB5 /* SorotanTableViewCell.swift */; };
 		B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63E424E11CC200FBAFB5 /* SorotanTableViewCell.xib */; };
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3FBF9624E59A9800EDC927 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +273,9 @@
 			dependencies = (
 			);
 			name = "BabyCare-MC3";
+			packageProductDependencies = (
+				3D3FBF9524E59A9800EDC927 /* Charts */,
+			);
 			productName = "BabyCare-MC3";
 			productReference = 0D748E7924E0F821005E893E /* BabyCare-MC3.app */;
 			productType = "com.apple.product-type.application";
@@ -343,6 +348,9 @@
 				Base,
 			);
 			mainGroup = 0D748E7024E0F821005E893E;
+			packageReferences = (
+				3D3FBF9424E59A9800EDC927 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 0D748E7A24E0F821005E893E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -740,6 +748,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D3FBF9424E59A9800EDC927 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D3FBF9524E59A9800EDC927 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D3FBF9424E59A9800EDC927 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D748E7124E0F821005E893E /* Project object */;
 }

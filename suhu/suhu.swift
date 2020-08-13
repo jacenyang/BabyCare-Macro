@@ -7,11 +7,14 @@
 //
 
 import UIKit
-
+import Charts
 class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
 var dataAPI = [feeds2]()
     let animal = ["cat","dog"]
     @IBOutlet weak var tblView: UITableView!
+    
+    @IBOutlet weak var listchartview: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.delegate = self
@@ -27,17 +30,26 @@ var dataAPI = [feeds2]()
         }
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    func setChartValues(_ count : Int = 20) {
+          let values = (0..<count).map { (i) -> ChartDataEntry in
+              let val = Double(arc4random_uniform(UInt32(count)) + 3)
+              return ChartDataEntry(x: Double(i), y: val)
+          }
+          var arr : [ChartDataEntry] = []
+          var i = 0
+          for da in dataAPI{
+              let d = Double("\(da.field2 ?? "0.0")")
+              arr.append(ChartDataEntry(x: Double(i), y: d ?? 0.0))
+              i+=1
+          }
+          print(arr)
+          let set1 = LineChartDataSet(entries: arr, label: "Denyut Jantung")
+          let data = LineChartData(dataSet: set1)
+          
+        self.listchartview.data = data
+      }
     func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
         guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1111876/feeds.json?") else{return}
         URLSession.shared.dataTask(with: apiURL) {(data, response, error) in
