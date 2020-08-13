@@ -24,7 +24,7 @@ var dataAPI = [feeds2]()
             DispatchQueue.main.async {
                 self.tblView.reloadData()
                 //print(self.dataAPI)
-               // self.setChartValues()
+                self.setChartValues()
             }
             
         }
@@ -45,7 +45,7 @@ var dataAPI = [feeds2]()
               i+=1
           }
           print(arr)
-          let set1 = LineChartDataSet(entries: arr, label: "Denyut Jantung")
+          let set1 = LineChartDataSet(entries: arr, label: "Suhu")
           let data = LineChartData(dataSet: set1)
           
         self.listchartview.data = data
