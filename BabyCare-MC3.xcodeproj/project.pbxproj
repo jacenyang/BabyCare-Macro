@@ -37,6 +37,8 @@
 		B3EE63EB24E127DC00FBAFB5 /* TipsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63E924E127DC00FBAFB5 /* TipsTableViewCell.xib */; };
 		C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54324E10ACB00B878E4 /* Suhu.storyboard */; };
 		C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */; };
+		D51324E124E5DB380008FDF1 /* tips1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51324E024E5DB370008FDF1 /* tips1.swift */; };
+		D51324E324E5DB470008FDF1 /* tips1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51324E224E5DB470008FDF1 /* tips1.storyboard */; };
 		D565899924E3A7980051A45F /* tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D565899824E3A7980051A45F /* tips.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		B3EE63E924E127DC00FBAFB5 /* TipsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsTableViewCell.xib; sourceTree = "<group>"; };
 		C048B54324E10ACB00B878E4 /* Suhu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suhu.storyboard; sourceTree = "<group>"; };
 		C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetakJantung.storyboard; sourceTree = "<group>"; };
+		D51324E024E5DB370008FDF1 /* tips1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tips1.swift; sourceTree = "<group>"; };
+		D51324E224E5DB470008FDF1 /* tips1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tips1.storyboard; sourceTree = "<group>"; };
 		D565899824E3A7980051A45F /* tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tips.storyboard; sourceTree = "<group>"; };
 		D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanggalKelahiran.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,7 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				0D748EBD24E0FADE005E893E /* tips.swift */,
+				D51324E024E5DB370008FDF1 /* tips1.swift */,
 				D565899824E3A7980051A45F /* tips.storyboard */,
+				D51324E224E5DB470008FDF1 /* tips1.storyboard */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51324E324E5DB470008FDF1 /* tips1.storyboard in Resources */,
 				0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */,
 				C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */,
 				B3EE63E624E11CC200FBAFB5 /* SorotanTableViewCell.xib in Resources */,
@@ -414,6 +421,7 @@
 				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
 				B3EE63EA24E127DC00FBAFB5 /* TipsTableViewCell.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
+				D51324E124E5DB380008FDF1 /* tips1.swift in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,

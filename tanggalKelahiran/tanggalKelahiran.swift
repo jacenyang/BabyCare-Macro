@@ -99,17 +99,16 @@ class tanggalKelahiran: UIViewController {
 //    }
     
     
+    public var completion: ((Date) -> Void)?
+    
     @IBOutlet var lblAge: UILabel!
     
     @IBAction func btnCalculateHandler(_ sender: UIButton) {
     
         //1 - get selected date from date picker
         let estimasilahir = datePicker.date
-        
            //2 - get estimate date
         let hariini = Date()
-        
-
            //3 - create an instance of the user's current calendar
            let calendar = Calendar.current
 
@@ -122,8 +121,8 @@ class tanggalKelahiran: UIViewController {
 
            //5 - display age in label
            self.lblAge.text = " \(ageYears!) Year,\(ageMonths!) months, \(ageDays!) days"
-
-    
+               
+            completion?(estimasilahir)
     
 }
 }
