@@ -21,7 +21,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bre-dV-jJF">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="343"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jepretan Layar 2020-08-14 pukul 03.18.00-1" translatesAutoresizingMaskIntoConstraints="NO" id="krk-Qj-KbC">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bayi Demam" translatesAutoresizingMaskIntoConstraints="NO" id="krk-Qj-KbC">
                                                 <rect key="frame" x="-4" y="1" width="421" height="235"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="421" id="K9Q-G9-ION"/>
@@ -96,6 +96,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Jepretan Layar 2020-08-14 pukul 03.18.00-1" width="1404" height="794"/>
+        <image name="Bayi Demam" width="1404" height="794"/>
     </resources>
 </document>

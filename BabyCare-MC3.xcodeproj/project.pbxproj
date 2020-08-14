@@ -40,6 +40,9 @@
 		D51324E124E5DB380008FDF1 /* tips1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51324E024E5DB370008FDF1 /* tips1.swift */; };
 		D51324E324E5DB470008FDF1 /* tips1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51324E224E5DB470008FDF1 /* tips1.storyboard */; };
 		D565899924E3A7980051A45F /* tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D565899824E3A7980051A45F /* tips.storyboard */; };
+		D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5D32EF424E6784600D2C923 /* tanggal.xcdatamodeld */; };
+		D5D32EF824E6799700D2C923 /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D32EF724E6799700D2C923 /* CoreViewController.swift */; };
+		D5D32EFA24E679AF00D2C923 /* TestCore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D32EF924E679AF00D2C923 /* TestCore.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		D51324E224E5DB470008FDF1 /* tips1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tips1.storyboard; sourceTree = "<group>"; };
 		D565899824E3A7980051A45F /* tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tips.storyboard; sourceTree = "<group>"; };
 		D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanggalKelahiran.storyboard; sourceTree = "<group>"; };
+		D5D32EF524E6784600D2C923 /* tanggal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tanggal.xcdatamodel; sourceTree = "<group>"; };
+		D5D32EF724E6799700D2C923 /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
+		D5D32EF924E679AF00D2C923 /* TestCore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestCore.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				D5D32EF324E6782500D2C923 /* CoreData */,
 				3D3FBF6524E4FBFF00EDC927 /* Parse JSON */,
 				0D748EBC24E0FACC005E893E /* tips */,
 				0D748EAE24E0FA1F005E893E /* mainScreen */,
@@ -266,6 +273,16 @@
 			path = Tips;
 			sourceTree = "<group>";
 		};
+		D5D32EF324E6782500D2C923 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D5D32EF424E6784600D2C923 /* tanggal.xcdatamodeld */,
+				D5D32EF724E6799700D2C923 /* CoreViewController.swift */,
+				D5D32EF924E679AF00D2C923 /* TestCore.storyboard */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +404,7 @@
 				B3EE63EB24E127DC00FBAFB5 /* TipsTableViewCell.xib in Resources */,
 				0D748E8424E0F821005E893E /* Main.storyboard in Resources */,
 				C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */,
+				D5D32EFA24E679AF00D2C923 /* TestCore.storyboard in Resources */,
 				0D2087BD24E109C3004E4E0C /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,10 +440,12 @@
 				B3EE63EA24E127DC00FBAFB5 /* TipsTableViewCell.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
 				D51324E124E5DB380008FDF1 /* tips1.swift in Sources */,
+				D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
+				D5D32EF824E6799700D2C923 /* CoreViewController.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
 				B3EE63E524E11CC200FBAFB5 /* SorotanTableViewCell.swift in Sources */,
 				3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */,
@@ -779,6 +799,19 @@
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D5D32EF424E6784600D2C923 /* tanggal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5D32EF524E6784600D2C923 /* tanggal.xcdatamodel */,
+			);
+			currentVersion = D5D32EF524E6784600D2C923 /* tanggal.xcdatamodel */;
+			path = tanggal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D748E7124E0F821005E893E /* Project object */;
 }
