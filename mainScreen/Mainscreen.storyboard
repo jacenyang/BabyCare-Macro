@@ -214,13 +214,6 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-7U-yUZ">
                                                                 <rect key="frame" x="0.0" y="39.5" width="374" height="174"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Demam" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agn-kt-mPB">
-                                                                        <rect key="frame" x="14" y="112" width="360" height="30"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download-min" translatesAutoresizingMaskIntoConstraints="NO" id="7wM-LP-SVW">
                                                                         <rect key="frame" x="187" y="4" width="179" height="166"/>
                                                                         <constraints>
@@ -228,12 +221,21 @@
                                                                             <constraint firstAttribute="width" constant="179" id="vJn-0Z-KkM"/>
                                                                         </constraints>
                                                                     </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demam Pada Bayi Prematur" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agn-kt-mPB">
+                                                                        <rect key="frame" x="14" y="91.5" width="173" height="50.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="7wM-LP-SVW" secondAttribute="bottom" constant="4" id="3Gk-3c-zMp"/>
                                                                     <constraint firstItem="7wM-LP-SVW" firstAttribute="top" secondItem="QdF-7U-yUZ" secondAttribute="top" constant="4" id="Di6-zo-jL2"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="agn-kt-mPB" secondAttribute="bottom" constant="32" id="WPQ-uH-kNM"/>
+                                                                    <constraint firstItem="7wM-LP-SVW" firstAttribute="leading" secondItem="agn-kt-mPB" secondAttribute="trailing" id="lKh-50-0Xs"/>
+                                                                    <constraint firstItem="agn-kt-mPB" firstAttribute="leading" secondItem="QdF-7U-yUZ" secondAttribute="leading" constant="14" id="wLd-7x-n7g"/>
                                                                     <constraint firstItem="7wM-LP-SVW" firstAttribute="leading" secondItem="QdF-7U-yUZ" secondAttribute="leading" constant="187" id="xbe-hN-Y3T"/>
                                                                     <constraint firstAttribute="trailing" secondItem="7wM-LP-SVW" secondAttribute="trailing" constant="8" id="zPV-Ph-NDD"/>
                                                                 </constraints>
@@ -249,8 +251,8 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-xC-KgH">
                                                                 <rect key="frame" x="0.0" y="227.5" width="374" height="182"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bradycardia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-QC-Ilh">
-                                                                        <rect key="frame" x="14" y="112" width="360" height="38"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mengenal Bradycardia " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-QC-Ilh">
+                                                                        <rect key="frame" x="14" y="99.5" width="181" height="50.5"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -266,14 +268,13 @@
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
+                                                                    <constraint firstItem="iLE-QC-Ilh" firstAttribute="leading" secondItem="hSz-xC-KgH" secondAttribute="leading" constant="14" id="0Sj-Ve-Owp"/>
+                                                                    <constraint firstItem="WpA-ta-zO0" firstAttribute="leading" secondItem="iLE-QC-Ilh" secondAttribute="trailing" id="7FV-pA-7Zb"/>
                                                                     <constraint firstAttribute="bottom" secondItem="WpA-ta-zO0" secondAttribute="bottom" constant="4" id="JGQ-Va-qxP"/>
                                                                     <constraint firstItem="WpA-ta-zO0" firstAttribute="leading" secondItem="hSz-xC-KgH" secondAttribute="leading" constant="195" id="Lf3-pE-Hhp"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="iLE-QC-Ilh" secondAttribute="trailing" id="SXa-NC-2gE"/>
                                                                     <constraint firstAttribute="trailing" secondItem="WpA-ta-zO0" secondAttribute="trailing" constant="8" id="WaA-PG-10P"/>
-                                                                    <constraint firstItem="iLE-QC-Ilh" firstAttribute="top" secondItem="hSz-xC-KgH" secondAttribute="top" constant="112" id="efE-aW-8UF"/>
-                                                                    <constraint firstItem="iLE-QC-Ilh" firstAttribute="leading" secondItem="hSz-xC-KgH" secondAttribute="leading" constant="14" id="h4a-rg-up3"/>
                                                                     <constraint firstItem="WpA-ta-zO0" firstAttribute="top" secondItem="hSz-xC-KgH" secondAttribute="top" constant="4" id="hcS-mj-acl"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="iLE-QC-Ilh" secondAttribute="bottom" constant="32" id="mEO-KB-FlI"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="iLE-QC-Ilh" secondAttribute="bottom" constant="32" id="tmw-o9-VEM"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
