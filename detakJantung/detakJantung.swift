@@ -69,7 +69,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
                    //self.lbltampil.text = (thinkSpeakData.feeds.last?.field1)
-                   // self.lblPulse.text = (thinkSpeakData.feeds.last?.field2)
+                    //self.lblPulse.text = (thinkSpeakData.feeds.last?.field2)
                     onSuccess()
                 }
                
@@ -100,7 +100,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
               
               let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
               
-           cell.textLabel?.text = dataAPI[indexPath.row].field1
+           cell.textLabel?.text = dataAPI[indexPath.row].field2
               
               return cell
           }

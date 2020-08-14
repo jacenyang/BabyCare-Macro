@@ -29,7 +29,7 @@ class mainScreen: UIViewController{
         
         self.lblSikon.text = "Suhu Tubuh"
         self.lblDetak.text = "Denyut Jantung"
-        self.lbldenyut.text = "86"
+        
         fetchAPIthinkSpeak{
                          DispatchQueue.main.async {
                        
@@ -39,7 +39,7 @@ class mainScreen: UIViewController{
                                       
                                         
 
-                                                                       if (myint! > 37)
+                                                                       if (myint! >= 37)
                                                                           {
                                                                               self.lblKondisi.text = "Sedang Demam Tinggi"
                                                                           }
@@ -53,7 +53,7 @@ class mainScreen: UIViewController{
                             
                               
 
-                                                             if (mydenyut! > 110)
+                                                             if (mydenyut! > 60-100)
                                                                 {
                                                                     self.lblkondisidenyut.text = "Tidak Normal"
                                                                 }
@@ -88,7 +88,7 @@ class mainScreen: UIViewController{
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
                     self.lblSuhu.text = (thinkSpeakData.feeds.last?.field1)
-                    //self.lbldenyut.text = (thinkSpeakData.feeds.first?.field2)
+                    self.lbldenyut.text = (thinkSpeakData.feeds.last?.field2)
                     
                    onSuccess()
                          

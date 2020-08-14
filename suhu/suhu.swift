@@ -40,7 +40,7 @@ var dataAPI = [feeds2]()
           var arr : [ChartDataEntry] = []
           var i = 0
           for da in dataAPI{
-              let d = Double("\(da.field2 ?? "0.0")")
+              let d = Double("\(da.field1 ?? "0.0")")
               arr.append(ChartDataEntry(x: Double(i), y: d ?? 0.0))
               i+=1
           }
