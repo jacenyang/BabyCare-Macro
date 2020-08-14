@@ -358,12 +358,12 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="3kP-l7-gkk">
                     <connections>
-                        <segue destination="2IJ-ef-hOm" kind="show" id="f8X-Pi-Lnm"/>
+                        <segue destination="2IJ-ef-hOm" kind="presentation" id="f8X-Pi-Lnm"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="MUs-22-DGK">
                     <connections>
-                        <segue destination="60y-ef-cgl" kind="show" id="F2N-pf-esb"/>
+                        <segue destination="60y-ef-cgl" kind="presentation" id="F2N-pf-esb"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -407,7 +407,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekm-fp-TGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="280"/>
+            <point key="canvasLocation" x="1550" y="398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n8q-0E-wkF">
