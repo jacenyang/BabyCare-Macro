@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bre-dV-jJF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1557"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1257"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bayi Demam" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-vO-k5z">
                                                 <rect key="frame" x="0.0" y="-278" width="414" height="794"/>
@@ -167,7 +167,7 @@
                                 <constraints>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="width" secondItem="GWF-G0-6TG" secondAttribute="width" id="28P-LC-VHA"/>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="top" secondItem="GWF-G0-6TG" secondAttribute="top" id="5Wb-NE-ACi"/>
-                                    <constraint firstItem="bre-dV-jJF" firstAttribute="height" secondItem="GWF-G0-6TG" secondAttribute="height" multiplier="0.689356" constant="1000" id="93y-SW-1tz"/>
+                                    <constraint firstItem="bre-dV-jJF" firstAttribute="height" secondItem="GWF-G0-6TG" secondAttribute="height" multiplier="0.689356" constant="700" id="93y-SW-1tz"/>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="leading" secondItem="GWF-G0-6TG" secondAttribute="leading" id="agg-D2-0dt"/>
                                     <constraint firstAttribute="trailing" secondItem="bre-dV-jJF" secondAttribute="trailing" id="ezU-ba-6GN"/>
                                     <constraint firstAttribute="bottom" secondItem="bre-dV-jJF" secondAttribute="bottom" id="zJH-GA-qCq"/>
