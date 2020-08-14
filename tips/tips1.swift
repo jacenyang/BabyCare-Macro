@@ -10,6 +10,10 @@ import UIKit
 
 class tips1: UIViewController {
 
+    
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var pengertianLabel: UILabel!
     @IBOutlet weak var penyebabLabel: UILabel!

@@ -57,20 +57,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnCalculateHandler:" destination="LF3-Ur-hXX" eventType="touchUpInside" id="KGH-ua-jKw"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usia Koreksi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-b0-bbv">
-                                <rect key="frame" x="20" y="438" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djf-ER-1cI">
-                                <rect key="frame" x="177" y="719" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="r5g-CE-37V" kind="show" id="kkL-N0-dj6"/>
+                                    <segue destination="r5g-CE-37V" kind="show" id="DIo-WF-ugI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,8 +68,6 @@
                             <constraint firstItem="y7b-BR-a0D" firstAttribute="bottom" secondItem="kGc-En-mbE" secondAttribute="bottom" constant="30" id="PQQ-wV-Ih2"/>
                             <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="56" id="Tvf-Nc-1JS"/>
                             <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="55" id="XOf-an-1jP"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="Apa-b0-bbv" secondAttribute="trailing" constant="20" id="Y6g-yU-qkg"/>
-                            <constraint firstItem="Apa-b0-bbv" firstAttribute="top" secondItem="qCJ-j2-3II" secondAttribute="bottom" constant="175" id="Zac-tg-CDi"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="top" secondItem="JPw-ui-cg0" secondAttribute="bottom" constant="22" id="foa-H2-xwO"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="top" secondItem="l5n-OA-kcq" secondAttribute="bottom" constant="8" id="giY-yU-cYO"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="kX9-lq-ZlT"/>
@@ -90,13 +75,11 @@
                             <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="l5n-OA-kcq" secondAttribute="trailing" constant="20" id="oEd-aK-w7m"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="ogZ-Nr-8ki"/>
                             <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="qCJ-j2-3II" secondAttribute="trailing" constant="20" id="oja-BD-f2u"/>
-                            <constraint firstItem="Apa-b0-bbv" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="p7Y-bW-MO3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y7b-BR-a0D"/>
                     </view>
                     <connections>
                         <outlet property="estimasiLahir" destination="qCJ-j2-3II" id="fkr-4t-GFm"/>
-                        <outlet property="lblAge" destination="Apa-b0-bbv" id="bS1-Tr-yg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97C-Q4-y7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
