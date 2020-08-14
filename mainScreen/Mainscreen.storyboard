@@ -99,6 +99,7 @@
                                                                                     </label>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk3-R4-dsy">
                                                                                         <rect key="frame" x="333.5" y="0.0" width="12.5" height="31.5"/>
+                                                                                        <color key="tintColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                         <state key="normal" image="chevron.right" catalog="system"/>
                                                                                     </button>
                                                                                 </subviews>
@@ -156,8 +157,9 @@
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29t-yw-BH4">
-                                                                                        <rect key="frame" x="321.5" y="0.0" width="24.5" height="31.5"/>
-                                                                                        <state key="normal" title="&gt;" image="chevron.right" catalog="system"/>
+                                                                                        <rect key="frame" x="333.5" y="0.0" width="12.5" height="31.5"/>
+                                                                                        <color key="tintColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                        <state key="normal" image="chevron.right" catalog="system"/>
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
