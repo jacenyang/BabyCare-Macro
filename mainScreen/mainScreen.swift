@@ -8,12 +8,8 @@
 
 import UIKit
 
-class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class mainScreen: UIViewController{
 
-
-    @IBOutlet weak var tipsTable: UITableView!
-    @IBOutlet weak var tblHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var lblKondisi: UILabel!
     
     
@@ -23,8 +19,7 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var lblParameter: UILabel!
     @IBOutlet weak var lblSikon: UILabel!
     @IBOutlet weak var lblSuhu: UILabel!
-    let judul = ["tips hadapi demam", "tips hadapi hipotermia"]
-    var picts:[String] = []
+    
      var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,14 +60,7 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
                          }
                          
                      }
-        tipsTable.delegate = self
-        tipsTable.dataSource = self
         
-        self.tipsTable.backgroundColor = UIColor(red: 0.93, green: 0.95, blue: 0.95, alpha: 1.00)
-        self.tipsTable.separatorStyle = .none
-        
-        
-       
     }
     
     
@@ -99,21 +87,9 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     //self.lbldenyut.text = (thinkSpeakData.feeds.first?.field2)
                     
                    onSuccess()
-                   
-                   
-                    
-                    
-                                  
+                         
                 }
-               
-                
-                
-                
-                
-                
-                
-                
-                
+                    
             } catch let err {
                 print("error", err)
             }
@@ -121,42 +97,6 @@ class mainScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = tipsTable.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-                cell.selectionStyle = .none
-                cell.judul.text = judul[indexPath.section]
-    //            cell.img.image = picts[indexPath.row]
-                return cell
-            }
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            judul.count
-        }
-    //
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 170
-        }
-        
-        func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return 10
-        }
-        
-        func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-            return 10
-        }
-        
-        func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-            view.tintColor = UIColor(red: 0.93, green: 0.95, blue: 0.95, alpha: 1.00)
-        }
-        
-        func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-            view.tintColor = UIColor(red: 0.93, green: 0.95, blue: 0.95, alpha: 1.00)
-        }
-        func tableView(_ tableView: UITableView, willDisplaycell: UITableViewCell, forRowAt indexPath: IndexPath) {
-            tblHeight.constant = tipsTable.contentSize.height
-        }
 }
 
 
