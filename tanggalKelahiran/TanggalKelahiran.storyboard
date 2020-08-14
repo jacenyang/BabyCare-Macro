@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LF3-Ur-hXX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LF3-Ur-hXX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="58" y="121"/>
         </scene>
-        <!--suhu-->
+        <!--Mainscreen-->
         <scene sceneID="Gm6-hX-iDT">
             <objects>
-                <viewControllerPlaceholder storyboardName="Suhu" referencedIdentifier="suhu" id="r5g-CE-37V" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Mainscreen" id="r5g-CE-37V" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HVL-el-GFu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVS-Ji-6c3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
