@@ -19,10 +19,14 @@ class mainScreen: UIViewController{
     @IBOutlet weak var lblParameter: UILabel!
     @IBOutlet weak var lblSikon: UILabel!
     @IBOutlet weak var lblSuhu: UILabel!
+    @IBOutlet weak var demam: UIImageView!
+    @IBOutlet weak var gambar2: UIImageView!
     
      var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.lblSikon.text = "Suhu Tubuh"
         self.lblDetak.text = "Denyut Jantung"
         self.lbldenyut.text = "86"
