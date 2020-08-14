@@ -25,6 +25,8 @@ class mainScreen: UIViewController{
      var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.lblSikon.text = "Suhu Tubuh"
         self.lblDetak.text = "Denyut Jantung"
         self.lbldenyut.text = "86"
