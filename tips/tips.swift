@@ -18,6 +18,9 @@ class tips: UIViewController {
     @IBOutlet weak var harusLabel: UILabel!
     @IBOutlet weak var janganLabel: UILabel!
     @IBOutlet weak var penyakitLabel: UILabel!
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     override func viewDidLoad() {
