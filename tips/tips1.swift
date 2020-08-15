@@ -14,6 +14,7 @@ class tips1: UIViewController {
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBOutlet weak var scrl: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var pengertianLabel: UILabel!
     @IBOutlet weak var penyebabLabel: UILabel!
@@ -21,6 +22,9 @@ class tips1: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrl.contentLayoutGuide.bottomAnchor.constraint(equalTo: pertolonganLabel.bottomAnchor).isActive = true
+        
         showTips()
         // Do any additional setup after loading the view.
     }

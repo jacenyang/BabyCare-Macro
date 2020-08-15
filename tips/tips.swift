@@ -27,7 +27,7 @@ class tips: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        scrollViewtps.contentLayoutGuide.bottomAnchor.constraint(equalTo: test.bottomAnchor).isActive = true
+        scrollViewtps.contentLayoutGuide.bottomAnchor.constraint(equalTo: penyakitLabel.bottomAnchor).isActive = true
         showTips()
         
     }
