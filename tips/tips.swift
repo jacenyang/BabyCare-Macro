@@ -11,7 +11,6 @@ import UIKit
 class tips: UIViewController {
 
     @IBOutlet weak var scrollViewtps: UIScrollView!
-    @IBOutlet weak var test: UIView!
     
     @IBOutlet weak var judulLabel: UILabel!
     @IBOutlet weak var pengertianLabel: UILabel!

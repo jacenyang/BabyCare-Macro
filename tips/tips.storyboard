@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecx-sJ-CTf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecx-sJ-CTf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -32,10 +32,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWF-G0-6TG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWF-G0-6TG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bre-dV-jJF">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bre-dV-jJF">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1257"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bayi Demam" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-vO-k5z">
@@ -102,6 +102,12 @@
                                                 <color key="textColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penyakit Lain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R4-qw-5il">
+                                                <rect key="frame" x="22" y="611.5" width="370" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                <color key="textColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EF-FA-rWy">
                                                 <rect key="frame" x="22" y="648.5" width="370" height="21.5"/>
                                                 <constraints>
@@ -109,15 +115,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penyakit Lain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R4-qw-5il">
-                                                <rect key="frame" x="22" y="611.5" width="370" height="29"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="370" id="YXr-IV-CSW"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                <color key="textColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -155,7 +152,6 @@
                                             <constraint firstItem="hUz-ze-fgL" firstAttribute="leading" secondItem="bre-dV-jJF" secondAttribute="leading" constant="22" id="lIG-gS-vVS"/>
                                             <constraint firstItem="qpH-NM-kOk" firstAttribute="top" secondItem="h4l-S4-Zy8" secondAttribute="bottom" constant="40" id="nSg-qj-nWD"/>
                                             <constraint firstItem="h4l-S4-Zy8" firstAttribute="leading" secondItem="bre-dV-jJF" secondAttribute="leading" constant="22" id="op0-Tn-2zh"/>
-                                            <constraint firstItem="6EF-FA-rWy" firstAttribute="top" secondItem="0R4-qw-5il" secondAttribute="bottom" constant="8" id="q5J-ir-gW7"/>
                                             <constraint firstAttribute="trailing" secondItem="aOQ-I6-8tQ" secondAttribute="trailing" constant="22" id="s4Z-z5-ujH"/>
                                             <constraint firstItem="cwG-XW-Ekq" firstAttribute="leading" secondItem="bre-dV-jJF" secondAttribute="leading" constant="22" id="sxC-9I-uAx"/>
                                             <constraint firstItem="1Ez-QY-hAe" firstAttribute="top" secondItem="aOQ-I6-8tQ" secondAttribute="bottom" constant="8" id="uFd-Ro-PUG"/>
@@ -170,7 +166,6 @@
                                 <constraints>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="width" secondItem="GWF-G0-6TG" secondAttribute="width" id="28P-LC-VHA"/>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="top" secondItem="GWF-G0-6TG" secondAttribute="top" id="5Wb-NE-ACi"/>
-                                    <constraint firstItem="bre-dV-jJF" firstAttribute="height" secondItem="GWF-G0-6TG" secondAttribute="height" multiplier="0.689356" constant="700" id="93y-SW-1tz"/>
                                     <constraint firstItem="bre-dV-jJF" firstAttribute="leading" secondItem="GWF-G0-6TG" secondAttribute="leading" id="agg-D2-0dt"/>
                                     <constraint firstAttribute="trailing" secondItem="bre-dV-jJF" secondAttribute="trailing" id="ezU-ba-6GN"/>
                                     <constraint firstAttribute="bottom" secondItem="bre-dV-jJF" secondAttribute="bottom" id="zJH-GA-qCq"/>
@@ -196,7 +191,6 @@
                         <outlet property="pengertianLabel" destination="h4l-S4-Zy8" id="y8N-DZ-J7p"/>
                         <outlet property="penyakitLabel" destination="6EF-FA-rWy" id="k9N-mh-UWf"/>
                         <outlet property="scrollViewtps" destination="GWF-G0-6TG" id="HZK-pb-6Eq"/>
-                        <outlet property="test" destination="bre-dV-jJF" id="uVR-fs-PIG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tA-ME-20z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
