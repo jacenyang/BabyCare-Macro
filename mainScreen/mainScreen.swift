@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import CoreData
+
+struct DataModel {
+    var estimasiDate: Date?
+}
 
 class mainScreen: UIViewController{
 
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var dateData = DataModel(estimasiDate: nil)
+    
     @IBOutlet weak var lblKondisi: UILabel!
     
+    @IBOutlet weak var lblUsiaKoreksi: UILabel!
     
     @IBOutlet weak var lblkondisidenyut: UILabel!
     @IBOutlet weak var lbldenyut: UILabel!
@@ -25,6 +35,27 @@ class mainScreen: UIViewController{
      var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadData()
+        let hariini = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: dateData.estimasiDate! , to: hariini)
+        //let ageYears = components.year
+        let ageMonths = components.month
+        let ageDays = components.day
+        self.lblUsiaKoreksi.text = " Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
+        //self.TampilLabelUmur()
+        //read data from core data
+        //self.loadData()
+        
+        //print date
+        //print(dateData.estimasiDate)
+        
+        //create data
+        //dateData.estimasiDate = Date()
+        
+        //Save date
+        //self.saveData()
+        
         
         
         self.lblSikon.text = "Suhu Tubuh"
@@ -101,6 +132,46 @@ class mainScreen: UIViewController{
         
         
     }
+    
+    func TampilLabelUmur(){
+        
+        
+        
+        
+    }
+    
+    func saveData(){
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.insertNewObject(forEntityName: "DateEstimasi", into: context)
+        
+        entity.setValue(dateData.estimasiDate, forKey: "estimasiDate")
+    }
+    
+    func loadData() {
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
+        do{
+            do{
+                let result = try context.fetch(request)
+                
+                if result.isEmpty{
+                    print("KOSONG")
+                    saveData()
+                }else{
+                    
+                    let take = result [0] as! NSManagedObject
+                    
+                    guard let date = take.value(forKey: "estimasiDate") else{
+                        return
+                    }
+                  dateData.estimasiDate = date as? Date
+                }
+            }
+            catch{
+                print(error)
+            }
+    }
+}
 }
 
 

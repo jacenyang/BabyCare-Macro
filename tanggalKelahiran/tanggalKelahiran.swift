@@ -9,11 +9,19 @@
 import UIKit
 import CoreData
 
+struct DataModel1 {
+    var estimasiDate: Date?
+}
+
+
 class tanggalKelahiran: UIViewController {
 
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var dateData = DataModel1(estimasiDate: nil)
+    
+    
     @IBOutlet var estimasiLahir: UITextField!
     let datePicker = UIDatePicker()
-    var models = [tanggal1]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,23 +69,43 @@ class tanggalKelahiran: UIViewController {
     public var completion: ((Date) -> Void)?
     @IBOutlet var lblAge: UILabel!
     @IBAction func btnCalculateHandler(_ sender: UIButton) {
-        let estimasi = datePicker.date
-//           let hariini = Date()
-//           let calendar = Calendar.current
-//           let components = calendar.dateComponents([.year, .month, .day], from: estimasilahir, to: hariini)
-//           let ageYears = components.year
-//           let ageMonths = components.month
-//           let ageDays = components.day
-//           self.lblAge.text = " \(ageYears!) Year,\(ageMonths!) months, \(ageDays!) days"
-        let new = tanggal1(yesterday: estimasi, identifier: "id_\(estimasi)")
-        self.models.append(new)
+        let estimasi = datePicker.date as Date
+        dateData.estimasiDate = estimasi
+        saveData()
     }
+    
+    func saveData(){
+          let context = appDelegate.persistentContainer.viewContext
+          let entity = NSEntityDescription.insertNewObject(forEntityName: "DateEstimasi", into: context)
+          
+          entity.setValue(dateData.estimasiDate, forKey: "estimasiDate")
+      }
+      
+      func loadData() {
+          let context = appDelegate.persistentContainer.viewContext
+          let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
+          do{
+              let result = try context.fetch(request)
+              
+              if result.isEmpty{
+                  print("KOSONG")
+                  saveData()
+              }else{
+                  
+                  let take = result [0] as! NSManagedObject
+                  
+                  guard let date = take.value(forKey: "estimasiDate") else{
+                      return
+                  }
+                dateData.estimasiDate = date as? Date
+              }
+          }
+          catch{
+              print(error)
+          }
+      }
 }
 
-struct tanggal1 {
-    let yesterday: Date
-    let identifier: String
-}
 
 
 
