@@ -9,15 +9,16 @@
 import UIKit
 import CoreData
 
-struct DataModel1 {
-    var estimasiDate: Date?
+struct DataModel {
+    var estimasiDate: Date
 }
-
 
 class tanggalKelahiran: UIViewController {
 
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var dateData = DataModel1(estimasiDate: nil)
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var DataEstimasis = [DateEstimasi]()
+    var dateData = [DataModel]()
     
     
     @IBOutlet var estimasiLahir: UITextField!
@@ -69,41 +70,40 @@ class tanggalKelahiran: UIViewController {
     public var completion: ((Date) -> Void)?
     @IBOutlet var lblAge: UILabel!
     @IBAction func btnCalculateHandler(_ sender: UIButton) {
-        let estimasi = datePicker.date as Date
-        dateData.estimasiDate = estimasi
-        saveData()
-    }
-    
-    func saveData(){
-          let context = appDelegate.persistentContainer.viewContext
-          let entity = NSEntityDescription.insertNewObject(forEntityName: "DateEstimasi", into: context)
-          
-          entity.setValue(dateData.estimasiDate, forKey: "estimasiDate")
-      }
-      
-      func loadData() {
-          let context = appDelegate.persistentContainer.viewContext
-          let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
-          do{
-              let result = try context.fetch(request)
-              
-              if result.isEmpty{
-                  print("KOSONG")
-                  saveData()
-              }else{
-                  
-                  let take = result [0] as! NSManagedObject
-                  
-                  guard let date = take.value(forKey: "estimasiDate") else{
-                      return
-                  }
-                dateData.estimasiDate = date as? Date
-              }
-          }
-          catch{
-              print(error)
-          }
-      }
+        if let isi = estimasiLahir.text, !isi.isEmpty
+            {
+            let estimasi = datePicker.date
+                let new = DataModel(estimasiDate: estimasi)
+                 let newData = DateEstimasi(context: self.context)
+                 newData.estimasiDate = estimasi
+                 self.DataEstimasis.append(newData)
+                 //self.saveData()
+                 self.dateData.append(new)
+                // self.table.reloadData()
+                 self.saveData()
+            }
+            func textFieldShouldReturn( textField: UITextField) ->Bool{
+            textField.resignFirstResponder()
+            return true
+            }
+        }
+        
+        func saveData(){
+               do{
+                   try context.save()
+               } catch {
+                   print("error saving with Error \(error)")
+               }
+           }
+           
+           func loadData(){
+               let request : NSFetchRequest<DateEstimasi> = DateEstimasi.fetchRequest()
+               do{
+                   DataEstimasis = try context.fetch(request)
+               } catch {
+                   print("Error loading data \(error)")
+               }
+           }
 }
 
 

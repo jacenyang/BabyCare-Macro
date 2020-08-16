@@ -9,15 +9,11 @@
 import UIKit
 import CoreData
 
-struct DataModel {
-    var estimasiDate: Date?
-}
-
 class mainScreen: UIViewController{
 
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    var dateData = DataModel(estimasiDate: nil)
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+var DataEstimasis = [DateEstimasi]()
+var dateData = [DataModel]()
     
     @IBOutlet weak var lblKondisi: UILabel!
     
@@ -35,15 +31,8 @@ class mainScreen: UIViewController{
      var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadData()
-        let hariini = Date()
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: dateData.estimasiDate! , to: hariini)
-        //let ageYears = components.year
-        let ageMonths = components.month
-        let ageDays = components.day
-        self.lblUsiaKoreksi.text = " Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
-        //self.TampilLabelUmur()
+        
+        self.TampilLabelUmur()
         //read data from core data
         //self.loadData()
         
@@ -134,48 +123,85 @@ class mainScreen: UIViewController{
     }
     
     func TampilLabelUmur(){
-        
+        retrieve()
         
         
         
     }
     
-    func saveData(){
-        let context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.insertNewObject(forEntityName: "DateEstimasi", into: context)
-        
-        entity.setValue(dateData.estimasiDate, forKey: "estimasiDate")
-    }
-    
-    func loadData() {
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
-        do{
-            do{
-                let result = try context.fetch(request)
-                
-                if result.isEmpty{
-                    print("KOSONG")
-                    saveData()
-                }else{
-                    
-                    let take = result [0] as! NSManagedObject
-                    
-                    guard let date = take.value(forKey: "estimasiDate") else{
-                        return
-                    }
-                  dateData.estimasiDate = date as? Date
-                }
-            }
-            catch{
-                print(error)
-            }
-    }
+//    func saveData(){
+//        let context = appDelegate.persistentContainer.viewContext
+//        let entity = NSEntityDescription.insertNewObject(forEntityName: "DateEstimasi", into: context)
+//        
+//        entity.setValue(dateData.estimasiDate, forKey: "estimasiDate")
+//    }
+//    
+//    func loadData() {
+//        let context = appDelegate.persistentContainer.viewContext
+//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
+//        do{
+//            do{
+//                let result = try context.fetch(request)
+//                
+//                if result.isEmpty{
+//                    print("KOSONG")
+//                    saveData()
+//                }else{
+//                    
+//                    let take = result [0] as! NSManagedObject
+//                    
+//                    guard let date = take.value(forKey: "estimasiDate") else{
+//                        return
+//                    }
+//                  dateData.estimasiDate = date as? Date
+//                }
+//            }
+//            catch{
+//                print(error)
+//            }
+//    }
+//}
+    func retrieve(){
+           
+           var tanggalCoDa = [DataModel]()
+           
+           // referensi ke AppDelegate
+           let appDelegate = UIApplication.shared.delegate as! AppDelegate
+           
+           // managed context
+           let managedContext = appDelegate.persistentContainer.viewContext
+           
+           // fetch data
+           let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
+           
+           do{
+               let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
+               result.forEach{ tanggalCoDain in
+                   tanggalCoDa.append(
+                       DataModel(estimasiDate: tanggalCoDain.value(forKey: "estimasiDate") as! Date)
+                   )
+                   
+                   print("ini result Retrive \(tanggalCoDain.value(forKey: "estimasiDate") as! Date)")
+                   let TanggalEstimasiLahir = tanggalCoDain.value(forKey: "estimasiDate") as! Date
+                   print("ini data dari Coredata?")
+                   let hariini = Date()
+                   let calendar = Calendar.current
+                   let components = calendar.dateComponents([.year, .month, .day], from: TanggalEstimasiLahir , to: hariini)
+                           //let ageYears = components.year
+                   let ageMonths = components.month
+                   let ageDays = components.day
+                   self.lblUsiaKoreksi.text = " Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
+                   
+               }
+           }catch let err{
+               print(err)
+           }
+           
+           return
 }
-}
 
 
 
     
 
-
+}
