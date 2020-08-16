@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LF3-Ur-hXX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LF3-Ur-hXX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -28,7 +28,7 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan tanggal estimasi dan tanggal lahir bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-ui-cg0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan tanggal estimasi kelahiran bayi anda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-ui-cg0">
                                 <rect key="frame" x="20" y="156" width="374" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -42,8 +42,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
-                                <rect key="frame" x="55" y="788" width="303" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
+                                <rect key="frame" x="22" y="788" width="374" height="44"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="jyl-RG-2FW"/>
@@ -66,8 +66,8 @@
                             <constraint firstItem="l5n-OA-kcq" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="4CG-Ao-skD"/>
                             <constraint firstItem="l5n-OA-kcq" firstAttribute="top" secondItem="y7b-BR-a0D" secondAttribute="top" constant="75" id="KVk-yQ-eDv"/>
                             <constraint firstItem="y7b-BR-a0D" firstAttribute="bottom" secondItem="kGc-En-mbE" secondAttribute="bottom" constant="30" id="PQQ-wV-Ih2"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="56" id="Tvf-Nc-1JS"/>
-                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="55" id="XOf-an-1jP"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="20" id="Tvf-Nc-1JS"/>
+                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="XOf-an-1jP"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="top" secondItem="JPw-ui-cg0" secondAttribute="bottom" constant="22" id="foa-H2-xwO"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="top" secondItem="l5n-OA-kcq" secondAttribute="bottom" constant="8" id="giY-yU-cYO"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="kX9-lq-ZlT"/>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97C-Q4-y7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="121"/>
+            <point key="canvasLocation" x="57.971014492753625" y="120.53571428571428"/>
         </scene>
         <!--Mainscreen-->
         <scene sceneID="Gm6-hX-iDT">

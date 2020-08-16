@@ -120,7 +120,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-dS-tbF">
-                                        <rect key="frame" x="22" y="614" width="290" height="44"/>
+                                        <rect key="frame" x="0.0" y="614" width="334" height="44"/>
                                         <color key="backgroundColor" red="0.21960784310000001" green="0.3411764706" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="RLp-Lm-ppD"/>
@@ -140,13 +140,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="bp2-dS-tbF" firstAttribute="top" secondItem="VdY-fI-qbJ" secondAttribute="bottom" constant="70" id="36C-qb-N3f"/>
-                                    <constraint firstAttribute="trailing" secondItem="bp2-dS-tbF" secondAttribute="trailing" constant="22" id="Jyi-PZ-A0H"/>
+                                    <constraint firstItem="bp2-dS-tbF" firstAttribute="leading" secondItem="JPN-yR-Fsf" secondAttribute="leading" id="8cn-By-ZDk"/>
                                     <constraint firstAttribute="trailing" secondItem="VdY-fI-qbJ" secondAttribute="trailing" constant="14" id="YQY-Yp-Fzf"/>
-                                    <constraint firstItem="bp2-dS-tbF" firstAttribute="leading" secondItem="JPN-yR-Fsf" secondAttribute="leading" constant="22" id="auL-iu-bLK"/>
-                                    <constraint firstAttribute="trailing" secondItem="bp2-dS-tbF" secondAttribute="trailing" constant="22" id="bBZ-dw-bQf"/>
-                                    <constraint firstItem="bp2-dS-tbF" firstAttribute="leading" secondItem="JPN-yR-Fsf" secondAttribute="leading" constant="22" id="bz8-22-ddF"/>
                                     <constraint firstItem="VdY-fI-qbJ" firstAttribute="leading" secondItem="JPN-yR-Fsf" secondAttribute="leading" constant="14" id="diB-sM-D7e"/>
                                     <constraint firstAttribute="bottom" secondItem="bp2-dS-tbF" secondAttribute="bottom" id="kui-R1-6lT"/>
+                                    <constraint firstAttribute="trailing" secondItem="bp2-dS-tbF" secondAttribute="trailing" id="nGB-1g-1dB"/>
                                 </constraints>
                             </stackView>
                         </subviews>
