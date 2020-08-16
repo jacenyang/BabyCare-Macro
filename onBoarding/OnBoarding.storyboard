@@ -34,7 +34,7 @@
                                                         <rect key="frame" x="98" y="8" width="161" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                                        <color key="textColor" red="0.21960784310000001" green="0.3411764706" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="textColor" red="0.2161281109" green="0.3376107216" blue="0.3137252331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-heart-monitor-64" translatesAutoresizingMaskIntoConstraints="NO" id="e87-g8-jjP">
@@ -121,7 +121,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-dS-tbF">
                                         <rect key="frame" x="0.0" y="614" width="334" height="44"/>
-                                        <color key="backgroundColor" red="0.21960784310000001" green="0.3411764706" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="RLp-Lm-ppD"/>
                                         </constraints>

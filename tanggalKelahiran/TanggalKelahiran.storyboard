@@ -23,28 +23,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-OA-kcq">
-                                <rect key="frame" x="20" y="119" width="374" height="29"/>
+                                <rect key="frame" x="40" y="119" width="374" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan tanggal estimasi kelahiran bayi anda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-ui-cg0">
-                                <rect key="frame" x="20" y="156" width="374" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukan tanggal estimasi kelahiran bayi anda untuk menghitung usia koreksi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-ui-cg0">
+                                <rect key="frame" x="40" y="156" width="334" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal estimasi" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-j2-3II">
-                                <rect key="frame" x="20" y="219" width="374" height="44"/>
+                                <rect key="frame" x="40" y="218" width="334" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="uLG-JM-9sL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
-                                <rect key="frame" x="22" y="788" width="374" height="44"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
+                                <rect key="frame" x="40" y="732" width="334" height="44"/>
+                                <color key="backgroundColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="jyl-RG-2FW"/>
                                 </constraints>
@@ -63,18 +63,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="l5n-OA-kcq" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="4CG-Ao-skD"/>
+                            <constraint firstItem="l5n-OA-kcq" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="4CG-Ao-skD"/>
                             <constraint firstItem="l5n-OA-kcq" firstAttribute="top" secondItem="y7b-BR-a0D" secondAttribute="top" constant="75" id="KVk-yQ-eDv"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="bottom" secondItem="kGc-En-mbE" secondAttribute="bottom" constant="30" id="PQQ-wV-Ih2"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="20" id="Tvf-Nc-1JS"/>
-                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="XOf-an-1jP"/>
-                            <constraint firstItem="qCJ-j2-3II" firstAttribute="top" secondItem="JPw-ui-cg0" secondAttribute="bottom" constant="22" id="foa-H2-xwO"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="bottom" secondItem="kGc-En-mbE" secondAttribute="bottom" constant="86" id="PQQ-wV-Ih2"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="40" id="Tvf-Nc-1JS"/>
+                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="XOf-an-1jP"/>
+                            <constraint firstItem="qCJ-j2-3II" firstAttribute="top" secondItem="JPw-ui-cg0" secondAttribute="bottom" constant="21" id="foa-H2-xwO"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="top" secondItem="l5n-OA-kcq" secondAttribute="bottom" constant="8" id="giY-yU-cYO"/>
-                            <constraint firstItem="qCJ-j2-3II" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="kX9-lq-ZlT"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="JPw-ui-cg0" secondAttribute="trailing" constant="20" id="ks9-fj-T5n"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="l5n-OA-kcq" secondAttribute="trailing" constant="20" id="oEd-aK-w7m"/>
-                            <constraint firstItem="JPw-ui-cg0" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="20" id="ogZ-Nr-8ki"/>
-                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="qCJ-j2-3II" secondAttribute="trailing" constant="20" id="oja-BD-f2u"/>
+                            <constraint firstItem="qCJ-j2-3II" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="kX9-lq-ZlT"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="JPw-ui-cg0" secondAttribute="trailing" constant="40" id="ks9-fj-T5n"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="l5n-OA-kcq" secondAttribute="trailing" id="oEd-aK-w7m"/>
+                            <constraint firstItem="JPw-ui-cg0" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="ogZ-Nr-8ki"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="qCJ-j2-3II" secondAttribute="trailing" constant="40" id="oja-BD-f2u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y7b-BR-a0D"/>
                     </view>
