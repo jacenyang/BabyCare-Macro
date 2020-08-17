@@ -114,7 +114,11 @@ var dataAPI = [feeds2]()
            let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! SuhuTableViewCell
            
         cell.angkaLabel.text = dataAPI[indexPath.row].field1
-        cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
+        
+        let tanggal = dataAPI[indexPath.row].created_at
+        let splits = tanggal?.components(separatedBy: "T")
+        //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
+        cell.tanggalLabel.text = splits![0]
            
            return cell
        }
