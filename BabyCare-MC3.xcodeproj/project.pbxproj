@@ -29,6 +29,8 @@
 		0DEDD50F24E3B24D00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
 		3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FBF6624E4FC2F00EDC927 /* API.swift */; };
 		3D3FBF9624E59A9800EDC927 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3FBF9524E59A9800EDC927 /* Charts */; };
+		B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */; };
+		B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5424EA726900492318 /* DetakTableViewCell.swift */; };
 		B37629E824E6BD6B00EF924C /* tips1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37629E724E6BD6B00EF924C /* tips1.swift */; };
 		B37629EA24E6BD8200EF924C /* tips1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37629E924E6BD8200EF924C /* tips1.storyboard */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
@@ -82,6 +84,8 @@
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
 		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
 		3D3FBF6624E4FC2F00EDC927 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuhuTableViewCell.swift; sourceTree = "<group>"; };
+		B373DE5424EA726900492318 /* DetakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetakTableViewCell.swift; sourceTree = "<group>"; };
 		B37629E724E6BD6B00EF924C /* tips1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips1.swift; sourceTree = "<group>"; };
 		B37629E924E6BD8200EF924C /* tips1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tips1.storyboard; sourceTree = "<group>"; };
 		B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mainscreen.storyboard; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0D748EB624E0FA91005E893E /* suhu.swift */,
+				B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */,
 				C048B54324E10ACB00B878E4 /* Suhu.storyboard */,
 			);
 			path = suhu;
@@ -223,6 +228,7 @@
 			children = (
 				0D748EB324E0FA6E005E893E /* detakJantung.swift */,
 				C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */,
+				B373DE5424EA726900492318 /* DetakTableViewCell.swift */,
 			);
 			path = detakJantung;
 			sourceTree = "<group>";
@@ -412,11 +418,13 @@
 				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
 				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
+				B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */,
 				D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,
+				B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */,
 				D550CC2124E858D50036181C /* DateEstimasi+CoreDataProperties.swift in Sources */,
 				D5D32EF824E6799700D2C923 /* CoreViewController.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,

@@ -9,11 +9,13 @@
 import UIKit
 import Charts
 class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
+        var dataAPI = [feeds2]()
 
     @IBOutlet weak var tblView: UITableView!
     
     @IBOutlet weak var listchartview: LineChartView!
-    var dataAPI = [feeds2]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.delegate = self
@@ -98,9 +100,10 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
           
           func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
               
-              let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+              let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! DetakTableViewCell
               
-           cell.textLabel?.text = dataAPI[indexPath.row].field2
+           cell.angkaLabel.text = dataAPI[indexPath.row].field2
+           cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
               
               return cell
           }

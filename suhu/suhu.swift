@@ -100,11 +100,14 @@ var dataAPI = [feeds2]()
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            
-           let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+           let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! SuhuTableViewCell
            
-        cell.textLabel?.text = dataAPI[indexPath.row].field1
+        cell.angkaLabel.text = dataAPI[indexPath.row].field1
+        cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
            
            return cell
        }
+    
+    
     
 }
