@@ -59,8 +59,8 @@ var dateData = [DataModel]()
         
                                         
                                         let myint = Double(self.lblcoba1.text!)
-                                        let myrouded = (myint!.rounded())
-                                                       self.lblSuhu.text = "\(myrouded)"
+                                        let myrouded = ((myint! * 100).rounded() / 100)
+                                        self.lblSuhu.text = "\(myrouded)"
 
                                                                        if (myint! >= 37)
                                                                           {
@@ -79,8 +79,8 @@ var dateData = [DataModel]()
                             
                             
                             let mydenyut = Double(self.lblcoba2.text!)
-                            let myroude = (mydenyut!.rounded())
-                                           self.lbldenyut.text = "\(myroude)"
+                            let myroude = ((mydenyut! * 100).rounded() / 100)
+                            self.lbldenyut.text = "\(myroude)"
                               
 
                                                              if (mydenyut! > 160)
