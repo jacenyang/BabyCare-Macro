@@ -202,6 +202,18 @@
                                                             </view>
                                                         </subviews>
                                                     </stackView>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doU-Q2-EUd">
+                                                        <rect key="frame" x="0.0" y="462" width="374" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAF-l5-VPR">
+                                                        <rect key="frame" x="0.0" y="462" width="374" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4VG-Bn-eBK">
                                                         <rect key="frame" x="0.0" y="475" width="374" height="409.5"/>
                                                         <subviews>
@@ -344,6 +356,8 @@
                         <outlet property="lblSikon" destination="T5m-Fw-ojO" id="Se8-KM-Dv4"/>
                         <outlet property="lblSuhu" destination="DBQ-Ao-hbP" id="lCO-5e-1Wc"/>
                         <outlet property="lblUsiaKoreksi" destination="TqX-6W-KOa" id="jVD-hH-pzy"/>
+                        <outlet property="lblcoba1" destination="doU-Q2-EUd" id="HT1-aX-qJ8"/>
+                        <outlet property="lblcoba2" destination="lAF-l5-VPR" id="fPr-p8-JhA"/>
                         <outlet property="lbldenyut" destination="RUr-Tp-z4K" id="oiY-bL-Ad7"/>
                         <outlet property="lblkondisidenyut" destination="5tP-mK-s4b" id="zL1-j6-2eK"/>
                     </connections>
