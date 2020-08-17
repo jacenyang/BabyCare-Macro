@@ -15,6 +15,9 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 var DataEstimasis = [DateEstimasi]()
 var dateData = [DataModel]()
     
+    @IBOutlet weak var cSuhu: UILabel!
+    @IBOutlet weak var cDetak: UILabel!
+    
     @IBOutlet weak var lblKondisi: UILabel!
     
     @IBOutlet weak var lblUsiaKoreksi: UILabel!
@@ -66,6 +69,7 @@ var dateData = [DataModel]()
                                                                           {
                                                                               self.lblKondisi.text = "Suhu bayi anda sangat tinggi"
                                                                             self.lblSuhu.textColor = UIColor.red
+                                                                            //self.cSuhu.textColor = UIColor.red
                                                                             
                                                                           }
                                                                           else if (myint! > 35 && myint! <= 36)
@@ -74,12 +78,13 @@ var dateData = [DataModel]()
                                                                        } else {
                                                                         self.lblKondisi.text = "Suhu bayi anda sangat rendah"
                                                                         self.lblSuhu.textColor = UIColor.red
+                                                                        //self.cSuhu.textColor = UIColor.red
                                                                         
                             }
                             
                             
                             let mydenyut = Double(self.lblcoba2.text!)
-                            let myroude = ((mydenyut! * 100).rounded() / 100)
+                            let myroude = mydenyut!.rounded()
                             self.lbldenyut.text = "\(myroude)"
                               
 
@@ -87,6 +92,7 @@ var dateData = [DataModel]()
                                                                 {
                                                                     self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu cepat"
                                                                     self.lbldenyut.textColor = UIColor.red
+                                                                    //self.cDetak.textColor = UIColor.red
                                                                 }
                                                                 else if (mydenyut! >= 120 && mydenyut! < 160)
                                                                 {
@@ -94,6 +100,7 @@ var dateData = [DataModel]()
                                                              } else {
                                                                 self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu lemah"
                                                                 self.lbldenyut.textColor = UIColor.red
+                                                                //self.cDetak.textColor = UIColor.red
                                                                 
                             }
                             
