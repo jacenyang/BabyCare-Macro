@@ -29,7 +29,9 @@ var dateData = [DataModel]()
     @IBOutlet weak var demam: UIImageView!
     @IBOutlet weak var gambar2: UIImageView!
     
-     var dataAPI = [feeds2]()
+    @IBOutlet weak var lblcoba2: UILabel!
+    @IBOutlet weak var lblcoba1: UILabel!
+    var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,9 +58,9 @@ var dateData = [DataModel]()
                        
         
                                         
-                                        let myint = Double(self.lblSuhu.text!)
-                                      
-                                        
+                                        let myint = Double(self.lblcoba1.text!)
+                                        let myrouded = (myint!.rounded())
+                                                       self.lblSuhu.text = "\(myrouded)"
 
                                                                        if (myint! >= 37)
                                                                           {
@@ -76,8 +78,9 @@ var dateData = [DataModel]()
                             }
                             
                             
-                            let mydenyut = Double(self.lbldenyut.text!)
-                            
+                            let mydenyut = Double(self.lblcoba2.text!)
+                            let myroude = (mydenyut!.rounded())
+                                           self.lbldenyut.text = "\(myroude)"
                               
 
                                                              if (mydenyut! > 160)
@@ -154,8 +157,8 @@ var dateData = [DataModel]()
                 //    print("ini data yang pertama", thinkSpeakData.feeds?.first)
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
-                    self.lblSuhu.text = thinkSpeakData.feeds.last?.field1
-                    self.lbldenyut.text = thinkSpeakData.feeds.last?.field2 
+                    self.lblcoba1.text = thinkSpeakData.feeds.last?.field1
+                    self.lblcoba2.text = thinkSpeakData.feeds.last?.field2
                     
                    onSuccess()
                          
