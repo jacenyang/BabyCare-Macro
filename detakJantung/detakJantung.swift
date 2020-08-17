@@ -47,6 +47,16 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
         print(arr)
         let set1 = LineChartDataSet(entries: arr, label: "Suhu")
+        set1.axisDependency = .left
+        set1.setColor(UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1))
+        set1.setCircleColor(UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1))
+        set1.lineWidth = 2
+        set1.circleRadius = 3
+        set1.fillAlpha = 65/255
+        set1.fillColor = UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1)
+        set1.highlightColor = UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1)
+        set1.drawCircleHoleEnabled = false
+        
         let data = LineChartData(dataSet: set1)
         
       self.listchartview.data = data
