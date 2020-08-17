@@ -62,15 +62,16 @@ var dateData = [DataModel]()
 
                                                                        if (myint! >= 37)
                                                                           {
-                                                                              self.lblKondisi.text = "Suhu bayi sangat tinggi, segera lakukan tindakan penanganan demam"
-                                                                            self.lblKondisi.textColor = UIColor.red
+                                                                              self.lblKondisi.text = "Suhu bayi anda sangat tinggi"
+                                                                            self.lblSuhu.textColor = UIColor.red
+                                                                            
                                                                           }
                                                                           else if (myint! > 35 && myint! <= 36)
                                                                           {
                                                                             self.lblKondisi.text = "Suhu bayi anda normal"
                                                                        } else {
-                                                                        self.lblKondisi.text = "Suhu bayi sangat rendah, segera lakukan tindakan penanganan hipothermia"
-                                                                        self.lblKondisi.textColor = UIColor.red
+                                                                        self.lblKondisi.text = "Suhu bayi anda sangat rendah"
+                                                                        self.lblSuhu.textColor = UIColor.red
                                                                         
                             }
                             
@@ -81,15 +82,15 @@ var dateData = [DataModel]()
 
                                                              if (mydenyut! > 160)
                                                                 {
-                                                                    self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu cepat. Segera periksa ke dokter."
-                                                                    self.lblkondisidenyut.textColor = UIColor.red
+                                                                    self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu cepat"
+                                                                    self.lbldenyut.textColor = UIColor.red
                                                                 }
                                                                 else if (mydenyut! >= 120 && mydenyut! < 160)
                                                                 {
-                                                                  self.lblkondisidenyut.text = "Jantung berdetak dengan normal"
+                                                                  self.lblkondisidenyut.text = "Detak jantung bayi anda normal"
                                                              } else {
-                                                                self.lblkondisidenyut.text = "Jantung berdetak dengan lemah, segera lakukan tindakan penanganan bradycardia."
-                                                                self.lblkondisidenyut.textColor = UIColor.red
+                                                                self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu lemah"
+                                                                self.lbldenyut.textColor = UIColor.red
                                                                 
                             }
                             
@@ -122,12 +123,11 @@ var dateData = [DataModel]()
                                    self.catatanLabel.text = "Suhu bayi sangat rendah, segera periksa ke dokter!"
                                 //content.body = self.catatanLabel.text!
                                 self.getNotificationSuhu()
-                                } else if (myint! < 35 && mydenyut! > 160) {
-                                   self.catatanLabel.text = "Suhu bayi sangat rendah dan jantung berdetak cepat, segera periksa ke dokter!"
+                                } else if (myint! < 35 && mydenyut! < 160) {
+                                   self.catatanLabel.text = "Suhu bayi sangat rendah dan jantung melemah, segera periksa ke dokter!"
                                 //content.body = self.catatanLabel.text!
-                                self.getNotificationSuhuRendahDetakCepat()
-                                    
-                            }
+                                self.getNotificationSuhuRendahDetakRendah()
+                                }
                          }
                          
                      }
@@ -362,6 +362,32 @@ var dateData = [DataModel]()
         let content = UNMutableNotificationContent()
         content.title = "Hai, Ibu!"
         content.body = "Suhu bayi rendah dan jantung berdetak cepat. Segera periksa bayi anda."
+        content.sound = UNNotificationSound.default
+        
+        
+        //triger
+        let myDate = Date().addingTimeInterval(1)
+        let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+        let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //req
+        let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+        
+        //put it to center notif
+        UNUserNotificationCenter.current().add(req) { (error) in
+            if let error = error{
+                print("error ",error)
+            }
+        }
+    }
+    
+    func getNotificationSuhuRendahDetakRendah(){
+        UNUserNotificationCenter.current().delegate = self
+
+        //content
+        let content = UNMutableNotificationContent()
+        content.title = "Hai, Ibu!"
+        content.body = "Suhu bayi rendah dan jantung melemah. Segera periksa bayi anda."
         content.sound = UNNotificationSound.default
         
         
