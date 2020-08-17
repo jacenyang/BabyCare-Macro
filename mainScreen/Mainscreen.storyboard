@@ -336,13 +336,14 @@
                     <navigationItem key="navigationItem" title="Kondisi Hari Ini" id="hl6-5X-hc9"/>
                     <size key="freeformSize" width="414" height="1100"/>
                     <connections>
+                        <outlet property="catatanLabel" destination="tWJ-2P-MjK" id="OTU-c7-sfh"/>
                         <outlet property="demam" destination="7wM-LP-SVW" id="uRx-r7-3lX"/>
                         <outlet property="gambar2" destination="WpA-ta-zO0" id="x9v-fb-eER"/>
                         <outlet property="lblDetak" destination="rtb-Te-2gE" id="rd8-hJ-cYb"/>
                         <outlet property="lblKondisi" destination="iPp-iv-XQT" id="aiZ-sc-HVi"/>
                         <outlet property="lblSikon" destination="T5m-Fw-ojO" id="Se8-KM-Dv4"/>
                         <outlet property="lblSuhu" destination="DBQ-Ao-hbP" id="lCO-5e-1Wc"/>
-                        <outlet property="lblUsiaKoreksi" destination="TqX-6W-KOa" id="2Pr-DJ-jCu"/>
+                        <outlet property="lblUsiaKoreksi" destination="tWJ-2P-MjK" id="EJh-ZO-rV7"/>
                         <outlet property="lbldenyut" destination="RUr-Tp-z4K" id="oiY-bL-Ad7"/>
                         <outlet property="lblkondisidenyut" destination="5tP-mK-s4b" id="zL1-j6-2eK"/>
                     </connections>

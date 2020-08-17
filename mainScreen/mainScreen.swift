@@ -19,6 +19,7 @@ var dateData = [DataModel]()
     
     @IBOutlet weak var lblUsiaKoreksi: UILabel!
     
+    @IBOutlet weak var catatanLabel: UILabel!
     @IBOutlet weak var lblkondisidenyut: UILabel!
     @IBOutlet weak var lbldenyut: UILabel!
     @IBOutlet weak var lblDetak: UILabel!
@@ -61,28 +62,72 @@ var dateData = [DataModel]()
 
                                                                        if (myint! >= 37)
                                                                           {
-                                                                              self.lblKondisi.text = "Sedang Demam Tinggi"
-                                                                            self.getNotificationSuhu()
+                                                                              self.lblKondisi.text = "Suhu bayi sangat tinggi, segera lakukan tindakan penanganan demam"
+                                                                            self.lblKondisi.textColor = UIColor.red
                                                                           }
-                                                                          else
+                                                                          else if (myint! > 35 && myint! <= 36)
                                                                           {
-                                                                            self.lblKondisi.text = "Suhu Anda Normal"
-                                                                          }
+                                                                            self.lblKondisi.text = "Suhu bayi anda normal"
+                                                                       } else {
+                                                                        self.lblKondisi.text = "Suhu bayi sangat rendah, segera lakukan tindakan penanganan hipothermia"
+                                                                        self.lblKondisi.textColor = UIColor.red
+                                                                        
+                            }
                             
                             
                             let mydenyut = Double(self.lbldenyut.text!)
                             
                               
 
-                                                             if (mydenyut! > 60-100)
+                                                             if (mydenyut! > 160)
                                                                 {
-                                                                    self.lblkondisidenyut.text = "Tidak Normal"
-                                                                    self.getNotificationDetak()
+                                                                    self.lblkondisidenyut.text = "Detak jantung bayi anda terlalu cepat. Segera periksa ke dokter."
+                                                                    self.lblkondisidenyut.textColor = UIColor.red
                                                                 }
-                                                                else
+                                                                else if (mydenyut! >= 120 && mydenyut! < 160)
                                                                 {
-                                                                  self.lblkondisidenyut.text = "Sedang Normal"
-                                                                }
+                                                                  self.lblkondisidenyut.text = "Jantung berdetak dengan normal"
+                                                             } else {
+                                                                self.lblkondisidenyut.text = "Jantung berdetak dengan lemah, segera lakukan tindakan penanganan bradycardia."
+                                                                self.lblkondisidenyut.textColor = UIColor.red
+                                                                
+                            }
+                            
+                            if (myint! > 37 && mydenyut! > 160) {
+                                   self.catatanLabel.text = "Jantung berdetak cepat dan suhu sangat tinggi, segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationTinggi()
+                               } else if (myint! > 37 && (mydenyut! >= 120 && mydenyut! <= 160)) {
+                                   self.catatanLabel.text = "Suhu bayi sangat tinggi, segera periksa ke dokter!"
+                                self.getNotificationSuhu()
+                               } else if (myint! > 37 && mydenyut! < 120){
+                                   self.catatanLabel.text = "Suhu bayi sangat tinggi dan detak jantung melemah, segera periksa ke dokter!"
+                                self.getNotificationSuhu()
+                                } else if ((myint! >= 35 && myint! <= 37) && mydenyut! > 160) {
+                                   self.catatanLabel.text = "Detak jantung berdetak sangat cepat, segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationDetak()
+                                } else if ((myint! >= 35 && myint! <= 37) && (mydenyut! >= 120 && mydenyut! <= 160)) {
+                                   self.catatanLabel.text = "Suhu dan detak jantung bayi normal. Selalu jaga kesehatan bayi ya!"
+                                //content.body = self.catatanLabel.text!
+                                } else if ((myint! >= 35 && myint! <= 37) && mydenyut! < 120) {
+                                   self.catatanLabel.text = "Detak jantung melemah, Segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationDetak()
+                                } else if (myint! < 35 && mydenyut! > 160) {
+                                   self.catatanLabel.text = "Suhu bayi rendah dan jantung berdetak cepat, segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationSuhu()
+                               } else if (myint! < 35 && (mydenyut! >= 120 && mydenyut! <= 160)) {
+                                   self.catatanLabel.text = "Suhu bayi sangat rendah, segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationSuhu()
+                                } else if (myint! < 35 && mydenyut! > 160) {
+                                   self.catatanLabel.text = "Suhu bayi sangat rendah dan jantung berdetak cepat, segera periksa ke dokter!"
+                                //content.body = self.catatanLabel.text!
+                                self.getNotificationSuhuRendahDetakCepat()
+                                    
+                            }
                          }
                          
                      }
@@ -109,8 +154,8 @@ var dateData = [DataModel]()
                 //    print("ini data yang pertama", thinkSpeakData.feeds?.first)
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
-                    self.lblSuhu.text = (thinkSpeakData.feeds.last?.field1)
-                    self.lbldenyut.text = (thinkSpeakData.feeds.last?.field2)
+                    self.lblSuhu.text = thinkSpeakData.feeds.last?.field1
+                    self.lbldenyut.text = thinkSpeakData.feeds.last?.field2 
                     
                    onSuccess()
                          
@@ -128,6 +173,10 @@ var dateData = [DataModel]()
         retrieve()
         
         
+        
+    }
+    
+    func catatan(){
         
     }
     
@@ -207,8 +256,8 @@ var dateData = [DataModel]()
 
             //content
             let content = UNMutableNotificationContent()
-            content.title = "🔥🔥🔥"
-        content.body = "Suhu bayi mencapai \(self.lblKondisi.text!). Segera lakukan langkah penanganan demam!"
+            content.title = "Hai, Ibu"
+            content.body = "Suhu bayi anda \(self.lblSuhu.text!). Segera periksa bayi anda."
             content.sound = UNNotificationSound.default
             
             
@@ -233,8 +282,8 @@ var dateData = [DataModel]()
 
         //content
         let content = UNMutableNotificationContent()
-        content.title = "Detak Jantung Lemah"
-        content.body = "Detak jantung bayi hanya \(self.lblkondisidenyut.text!). Segera lakukan langkah penanganan Bradycardia!"
+        content.title = "Hai, Ibu"
+        content.body = "Detak jantung bayi anda \(self.lbldenyut.text!). Segera periksa bayi anda."
         content.sound = UNNotificationSound.default
         
         
@@ -253,6 +302,86 @@ var dateData = [DataModel]()
             }
         }
     }
+    
+    func getNotificationTinggi(){
+        UNUserNotificationCenter.current().delegate = self
+
+        //content
+        let content = UNMutableNotificationContent()
+        content.title = "Hai, Ibu!"
+        content.body = "Suhu bayi tinggi dan jantung berdetak cepat. Segera periksa bayi anda."
+        content.sound = UNNotificationSound.default
+        
+        
+        //triger
+        let myDate = Date().addingTimeInterval(1)
+        let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+        let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //req
+        let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+        
+        //put it to center notif
+        UNUserNotificationCenter.current().add(req) { (error) in
+            if let error = error{
+                print("error ",error)
+            }
+        }
+    }
+    
+    func getNotificationRendah(){
+        UNUserNotificationCenter.current().delegate = self
+
+        //content
+        let content = UNMutableNotificationContent()
+        content.title = "Hai, Ibu!"
+        content.body = "Suhu bayi rendah dan jantung berdetak lemah. Segera periksa bayi anda."
+        content.sound = UNNotificationSound.default
+        
+        
+        //triger
+        let myDate = Date().addingTimeInterval(1)
+        let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+        let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //req
+        let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+        
+        //put it to center notif
+        UNUserNotificationCenter.current().add(req) { (error) in
+            if let error = error{
+                print("error ",error)
+            }
+        }
+    }
+    
+    func getNotificationSuhuRendahDetakCepat(){
+        UNUserNotificationCenter.current().delegate = self
+
+        //content
+        let content = UNMutableNotificationContent()
+        content.title = "Hai, Ibu!"
+        content.body = "Suhu bayi rendah dan jantung berdetak cepat. Segera periksa bayi anda."
+        content.sound = UNNotificationSound.default
+        
+        
+        //triger
+        let myDate = Date().addingTimeInterval(1)
+        let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+        let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //req
+        let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+        
+        //put it to center notif
+        UNUserNotificationCenter.current().add(req) { (error) in
+            if let error = error{
+                print("error ",error)
+            }
+        }
+    }
+    
+    
 
 }
 
