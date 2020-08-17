@@ -16,6 +16,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var listchartview: LineChartView!
 
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.delegate = self

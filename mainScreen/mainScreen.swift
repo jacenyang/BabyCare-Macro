@@ -62,6 +62,7 @@ var dateData = [DataModel]()
                                                                        if (myint! >= 37)
                                                                           {
                                                                               self.lblKondisi.text = "Sedang Demam Tinggi"
+                                                                            self.getNotificationSuhu()
                                                                           }
                                                                           else
                                                                           {
@@ -76,6 +77,7 @@ var dateData = [DataModel]()
                                                              if (mydenyut! > 60-100)
                                                                 {
                                                                     self.lblkondisidenyut.text = "Tidak Normal"
+                                                                    self.getNotificationDetak()
                                                                 }
                                                                 else
                                                                 {
@@ -198,10 +200,66 @@ var dateData = [DataModel]()
            }
            
            return
-}
+    }
 
+    func getNotificationSuhu(){
+            UNUserNotificationCenter.current().delegate = self
 
-
+            //content
+            let content = UNMutableNotificationContent()
+            content.title = "🔥🔥🔥"
+        content.body = "Suhu bayi mencapai \(self.lblKondisi.text!). Segera lakukan langkah penanganan demam!"
+            content.sound = UNNotificationSound.default
+            
+            
+            //triger
+            let myDate = Date().addingTimeInterval(1)
+            let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+            let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+            
+            //req
+            let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+            
+            //put it to center notif
+            UNUserNotificationCenter.current().add(req) { (error) in
+                if let error = error{
+                    print("error ",error)
+                }
+            }
+        }
     
+    func getNotificationDetak(){
+        UNUserNotificationCenter.current().delegate = self
+
+        //content
+        let content = UNMutableNotificationContent()
+        content.title = "Detak Jantung Lemah"
+        content.body = "Detak jantung bayi hanya \(self.lblkondisidenyut.text!). Segera lakukan langkah penanganan Bradycardia!"
+        content.sound = UNNotificationSound.default
+        
+        
+        //triger
+        let myDate = Date().addingTimeInterval(1)
+        let dateComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: myDate)
+        let triger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //req
+        let req = UNNotificationRequest(identifier: "cobaNotif", content: content, trigger: triger)
+        
+        //put it to center notif
+        UNUserNotificationCenter.current().add(req) { (error) in
+            if let error = error{
+                print("error ",error)
+            }
+        }
+    }
 
 }
+
+extension mainScreen : UNUserNotificationCenterDelegate{
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.sound,.alert])
+    }
+}
+
+
