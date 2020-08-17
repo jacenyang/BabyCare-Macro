@@ -115,6 +115,7 @@ var dataAPI = [feeds2]()
            
         cell.angkaLabel.text = dataAPI[indexPath.row].field1
         
+        
         let tanggal = dataAPI[indexPath.row].created_at
         let splits = tanggal?.components(separatedBy: "T")
         //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at

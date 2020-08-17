@@ -157,7 +157,8 @@ var dateData = [DataModel]()
                 //    print("ini data yang pertama", thinkSpeakData.feeds?.first)
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
-                    self.lblcoba1.text = thinkSpeakData.feeds.last?.field1
+                    
+                    self.lblcoba1.text = (thinkSpeakData.feeds.last?.field1)
                     self.lblcoba2.text = thinkSpeakData.feeds.last?.field2
                     
                    onSuccess()
