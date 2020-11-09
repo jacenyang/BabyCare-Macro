@@ -9,27 +9,27 @@
 import UIKit
 import Charts
 class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
-        var dataAPI = [feeds2]()
-
+    var dataAPI = [feeds2]()
+    
     @IBOutlet weak var tblView: UITableView!
     
     @IBOutlet weak var listchartview: LineChartView!
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.delegate = self
-               tblView.dataSource = self
+        tblView.dataSource = self
         
         fetchAPIthinkSpeak{
-                   DispatchQueue.main.async {
-                       self.tblView.reloadData()
-                       //print(self.dataAPI)
-                       self.setChartValues()
-                   }
-                   
-               }
+            DispatchQueue.main.async {
+                self.tblView.reloadData()
+                //print(self.dataAPI)
+                self.setChartValues()
+            }
+            
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -59,7 +59,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let data = LineChartData(dataSet: set1)
         
-      self.listchartview.data = data
+        self.listchartview.data = data
     }
     
     func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
@@ -73,7 +73,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 let decoder = JSONDecoder()
                 let thinkSpeakData = try decoder.decode(ThinkSpeakAPI2.self, from: data)
                 //print(thinkSpeakData.feeds)
-               self.dataAPI = thinkSpeakData.feeds ?? []
+                self.dataAPI = thinkSpeakData.feeds ?? []
                 //print(self.dataAPI)
                 
                 // print(thinkSpeakData.channel?.name)
@@ -81,11 +81,11 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 //    print("ini data yang pertama", thinkSpeakData.feeds?.first)
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
-                   //self.lbltampil.text = (thinkSpeakData.feeds.last?.field1)
+                    //self.lbltampil.text = (thinkSpeakData.feeds.last?.field1)
                     //self.lblPulse.text = (thinkSpeakData.feeds.last?.field2)
                     onSuccess()
                 }
-               
+                
                 
                 
                 
@@ -102,26 +102,29 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-              return 1
-          }
-          
-          func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return dataAPI.count
-          }
-          
-          func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-              
-              let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! DetakTableViewCell
-              
-           cell.angkaLabel.text = dataAPI[indexPath.row].field2
-           //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
-            
-            let tanggal = dataAPI[indexPath.row].created_at
-            let splits = tanggal?.components(separatedBy: "T")
-            //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
-            cell.tanggalLabel.text = splits![0]
-              
-              return cell
-          }
-       
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataAPI.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! DetakTableViewCell
+        
+        let detakDouble = Double(dataAPI[indexPath.row].field2!)
+        let detakString = String(format: "%.0f", detakDouble!)
+        
+        cell.angkaLabel.text = detakString
+        //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
+        
+        let tanggal = dataAPI[indexPath.row].created_at
+        let splits = tanggal?.components(separatedBy: "T")
+        //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
+        cell.tanggalLabel.text = splits![0]
+        
+        return cell
+    }
+    
 }
