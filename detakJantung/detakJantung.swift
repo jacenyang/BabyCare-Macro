@@ -113,13 +113,13 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! DetakTableViewCell
         
-        let detakDouble = Double(dataAPI[indexPath.row].field2!)
+        let detakDouble = Double(dataAPI.reversed()[indexPath.row].field2!)
         let detakString = String(format: "%.0f", detakDouble!)
         
         cell.angkaLabel.text = detakString
         //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
         
-        let tanggal = dataAPI[indexPath.row].created_at
+        let tanggal = dataAPI.reversed()[indexPath.row].created_at
         let splits = tanggal?.components(separatedBy: "T")
         //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
         cell.tanggalLabel.text = splits![0]

@@ -432,6 +432,3 @@ extension Double {
         return (self * multiplier).rounded() / multiplier
     }
 }
-
-
-

@@ -113,13 +113,11 @@ class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! SuhuTableViewCell
         
-        let suhuDouble = Double(dataAPI[indexPath.row].field1!)
+        let suhuDouble = Double(dataAPI.reversed()[indexPath.row].field1!)
         let suhuString = String(format: "%.1f", suhuDouble!)
         cell.angkaLabel.text = suhuString
-        print(dataAPI[indexPath.row].field1!)
         
-        
-        let tanggal = dataAPI[indexPath.row].created_at
+        let tanggal = dataAPI.reversed()[indexPath.row].created_at
         let splits = tanggal?.components(separatedBy: "T")
         //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
         cell.tanggalLabel.text = splits![0]
