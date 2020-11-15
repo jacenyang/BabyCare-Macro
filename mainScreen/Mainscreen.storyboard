@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cw9-Tg-feO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaU-56-jEY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -424,26 +424,94 @@
             </objects>
             <point key="canvasLocation" x="1550" y="398"/>
         </scene>
-        <!--Tips-->
+        <!--View Controller-->
         <scene sceneID="vIM-Fi-bwT">
             <objects>
-                <viewController id="wJs-WA-0Cw" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="wJs-WA-0Cw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rEQ-BQ-0V1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-Oy-bLf">
+                                <rect key="frame" x="87" y="204" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Demam pada bayi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecB-u7-LVH">
+                                        <rect key="frame" x="52" y="54" width="137" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dvm-cn-MuB" appends="YES" id="GAH-uH-WMQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLv-Nf-6wf">
+                                <rect key="frame" x="87" y="598" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bradycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m87-uB-Sae">
+                                        <rect key="frame" x="75" y="54" width="91" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4zI-lx-OBZ" appends="YES" id="tSK-7P-Ujk"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qEg-x3-W5P"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.91385358569999997" green="0.93702810999999997" blue="0.94902223350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tips" id="EZ6-BW-Bcc"/>
+                    <navigationItem key="navigationItem" id="4tp-vE-mY2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGg-8A-g1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dvm-cn-MuB">
+                    <connections>
+                        <segue destination="etw-y2-tkC" kind="show" id="T4r-tj-4f2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4zI-lx-OBZ">
+                    <connections>
+                        <segue destination="ckF-iI-Qcu" kind="show" id="HWs-m2-qUG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="946" y="1483"/>
+            <point key="canvasLocation" x="1784.057971014493" y="2193.75"/>
+        </scene>
+        <!--tips-->
+        <scene sceneID="nb8-41-cWG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="tips" id="etw-y2-tkC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EQK-VL-1zk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02f-BD-iHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="2084"/>
+        </scene>
+        <!--tips1-->
+        <scene sceneID="JRm-ZS-2RO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="tips1" id="ckF-iI-Qcu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CH5-SO-qDh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLD-Kj-TQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="2325"/>
         </scene>
         <!--Kondisi Hari Ini-->
         <scene sceneID="k7M-Yl-xK3">
             <objects>
-                <viewController storyboardIdentifier="SummaryVC" title="Kondisi Hari Ini" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z54-mP-oTM" customClass="SummaryVC" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z54-mP-oTM" customClass="SummaryVC" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RbD-6Z-Obf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -685,7 +753,7 @@
                         <viewLayoutGuide key="safeArea" id="IuR-g0-mJQ"/>
                         <color key="backgroundColor" red="0.91385358569999997" green="0.93702810999999997" blue="0.94902223350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Kondisi Hari Ini" id="PJc-2o-3qh"/>
+                    <navigationItem key="navigationItem" title="Kondisi Hari Ini" largeTitleDisplayMode="always" id="PJc-2o-3qh"/>
                     <connections>
                         <outlet property="lblDetak" destination="iEX-OS-FtU" id="gI2-Uz-jur"/>
                         <outlet property="lblKeteranganBayi" destination="mK3-HY-kjd" id="suB-bf-3sp"/>
@@ -701,14 +769,18 @@
                         <segue destination="v1B-Y5-lDI" kind="show" id="Gy9-hJ-5xb"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="C3e-Q5-Sub"/>
+                <tapGestureRecognizer id="C3e-Q5-Sub">
+                    <connections>
+                        <segue destination="d6v-iI-GCO" kind="show" id="2oD-aW-k1f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1856.521739130435" y="825"/>
+            <point key="canvasLocation" x="1786" y="1126"/>
         </scene>
         <!--Kondisi Bayi-->
         <scene sceneID="aWo-TI-SjZ">
             <objects>
-                <viewController title="Kondisi Bayi" modalPresentationStyle="fullScreen" id="v1B-Y5-lDI" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="v1B-Y5-lDI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fag-fI-cod">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -849,7 +921,101 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="jgl-h4-OEv"/>
             </objects>
-            <point key="canvasLocation" x="2740.579710144928" y="825"/>
+            <point key="canvasLocation" x="2693" y="756"/>
+        </scene>
+        <!--Kondisi Kabin-->
+        <scene sceneID="ppb-qc-ZBd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="d6v-iI-GCO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e0p-RW-erZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G4G-ks-R8P">
+                                <rect key="frame" x="20" y="187" width="374" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Kabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDB-FK-3Nu">
+                                        <rect key="frame" x="8" y="8" width="87" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0h-ic-wJF">
+                                        <rect key="frame" x="8" y="88" width="358" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyw-9h-oVc">
+                                        <rect key="frame" x="352" y="8" width="14" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="chevron.right" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBB-Fe-A4j">
+                                        <rect key="frame" x="8" y="46" width="200" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9mH-Nz-5iw" appends="YES" id="DWa-ma-wPG"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDB-bq-tpg">
+                                <rect key="frame" x="20" y="466" width="374" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apK-Rj-QUh">
+                                        <rect key="frame" x="8" y="8" width="69" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60U-eK-HGh">
+                                        <rect key="frame" x="8" y="88" width="358" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkF-0e-SHj">
+                                        <rect key="frame" x="352" y="8" width="14" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="chevron.right" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-EC-81b">
+                                        <rect key="frame" x="8" y="46" width="200" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="R1Q-3b-xWc" appends="YES" id="7tR-Rb-4VR"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oan-3n-0Y2"/>
+                        <color key="backgroundColor" red="0.91385358569999997" green="0.93702810999999997" blue="0.94902223350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kondisi Kabin" id="WTU-qP-7Vp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fw9-d5-L5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9mH-Nz-5iw"/>
+                <tapGestureRecognizer id="R1Q-3b-xWc"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="1430"/>
         </scene>
         <!--Suhu-->
         <scene sceneID="zFB-iz-5cg">
@@ -869,7 +1035,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSz-0H-u5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3316" y="835"/>
+            <point key="canvasLocation" x="3336" y="834"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ykq-mI-dMk">
@@ -882,12 +1048,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="yOW-es-ONY" kind="relationship" relationship="viewControllers" id="tCz-nu-Cjs"/>
-                        <segue destination="wJs-WA-0Cw" kind="relationship" relationship="viewControllers" id="uGY-ml-RFr"/>
+                        <segue destination="xcT-bm-koM" kind="relationship" relationship="viewControllers" id="uGY-ml-RFr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyB-t2-6tB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="1129"/>
+            <point key="canvasLocation" x="-81" y="1651"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n8q-0E-wkF">
@@ -924,7 +1090,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBO-zB-0Uk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946.37681159420299" y="825"/>
+            <point key="canvasLocation" x="874" y="1126"/>
+        </scene>
+        <!--Tips-->
+        <scene sceneID="hOm-I5-O2E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xcT-bm-koM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tips" id="EZ6-BW-Bcc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IfW-yo-Tsc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wJs-WA-0Cw" kind="relationship" relationship="rootViewController" id="Tpl-kz-DSh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQ3-eH-lYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.91304347826099" y="2193.75"/>
         </scene>
     </scenes>
     <resources>

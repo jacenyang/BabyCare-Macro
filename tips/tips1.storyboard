@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pcW-Og-lqz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pcW-Og-lqz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,24 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrH-Ps-DtS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Bradycardia" leftItemsSupplementBackButton="YES" id="TA1-hh-vRl">
-                                        <barButtonItem key="leftBarButtonItem" title="Kembali" id="UiQ-ys-7aA">
-                                            <color key="tintColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <connections>
-                                                <action selector="backBtn:" destination="pcW-Og-lqz" id="Rg8-sL-ILE"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-8n-PDq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-8n-PDq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgO-hV-qjx">
@@ -103,7 +88,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Tdz-eN-J61" firstAttribute="top" secondItem="GgO-hV-qjx" secondAttribute="top" constant="-278" id="1ik-SD-a5z"/>
                                             <constraint firstItem="Tdz-eN-J61" firstAttribute="leading" secondItem="GgO-hV-qjx" secondAttribute="leading" id="1z6-Hv-KVA"/>
@@ -149,19 +134,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KIp-1b-bfg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IMb-8n-PDq" firstAttribute="top" secondItem="DrH-Ps-DtS" secondAttribute="bottom" id="61Y-wB-ufI"/>
                             <constraint firstAttribute="bottom" secondItem="IMb-8n-PDq" secondAttribute="bottom" id="BOC-kB-s8v"/>
                             <constraint firstItem="IMb-8n-PDq" firstAttribute="leading" secondItem="KIp-1b-bfg" secondAttribute="leading" id="LId-la-qqe"/>
-                            <constraint firstItem="IMb-8n-PDq" firstAttribute="top" secondItem="DrH-Ps-DtS" secondAttribute="bottom" id="jkq-Cl-Uqp"/>
-                            <constraint firstItem="DrH-Ps-DtS" firstAttribute="top" secondItem="KIp-1b-bfg" secondAttribute="top" id="m0O-sB-GV4"/>
                             <constraint firstItem="IMb-8n-PDq" firstAttribute="trailing" secondItem="KIp-1b-bfg" secondAttribute="trailing" id="r6K-Ts-fl0"/>
-                            <constraint firstItem="DrH-Ps-DtS" firstAttribute="leading" secondItem="KIp-1b-bfg" secondAttribute="leading" id="utX-el-2EI"/>
                             <constraint firstAttribute="bottom" secondItem="IMb-8n-PDq" secondAttribute="bottom" id="v0e-9t-fwL"/>
-                            <constraint firstItem="DrH-Ps-DtS" firstAttribute="trailing" secondItem="KIp-1b-bfg" secondAttribute="trailing" id="xPE-yz-c8d"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="KIp-1b-bfg"/>
                     </view>
                     <connections>
                         <outlet property="pengertianLabel" destination="Ju9-nP-xHg" id="PT3-9d-c90"/>
@@ -178,5 +158,8 @@
     </scenes>
     <resources>
         <image name="383411" width="800" height="450"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

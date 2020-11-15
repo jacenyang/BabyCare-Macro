@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecx-sJ-CTf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecx-sJ-CTf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,23 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdW-vl-FMj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Demam" leftItemsSupplementBackButton="YES" id="5m4-BG-h2p">
-                                        <barButtonItem key="leftBarButtonItem" title="Kembali" id="rRA-6I-0DQ">
-                                            <color key="tintColor" red="0.21612840890000001" green="0.34159553050000002" blue="0.31372472639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <connections>
-                                                <action selector="backBtn:" destination="ecx-sJ-CTf" id="stQ-Mt-J6U"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWF-G0-6TG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
@@ -118,7 +103,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="1Ez-QY-hAe" firstAttribute="top" secondItem="aOQ-I6-8tQ" secondAttribute="bottom" constant="8" id="0gI-k1-G2o"/>
                                             <constraint firstItem="NgO-a4-Rvb" firstAttribute="top" secondItem="bre-dV-jJF" secondAttribute="top" constant="256" id="17e-vT-NCq"/>
@@ -172,17 +157,13 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qaN-P0-X2a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GWF-G0-6TG" firstAttribute="leading" secondItem="qaN-P0-X2a" secondAttribute="leading" id="Ble-Od-SDJ"/>
                             <constraint firstItem="GWF-G0-6TG" firstAttribute="trailing" secondItem="qaN-P0-X2a" secondAttribute="trailing" id="C6l-hm-I6k"/>
-                            <constraint firstItem="kdW-vl-FMj" firstAttribute="top" secondItem="qaN-P0-X2a" secondAttribute="top" id="Hnl-LH-ixn"/>
-                            <constraint firstItem="kdW-vl-FMj" firstAttribute="leading" secondItem="qaN-P0-X2a" secondAttribute="leading" id="W80-nu-Bfy"/>
-                            <constraint firstItem="kdW-vl-FMj" firstAttribute="trailing" secondItem="qaN-P0-X2a" secondAttribute="trailing" id="mdG-Sh-2Rd"/>
                             <constraint firstAttribute="bottom" secondItem="GWF-G0-6TG" secondAttribute="bottom" id="qBo-dY-akc"/>
-                            <constraint firstItem="GWF-G0-6TG" firstAttribute="top" secondItem="kdW-vl-FMj" secondAttribute="bottom" id="tdN-rM-RgE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qaN-P0-X2a"/>
                     </view>
                     <connections>
                         <outlet property="harusLabel" destination="cwG-XW-Ekq" id="nUn-u6-Sgl"/>
@@ -200,5 +181,8 @@
     </scenes>
     <resources>
         <image name="Bayi Demam" width="1404" height="794"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
