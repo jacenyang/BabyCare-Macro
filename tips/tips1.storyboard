@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-8n-PDq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-8n-PDq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgO-hV-qjx">
@@ -139,6 +139,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="IMb-8n-PDq" secondAttribute="bottom" id="BOC-kB-s8v"/>
                             <constraint firstItem="IMb-8n-PDq" firstAttribute="leading" secondItem="KIp-1b-bfg" secondAttribute="leading" id="LId-la-qqe"/>
+                            <constraint firstItem="IMb-8n-PDq" firstAttribute="top" secondItem="KIp-1b-bfg" secondAttribute="top" constant="44" id="hL9-nb-tu9"/>
                             <constraint firstItem="IMb-8n-PDq" firstAttribute="trailing" secondItem="KIp-1b-bfg" secondAttribute="trailing" id="r6K-Ts-fl0"/>
                             <constraint firstAttribute="bottom" secondItem="IMb-8n-PDq" secondAttribute="bottom" id="v0e-9t-fwL"/>
                         </constraints>
