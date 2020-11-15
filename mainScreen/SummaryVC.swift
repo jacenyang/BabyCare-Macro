@@ -27,8 +27,10 @@ class SummaryVC: ViewController {
     @IBOutlet weak var lbldenyut: UILabel!
     
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
 //
 //        self.TampilLabelUmur()
 //
@@ -89,7 +91,7 @@ class SummaryVC: ViewController {
 //
 //        }
 //
-//    }
+    }
 //
 //
 //    func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
@@ -127,55 +129,55 @@ class SummaryVC: ViewController {
 //
 //    }
 //
-//    func TampilLabelUmur(){
-//        retrieve()
-//
-//
-//
-//    }
-//
-//    func catatan(){
-//
-//    }
-//
-//    func retrieve(){
-//
-//        var tanggalCoDa = [DataModel]()
-//
-//        // referensi ke AppDelegate
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//
-//        // managed context
-//        let managedContext = appDelegate.persistentContainer.viewContext
-//
-//        // fetch data
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
-//
-//        do{
-//            let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
-//            result.forEach{ tanggalCoDain in
-//                tanggalCoDa.append(
-//                    DataModel(estimasiDate: tanggalCoDain.value(forKey: "estimasiDate") as! Date)
-//                )
-//
-//                print("ini result Retrive \(tanggalCoDain.value(forKey: "estimasiDate") as! Date)")
-//                let TanggalEstimasiLahir = tanggalCoDain.value(forKey: "estimasiDate") as! Date
-//                print("ini data dari Coredata?")
-//                let hariini = Date()
-//                let calendar = Calendar.current
-//                let components = calendar.dateComponents([.year, .month, .day], from: TanggalEstimasiLahir , to: hariini)
-//                //let ageYears = components.year
-//                let ageMonths = components.month
-//                let ageDays = components.day
-//                self.lblUsiaKoreksi.text = " Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
-//
-//            }
-//        }catch let err{
-//            print(err)
-//        }
-//
-//        return
-//    }
+    func TampilLabelUmur(){
+        retrieve()
+
+
+
+    }
+
+    func catatan(){
+
+    }
+
+    func retrieve(){
+
+        var tanggalCoDa = [DataModel]()
+
+        // referensi ke AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        // managed context
+        let managedContext = appDelegate.persistentContainer.viewContext
+
+        // fetch data
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DateEstimasi")
+
+        do{
+            let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
+            result.forEach{ tanggalCoDain in
+                tanggalCoDa.append(
+                    DataModel(estimasiDate: tanggalCoDain.value(forKey: "estimasiDate") as! Date)
+                )
+
+                print("ini result Retrive \(tanggalCoDain.value(forKey: "estimasiDate") as! Date)")
+                let TanggalEstimasiLahir = tanggalCoDain.value(forKey: "estimasiDate") as! Date
+                print("ini data dari Coredata?")
+                let hariini = Date()
+                let calendar = Calendar.current
+                let components = calendar.dateComponents([.year, .month, .day], from: TanggalEstimasiLahir , to: hariini)
+                //let ageYears = components.year
+                let ageMonths = components.month
+                let ageDays = components.day
+                self.lblUsiaKoreksi.text = " Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
+
+            }
+        }catch let err{
+            print(err)
+        }
+
+        return
+    }
 //
 //    func getNotificationSuhu(){
 //        UNUserNotificationCenter.current().delegate = self
