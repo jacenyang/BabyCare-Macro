@@ -31,6 +31,9 @@
 		3D3FBF9624E59A9800EDC927 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3FBF9524E59A9800EDC927 /* Charts */; };
 		911A620A25606513000DC74E /* SummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A620925606513000DC74E /* SummaryVC.swift */; };
 		911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A62142560F93C000DC74E /* KondisiBayiVC.swift */; };
+		96168F5425610FBC007A7489 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5125610FBC007A7489 /* SensorData.swift */; };
+		96168F5525610FBC007A7489 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5225610FBC007A7489 /* SensorManager.swift */; };
+		96168F5625610FBC007A7489 /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5325610FBC007A7489 /* SensorModel.swift */; };
 		B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */; };
 		B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5424EA726900492318 /* DetakTableViewCell.swift */; };
 		B37629E824E6BD6B00EF924C /* tips1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37629E724E6BD6B00EF924C /* tips1.swift */; };
@@ -88,6 +91,9 @@
 		3D3FBF6624E4FC2F00EDC927 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		911A620925606513000DC74E /* SummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryVC.swift; sourceTree = "<group>"; };
 		911A62142560F93C000DC74E /* KondisiBayiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiBayiVC.swift; sourceTree = "<group>"; };
+		96168F5125610FBC007A7489 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		96168F5225610FBC007A7489 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		96168F5325610FBC007A7489 /* SensorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
 		B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuhuTableViewCell.swift; sourceTree = "<group>"; };
 		B373DE5424EA726900492318 /* DetakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetakTableViewCell.swift; sourceTree = "<group>"; };
 		B37629E724E6BD6B00EF924C /* tips1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips1.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				96168F5025610FBC007A7489 /* Model */,
 				D5D32EF324E6782500D2C923 /* CoreData */,
 				3D3FBF6524E4FBFF00EDC927 /* Parse JSON */,
 				0D748EBC24E0FACC005E893E /* tips */,
@@ -256,6 +263,16 @@
 				3D3FBF6624E4FC2F00EDC927 /* API.swift */,
 			);
 			path = "Parse JSON";
+			sourceTree = "<group>";
+		};
+		96168F5025610FBC007A7489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96168F5125610FBC007A7489 /* SensorData.swift */,
+				96168F5225610FBC007A7489 /* SensorManager.swift */,
+				96168F5325610FBC007A7489 /* SensorModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D5D32EF324E6782500D2C923 /* CoreData */ = {
@@ -422,11 +439,13 @@
 				D550CC2024E858D50036181C /* DateEstimasi+CoreDataClass.swift in Sources */,
 				B37629E824E6BD6B00EF924C /* tips1.swift in Sources */,
 				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
+				96168F5425610FBC007A7489 /* SensorData.swift in Sources */,
 				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
 				B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */,
 				D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */,
 				911A620A25606513000DC74E /* SummaryVC.swift in Sources */,
+				96168F5625610FBC007A7489 /* SensorModel.swift in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
@@ -434,6 +453,7 @@
 				B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */,
 				D550CC2124E858D50036181C /* DateEstimasi+CoreDataProperties.swift in Sources */,
 				D5D32EF824E6799700D2C923 /* CoreViewController.swift in Sources */,
+				96168F5525610FBC007A7489 /* SensorManager.swift in Sources */,
 				911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
 				3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */,

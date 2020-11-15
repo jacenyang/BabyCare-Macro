@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaU-56-jEY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaU-56-jEY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -520,8 +520,8 @@
                                 <rect key="frame" x="20" y="197" width="374" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kondisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW5-4k-ZZp">
-                                        <rect key="frame" x="8" y="8" width="56" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kondisi Bayi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW5-4k-ZZp">
+                                        <rect key="frame" x="8" y="8" width="92" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -634,8 +634,8 @@
                                 <rect key="frame" x="20" y="506" width="374" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kondisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-19-IwH">
-                                        <rect key="frame" x="8" y="8" width="56" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kondisi Kabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-19-IwH">
+                                        <rect key="frame" x="8" y="8" width="103" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -647,7 +647,7 @@
                                         <state key="normal" image="chevron.right" catalog="system"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ket. Kabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-Iw-rU2">
-                                        <rect key="frame" x="8" y="48" width="77" height="21"/>
+                                        <rect key="frame" x="8" y="48" width="358" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -748,12 +748,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Kondisi Hari Ini" largeTitleDisplayMode="always" id="PJc-2o-3qh"/>
                     <connections>
-                        <outlet property="lblDetak" destination="iEX-OS-FtU" id="gI2-Uz-jur"/>
-                        <outlet property="lblKeteranganBayi" destination="mK3-HY-kjd" id="suB-bf-3sp"/>
-                        <outlet property="lblSuhu" destination="a4a-oi-gVm" id="Ifr-u5-pd0"/>
-                        <outlet property="lblSuhuTubuh" destination="gf1-50-Wax" id="czv-bP-7pm"/>
-                        <outlet property="lblUsiaKoreksi" destination="hrg-Jl-xaP" id="E1H-WH-35d"/>
-                        <outlet property="lbldenyut" destination="u3s-4A-Wld" id="z3t-oS-NKR"/>
+                        <outlet property="allDataView" destination="di0-8f-oLX" id="su4-pY-Tbc"/>
+                        <outlet property="babyConditionView" destination="WNg-wQ-OII" id="68g-IU-ksm"/>
+                        <outlet property="babySummaryLabel" destination="mK3-HY-kjd" id="suB-bf-3sp"/>
+                        <outlet property="babyTempColorLabel" destination="lDE-qC-49f" id="Bmz-nO-Uqb"/>
+                        <outlet property="babyTempLabel" destination="a4a-oi-gVm" id="Ifr-u5-pd0"/>
+                        <outlet property="cabinConditionView" destination="nmm-GC-HYl" id="0qX-Fv-euO"/>
+                        <outlet property="cabinSummaryLabel" destination="hG5-Iw-rU2" id="wTj-EF-D2C"/>
+                        <outlet property="cabinTempColorLabel" destination="44A-uS-nSf" id="dc2-j7-gpL"/>
+                        <outlet property="cabinTempLabel" destination="NNb-k9-0uz" id="Lto-ZX-7wf"/>
+                        <outlet property="correctedAgeLabel" destination="hrg-Jl-xaP" id="E1H-WH-35d"/>
+                        <outlet property="humidityColorLabel" destination="d3M-hz-9xG" id="O9k-hk-XxH"/>
+                        <outlet property="humidityLabel" destination="xWl-yR-1rA" id="dTT-4z-CtM"/>
+                        <outlet property="pulseColorLabel" destination="k4d-0U-1rO" id="daw-rA-De1"/>
+                        <outlet property="pulseLabel" destination="u3s-4A-Wld" id="z3t-oS-NKR"/>
+                        <outlet property="weightColorLabel" destination="gbh-zt-VbU" id="c4k-RM-wB2"/>
+                        <outlet property="weightLabel" destination="Ph8-ag-VLH" id="ext-Gp-tKT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbZ-tD-08X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -768,7 +778,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1786" y="1126"/>
+            <point key="canvasLocation" x="1785.5072463768117" y="1125.6696428571429"/>
         </scene>
         <!--Kondisi Bayi-->
         <scene sceneID="aWo-TI-SjZ">
