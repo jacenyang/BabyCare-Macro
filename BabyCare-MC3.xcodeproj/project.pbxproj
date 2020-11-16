@@ -33,6 +33,7 @@
 		911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A62142560F93C000DC74E /* KondisiBayiVC.swift */; };
 		911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A621C2561FCE6000DC74E /* ListTipsVC.swift */; };
 		911A622225620D72000DC74E /* KondisiKabinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A622125620D72000DC74E /* KondisiKabinVC.swift */; };
+		911A622825621A7D000DC74E /* QRCodeScannerr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */; };
 		96168F5425610FBC007A7489 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5125610FBC007A7489 /* SensorData.swift */; };
 		96168F5525610FBC007A7489 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5225610FBC007A7489 /* SensorManager.swift */; };
 		96168F5625610FBC007A7489 /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5325610FBC007A7489 /* SensorModel.swift */; };
@@ -95,6 +96,7 @@
 		911A62142560F93C000DC74E /* KondisiBayiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiBayiVC.swift; sourceTree = "<group>"; };
 		911A621C2561FCE6000DC74E /* ListTipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTipsVC.swift; sourceTree = "<group>"; };
 		911A622125620D72000DC74E /* KondisiKabinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiKabinVC.swift; sourceTree = "<group>"; };
+		911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeScannerr.storyboard; sourceTree = "<group>"; };
 		96168F5125610FBC007A7489 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		96168F5225610FBC007A7489 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
 		96168F5325610FBC007A7489 /* SensorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				911A622625621A04000DC74E /* QR Code */,
 				96168F5025610FBC007A7489 /* Model */,
 				D5D32EF324E6782500D2C923 /* CoreData */,
 				3D3FBF6524E4FBFF00EDC927 /* Parse JSON */,
@@ -269,6 +272,14 @@
 				3D3FBF6624E4FC2F00EDC927 /* API.swift */,
 			);
 			path = "Parse JSON";
+			sourceTree = "<group>";
+		};
+		911A622625621A04000DC74E /* QR Code */ = {
+			isa = PBXGroup;
+			children = (
+				911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */,
+			);
+			path = "QR Code";
 			sourceTree = "<group>";
 		};
 		96168F5025610FBC007A7489 /* Model */ = {
@@ -409,6 +420,7 @@
 				0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */,
 				0D748E8624E0F823005E893E /* Assets.xcassets in Resources */,
 				D565899924E3A7980051A45F /* tips.storyboard in Resources */,
+				911A622825621A7D000DC74E /* QRCodeScannerr.storyboard in Resources */,
 				B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */,
 				0D748E8424E0F821005E893E /* Main.storyboard in Resources */,
 				C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */,
