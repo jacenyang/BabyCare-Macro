@@ -554,7 +554,7 @@
         <!--TipsDemam-->
         <scene sceneID="FXw-kE-eYe">
             <objects>
-                <viewControllerPlaceholder storyboardName="TipsDemam" id="JeT-nS-Mci" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsDemam" id="JeT-nS-Mci" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fC8-Zb-Aqj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYS-ia-iRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -564,7 +564,7 @@
         <!--TipsBradycardia-->
         <scene sceneID="iMX-OV-2Hi">
             <objects>
-                <viewControllerPlaceholder storyboardName="TipsBradycardia" id="SBx-EY-nD0" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsBradycardia" id="SBx-EY-nD0" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uvz-ZA-1wU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Plk-ta-PDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -574,7 +574,7 @@
         <!--TipsBeratBadan-->
         <scene sceneID="2xr-tD-AXh">
             <objects>
-                <viewControllerPlaceholder storyboardName="TipsBeratBadan" id="OMW-jG-W2I" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsBeratBadan" id="OMW-jG-W2I" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="pb2-m9-7lG"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIn-Ob-P2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
