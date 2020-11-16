@@ -30,9 +30,6 @@ class KondisiKabinVC: ViewController, SensorManagerDelegate {
         suhuKabinView.layer.cornerRadius = 15
         humidityView.layer.cornerRadius = 15
     }
-    func didFailWithError(error: Error) {
-        print(error)
-    }
     
     func didUpdateSensor(_ sensorManager: SensorManager, sensor: SensorModel) {
         DispatchQueue.main.async {
@@ -41,4 +38,9 @@ class KondisiKabinVC: ViewController, SensorManagerDelegate {
             self.humidityLabel.text = sensor.humidityString
         }
     }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
 }
