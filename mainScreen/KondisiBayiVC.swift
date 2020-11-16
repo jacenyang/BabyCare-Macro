@@ -34,16 +34,16 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
         detakView.layer.cornerRadius = 15
         beratBadanView.layer.cornerRadius = 15
     }
-    func didFailWithError(error: Error) {
-        print(error)
-    }
     
     func didUpdateSensor(_ sensorManager: SensorManager, sensor: SensorModel) {
         DispatchQueue.main.async {
-            
             self.pulseLabel.text = sensor.pulseString
             self.babyTempLabel.text = sensor.babyTempString
             self.weightLabel.text = sensor.weightToKgString
         }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }
