@@ -15,11 +15,12 @@ struct DataModel {
 
 class tanggalKelahiran: UIViewController, UITextFieldDelegate {
     
+    let defaults = UserDefaults.standard
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     //let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var DataEstimasis = [DateEstimasi]()
     var dateData = [DataModel]()
-    
     
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet var estimasiLahirTxtField: UITextField!
@@ -84,6 +85,7 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         datePicker.datePickerMode = .date
         
     }
+    
     @objc func donePress(){
         let formatter = DateFormatter()
         formatter.dateFormat = "d MMMM yyyy"
@@ -109,6 +111,10 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
             self.dateData.append(new)
             // self.table.reloadData()
             self.saveData()
+            
+            self.defaults.set(estimasiLahirTxtField.text, forKey: "estimasiLahir")
+            self.defaults.set(namaIbuTxtField.text, forKey: "namaIbu")
+            self.defaults.set(tanggalLahirBayiTxtField.text, forKey: "realisasiLahir")
         }
         func textFieldShouldReturn( textField: UITextField) ->Bool{
             textField.resignFirstResponder()
