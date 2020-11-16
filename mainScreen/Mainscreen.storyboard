@@ -563,6 +563,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tips" id="4tp-vE-mY2"/>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="bradycardiaView" destination="fh6-Oa-z3r" id="pr8-Ch-Kql"/>
+                        <outlet property="demamView" destination="WiK-wx-wXf" id="pdw-Hj-RnL"/>
+                        <outlet property="tips1View" destination="bB4-W8-SDo" id="jRT-bw-8bH"/>
+                        <outlet property="tips2View" destination="qZE-rd-IG7" id="gzN-6F-yvY"/>
+                        <outlet property="tips3View" destination="lqU-Cd-0KB" id="7rW-3o-UWO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGg-8A-g1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="p1U-tz-UWc">
@@ -614,7 +621,7 @@
                                         <rect key="frame" x="8" y="8" width="92" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.27531319859999998" green="0.46706676479999998" blue="0.43921649460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0N0-0m-fJM">
@@ -728,7 +735,7 @@
                                         <rect key="frame" x="8" y="8" width="103" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.27531319859999998" green="0.46706676479999998" blue="0.43921649460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cse-UG-pDk">
@@ -829,7 +836,7 @@
                                 <rect key="frame" x="20" y="145" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.27531319859999998" green="0.46706676479999998" blue="0.43921649460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1002,7 +1009,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="babyTempLabel" destination="KvP-P5-Ugb" id="vU1-la-S9Q"/>
+                        <outlet property="beratBadanView" destination="bHb-yY-Cml" id="REa-iW-xxB"/>
+                        <outlet property="detakView" destination="VB5-If-daR" id="aN2-CB-nlh"/>
                         <outlet property="pulseLabel" destination="Jcf-cp-mO7" id="DDn-YB-3uS"/>
+                        <outlet property="suhuBayiView" destination="cxV-sR-8ep" id="9YB-Cx-LgM"/>
                         <outlet property="weightLabel" destination="46c-F2-p36" id="sOb-1I-u47"/>
                     </connections>
                 </viewController>
@@ -1111,6 +1121,8 @@
                     <connections>
                         <outlet property="cabinTempLabel" destination="PBB-Fe-A4j" id="R9u-Cr-M3C"/>
                         <outlet property="humidityLabel" destination="yQ1-EC-81b" id="XHC-Ej-s76"/>
+                        <outlet property="humidityView" destination="lDB-bq-tpg" id="KaG-sb-iq7"/>
+                        <outlet property="suhuKabinView" destination="G4G-ks-R8P" id="iec-Gd-5Fc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fw9-d5-L5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

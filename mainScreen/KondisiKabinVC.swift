@@ -15,15 +15,20 @@ class KondisiKabinVC: ViewController, SensorManagerDelegate {
     @IBOutlet weak var cabinTempLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     
+    @IBOutlet weak var suhuKabinView: UIView!
+    @IBOutlet weak var humidityView: UIView!
+    
     var sensorManager = SensorManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
         
-        
         sensorManager.delegate = self
         sensorManager.fetchSensor()
+        
+        suhuKabinView.layer.cornerRadius = 15
+        humidityView.layer.cornerRadius = 15
     }
     func didFailWithError(error: Error) {
         print(error)

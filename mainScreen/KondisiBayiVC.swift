@@ -16,6 +16,10 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
     @IBOutlet weak var pulseLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
+    @IBOutlet weak var suhuBayiView: UIView!
+    @IBOutlet weak var detakView: UIView!
+    @IBOutlet weak var beratBadanView: UIView!
+    
     var sensorManager = SensorManager()
     
     override func viewDidLoad() {
@@ -25,6 +29,10 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
         
         sensorManager.delegate = self
         sensorManager.fetchSensor()
+        
+        suhuBayiView.layer.cornerRadius = 15
+        detakView.layer.cornerRadius = 15
+        beratBadanView.layer.cornerRadius = 15
     }
     func didFailWithError(error: Error) {
         print(error)
