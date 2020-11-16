@@ -9,7 +9,7 @@
 import UIKit
 
 class TipsBradycardia: UIViewController {
-
+    
     @IBOutlet weak var scrl: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var pengertianLabel: UILabel!
@@ -35,11 +35,22 @@ class TipsBradycardia: UIViewController {
         2. Temperatur badan bayi rendah
         3. Efek atau pengaruh obat
         4. Penyakit jantung bawaan
-"""
-
+        """
+        
         pertolonganLabel.text = """
         Pastikan bahwa tidak ada kemungkinan jalan nafas bayi terhambat, seperti posisi dada yang tertekan, jalur nafas yang tertutup atau mungkin kondisi ruangan/ambient yang tidak nyaman, misalnya terlalu panas dan lembab. Segera bawa bayi ke dokter dan beri penanganan intensif!
         """
     }
-
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
