@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="13t-CC-Lsl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="13t-CC-Lsl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,7 +50,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-fD-Iex">
                                                 <rect key="frame" x="0.0" y="272" width="306" height="136"/>
@@ -73,7 +74,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iig-wg-Uwe">
                                                 <rect key="frame" x="0.0" y="408" width="306" height="136"/>
@@ -97,7 +98,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -119,7 +120,7 @@
                                             <constraint firstItem="iig-wg-Uwe" firstAttribute="leading" secondItem="VdY-fI-qbJ" secondAttribute="leading" id="yMV-tH-a6R"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-dS-tbF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-dS-tbF">
                                         <rect key="frame" x="0.0" y="614" width="334" height="44"/>
                                         <color key="backgroundColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -148,14 +149,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8PN-GQ-G5T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JPN-yR-Fsf" firstAttribute="top" secondItem="8PN-GQ-G5T" secondAttribute="top" constant="80" id="4G0-6x-puC"/>
                             <constraint firstItem="JPN-yR-Fsf" firstAttribute="leading" secondItem="8PN-GQ-G5T" secondAttribute="leading" constant="40" id="5W0-eT-Lo0"/>
                             <constraint firstItem="8PN-GQ-G5T" firstAttribute="trailing" secondItem="JPN-yR-Fsf" secondAttribute="trailing" constant="40" id="8S7-ir-kjh"/>
                             <constraint firstItem="8PN-GQ-G5T" firstAttribute="bottom" secondItem="JPN-yR-Fsf" secondAttribute="bottom" constant="80" id="vyC-S6-kNu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8PN-GQ-G5T"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ej-3E-3UV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,5 +178,8 @@
         <image name="icons8-clipboard-64" width="64" height="64"/>
         <image name="icons8-heart-monitor-64" width="64" height="64"/>
         <image name="icons8-topic-push-notification-64" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
