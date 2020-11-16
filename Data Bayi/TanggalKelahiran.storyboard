@@ -46,8 +46,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-En-mbE">
-                                <rect key="frame" x="40" y="627" width="334" height="30"/>
+                                <rect key="frame" x="40" y="627" width="334" height="44"/>
                                 <color key="backgroundColor" red="0.22004827860000001" green="0.34153229000000002" blue="0.31764680150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dGi-pU-BjT"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Simpan"/>
                                 <userDefinedRuntimeAttributes>
@@ -71,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="y7b-BR-a0D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kGc-En-mbE" firstAttribute="top" secondItem="170-op-nSL" secondAttribute="bottom" constant="108" id="3Ed-oF-huG"/>
                             <constraint firstItem="170-op-nSL" firstAttribute="centerY" secondItem="x6a-Nt-tRG" secondAttribute="centerY" constant="54" id="ERJ-71-UGv"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="170-op-nSL" secondAttribute="leading" id="Gza-H0-fvS"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="centerX" secondItem="x6a-Nt-tRG" secondAttribute="centerX" id="LSz-4Z-d09"/>
@@ -82,14 +86,14 @@
                             <constraint firstItem="t5c-Yd-DOP" firstAttribute="centerY" secondItem="x6a-Nt-tRG" secondAttribute="centerY" constant="-119" id="RDD-rH-aeX"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="l5n-OA-kcq" secondAttribute="leading" id="Uxu-V0-lcK"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="centerY" secondItem="x6a-Nt-tRG" secondAttribute="centerY" constant="-189.5" id="YYW-ZB-WEP"/>
-                            <constraint firstItem="kGc-En-mbE" firstAttribute="centerX" secondItem="x6a-Nt-tRG" secondAttribute="centerX" id="YnJ-Bp-IUP"/>
+                            <constraint firstItem="kGc-En-mbE" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="dv7-FO-k9j"/>
                             <constraint firstItem="qCJ-j2-3II" firstAttribute="centerY" secondItem="x6a-Nt-tRG" secondAttribute="centerY" constant="-32" id="eK0-Ql-Fvs"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="top" secondItem="y7b-BR-a0D" secondAttribute="top" id="efl-PG-foM"/>
+                            <constraint firstItem="y7b-BR-a0D" firstAttribute="trailing" secondItem="kGc-En-mbE" secondAttribute="trailing" constant="40" id="jLN-IX-JBy"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="t5c-Yd-DOP" secondAttribute="leading" id="kPl-zv-U2E"/>
                             <constraint firstItem="JPw-ui-cg0" firstAttribute="centerX" secondItem="x6a-Nt-tRG" secondAttribute="centerX" id="kbH-1l-wfq"/>
                             <constraint firstItem="t5c-Yd-DOP" firstAttribute="centerX" secondItem="x6a-Nt-tRG" secondAttribute="centerX" id="oHu-PE-9Ch"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="JPw-ui-cg0" secondAttribute="leading" id="qKP-FK-N6m"/>
-                            <constraint firstItem="kGc-En-mbE" firstAttribute="centerY" secondItem="x6a-Nt-tRG" secondAttribute="centerY" constant="194" id="rXk-yG-MvQ"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="qCJ-j2-3II" secondAttribute="leading" id="vDD-J2-XLu"/>
                             <constraint firstItem="YBa-Ay-6Aa" firstAttribute="leading" secondItem="y7b-BR-a0D" secondAttribute="leading" constant="40" id="w3B-jw-yet"/>
                         </constraints>
