@@ -14,7 +14,7 @@ protocol SensorManagerDelegate {
 
 struct SensorManager {
     
-    let sensorURL = "https://api.thingspeak.com/channels/592779/feeds.json"
+    let sensorURL = "https://api.thingspeak.com/channels/1229232/feeds.json"
     
     var delegate: SensorManagerDelegate?
     
@@ -49,16 +49,17 @@ struct SensorManager {
         
         let decoder = JSONDecoder()
         do {
-            let decodedData = try decoder.decode(SensorData.self, from: sensorData)
-            let isoDate = (decodedData.feeds.last?.created_at)!
-            let cabinTemp = (decodedData.feeds.last?.field1)!
-            let humidity = (decodedData.feeds.last?.field2)!
-            let pulse = (decodedData.feeds.last?.field3)!
-            let babyTemp = (decodedData.feeds.last?.field4)!
-            let weight = (decodedData.feeds.last?.field5)!
             
+            let decodedData = try decoder.decode(SensorData.self, from: sensorData)
+            let isoDate = (decodedData.feeds.last?.created_at) ?? "0.0"
+            let cabinTemp = (decodedData.feeds.last?.field1) ?? "0.0"
+            let humidity = (decodedData.feeds.last?.field2) ?? "0.0"
+            let pulse = (decodedData.feeds.last?.field3) ?? "0.0"
+            let babyTemp = (decodedData.feeds.last?.field4 ) ?? "0.0"
+            let weight = (decodedData.feeds.last!.field5) ?? "0.0"
             let sensor = SensorModel(isoDate: isoDate, cabinTemp: cabinTemp, humidity: humidity, pulse: pulse, babyTemp: babyTemp, weight: weight)
             return sensor
+            
         }
         catch {
             delegate?.didFailWithError(error: error)

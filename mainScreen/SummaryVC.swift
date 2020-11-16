@@ -61,14 +61,25 @@ class SummaryVC: ViewController, SensorManagerDelegate {
             self.weightLabel.text = sensor.weightToKgString
             //            self.timeLabel.text = sensor.time
             //            self.dateLabel.text = sensor.date
+            
             self.babySummaryLabel.text = "Placeholder"
             self.cabinSummaryLabel.text = "Placeholder"
             
+            self.cabinTempColorLabel.text = sensor.cabinTempDesc
+            self.cabinTempColorLabel.textColor = sensor.cabinTempColor
+            self.humidityColorLabel.text = sensor.humidityDesc
+            self.humidityColorLabel.textColor = sensor.humidityColor
+            self.pulseColorLabel.text = sensor.pulseDesc
+            self.pulseColorLabel.textColor = sensor.pulseColor
+            self.babyTempColorLabel.text = sensor.babyTempDesc
+            self.babyTempColorLabel.textColor = sensor.babyTempColor
+            self.weightColorLabel.text = sensor.weightDesc
+            self.weightColorLabel.textColor = sensor.weightColor
         }
     }
     
     func didFailWithError(error: Error) {
-        print(error)
+        print("ERROR : \(error)")
     }
     
     func retrieve(){

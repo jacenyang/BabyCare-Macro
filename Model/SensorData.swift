@@ -12,11 +12,11 @@ struct SensorData: Codable {
 }
 
 struct Feeds: Codable {
-    let created_at: String
-    let entry_id: Int
-    let field1: String
-    let field2: String
-    let field3: String
-    let field4: String
-    let field5: String
+    let created_at: String?
+    let entry_id: Int?
+    let field1: String?
+    let field2: String?
+    let field3: String?
+    let field4: String?
+    let field5: String?
 }
