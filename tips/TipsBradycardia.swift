@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tips1: UIViewController {
+class TipsBradycardia: UIViewController {
 
     @IBOutlet weak var scrl: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!

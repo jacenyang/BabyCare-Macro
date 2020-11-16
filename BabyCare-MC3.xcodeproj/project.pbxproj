@@ -21,7 +21,7 @@
 		0D748EB724E0FA91005E893E /* suhu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB624E0FA91005E893E /* suhu.swift */; };
 		0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EB824E0FAA8005E893E /* onBoarding.swift */; };
 		0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */; };
-		0D748EBE24E0FADE005E893E /* tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* tips.swift */; };
+		0D748EBE24E0FADE005E893E /* TipsDemam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D748EBD24E0FADE005E893E /* TipsDemam.swift */; };
 		0DEDD50B24E3B15D00763D96 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2087BC24E109C3004E4E0C /* OnBoarding.storyboard */; };
 		0DEDD50C24E3B15E00763D96 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2087BC24E109C3004E4E0C /* OnBoarding.storyboard */; };
 		0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */; };
@@ -32,21 +32,20 @@
 		911A620A25606513000DC74E /* SummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A620925606513000DC74E /* SummaryVC.swift */; };
 		911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A62142560F93C000DC74E /* KondisiBayiVC.swift */; };
 		911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A621C2561FCE6000DC74E /* ListTipsVC.swift */; };
-		911A622225620D72000DC74E /* KondisiKabinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A622125620D72000DC74E /* KondisiKabinVC.swift */; };
 		911A622825621A7D000DC74E /* QRCodeScannerr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */; };
 		96168F5425610FBC007A7489 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5125610FBC007A7489 /* SensorData.swift */; };
 		96168F5525610FBC007A7489 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5225610FBC007A7489 /* SensorManager.swift */; };
 		96168F5625610FBC007A7489 /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5325610FBC007A7489 /* SensorModel.swift */; };
 		B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */; };
 		B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5424EA726900492318 /* DetakTableViewCell.swift */; };
-		B37629E824E6BD6B00EF924C /* tips1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37629E724E6BD6B00EF924C /* tips1.swift */; };
-		B37629EA24E6BD8200EF924C /* tips1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37629E924E6BD8200EF924C /* tips1.storyboard */; };
+		B37629E824E6BD6B00EF924C /* TipsBradycardia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37629E724E6BD6B00EF924C /* TipsBradycardia.swift */; };
+		B37629EA24E6BD8200EF924C /* TipsBradycardia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37629E924E6BD8200EF924C /* TipsBradycardia.storyboard */; };
 		B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */; };
 		C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54324E10ACB00B878E4 /* Suhu.storyboard */; };
 		C048B54624E10D7A00B878E4 /* DetakJantung.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */; };
 		D550CC2024E858D50036181C /* DateEstimasi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D550CC1E24E858D50036181C /* DateEstimasi+CoreDataClass.swift */; };
 		D550CC2124E858D50036181C /* DateEstimasi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D550CC1F24E858D50036181C /* DateEstimasi+CoreDataProperties.swift */; };
-		D565899924E3A7980051A45F /* tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D565899824E3A7980051A45F /* tips.storyboard */; };
+		D565899924E3A7980051A45F /* TipsDemam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D565899824E3A7980051A45F /* TipsDemam.storyboard */; };
 		D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5D32EF424E6784600D2C923 /* tanggal.xcdatamodeld */; };
 		D5D32EF824E6799700D2C923 /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D32EF724E6799700D2C923 /* CoreViewController.swift */; };
 		D5D32EFA24E679AF00D2C923 /* TestCore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D32EF924E679AF00D2C923 /* TestCore.storyboard */; };
@@ -90,26 +89,25 @@
 		0D748EB624E0FA91005E893E /* suhu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suhu.swift; sourceTree = "<group>"; };
 		0D748EB824E0FAA8005E893E /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		0D748EBA24E0FABC005E893E /* tanggalKelahiran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanggalKelahiran.swift; sourceTree = "<group>"; };
-		0D748EBD24E0FADE005E893E /* tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips.swift; sourceTree = "<group>"; };
+		0D748EBD24E0FADE005E893E /* TipsDemam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDemam.swift; sourceTree = "<group>"; };
 		3D3FBF6624E4FC2F00EDC927 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		911A620925606513000DC74E /* SummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryVC.swift; sourceTree = "<group>"; };
 		911A62142560F93C000DC74E /* KondisiBayiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiBayiVC.swift; sourceTree = "<group>"; };
 		911A621C2561FCE6000DC74E /* ListTipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTipsVC.swift; sourceTree = "<group>"; };
-		911A622125620D72000DC74E /* KondisiKabinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiKabinVC.swift; sourceTree = "<group>"; };
 		911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeScannerr.storyboard; sourceTree = "<group>"; };
 		96168F5125610FBC007A7489 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		96168F5225610FBC007A7489 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
 		96168F5325610FBC007A7489 /* SensorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
 		B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuhuTableViewCell.swift; sourceTree = "<group>"; };
 		B373DE5424EA726900492318 /* DetakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetakTableViewCell.swift; sourceTree = "<group>"; };
-		B37629E724E6BD6B00EF924C /* tips1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tips1.swift; sourceTree = "<group>"; };
-		B37629E924E6BD8200EF924C /* tips1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tips1.storyboard; sourceTree = "<group>"; };
+		B37629E724E6BD6B00EF924C /* TipsBradycardia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsBradycardia.swift; sourceTree = "<group>"; };
+		B37629E924E6BD8200EF924C /* TipsBradycardia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TipsBradycardia.storyboard; sourceTree = "<group>"; };
 		B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mainscreen.storyboard; sourceTree = "<group>"; };
 		C048B54324E10ACB00B878E4 /* Suhu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suhu.storyboard; sourceTree = "<group>"; };
 		C048B54524E10D7A00B878E4 /* DetakJantung.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetakJantung.storyboard; sourceTree = "<group>"; };
 		D550CC1E24E858D50036181C /* DateEstimasi+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateEstimasi+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D550CC1F24E858D50036181C /* DateEstimasi+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateEstimasi+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D565899824E3A7980051A45F /* tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tips.storyboard; sourceTree = "<group>"; };
+		D565899824E3A7980051A45F /* TipsDemam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TipsDemam.storyboard; sourceTree = "<group>"; };
 		D56D4C1C24E10AAF00A084AE /* TanggalKelahiran.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanggalKelahiran.storyboard; sourceTree = "<group>"; };
 		D5D32EF524E6784600D2C923 /* tanggal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tanggal.xcdatamodel; sourceTree = "<group>"; };
 		D5D32EF724E6799700D2C923 /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				911A620925606513000DC74E /* SummaryVC.swift */,
 				911A62142560F93C000DC74E /* KondisiBayiVC.swift */,
 				911A621C2561FCE6000DC74E /* ListTipsVC.swift */,
-				911A622125620D72000DC74E /* KondisiKabinVC.swift */,
 			);
 			path = mainScreen;
 			sourceTree = "<group>";
@@ -258,10 +255,10 @@
 		0D748EBC24E0FACC005E893E /* tips */ = {
 			isa = PBXGroup;
 			children = (
-				0D748EBD24E0FADE005E893E /* tips.swift */,
-				D565899824E3A7980051A45F /* tips.storyboard */,
-				B37629E924E6BD8200EF924C /* tips1.storyboard */,
-				B37629E724E6BD6B00EF924C /* tips1.swift */,
+				0D748EBD24E0FADE005E893E /* TipsDemam.swift */,
+				D565899824E3A7980051A45F /* TipsDemam.storyboard */,
+				B37629E924E6BD8200EF924C /* TipsBradycardia.storyboard */,
+				B37629E724E6BD6B00EF924C /* TipsBradycardia.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -414,12 +411,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37629EA24E6BD8200EF924C /* tips1.storyboard in Resources */,
+				B37629EA24E6BD8200EF924C /* TipsBradycardia.storyboard in Resources */,
 				0D748E8924E0F823005E893E /* LaunchScreen.storyboard in Resources */,
 				C048B54424E10ACB00B878E4 /* Suhu.storyboard in Resources */,
 				0DEDD50D24E3B24C00763D96 /* TanggalKelahiran.storyboard in Resources */,
 				0D748E8624E0F823005E893E /* Assets.xcassets in Resources */,
-				D565899924E3A7980051A45F /* tips.storyboard in Resources */,
+				D565899924E3A7980051A45F /* TipsDemam.storyboard in Resources */,
 				911A622825621A7D000DC74E /* QRCodeScannerr.storyboard in Resources */,
 				B3EE63E024E1185C00FBAFB5 /* Mainscreen.storyboard in Resources */,
 				0D748E8424E0F821005E893E /* Main.storyboard in Resources */,
@@ -455,7 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D550CC2024E858D50036181C /* DateEstimasi+CoreDataClass.swift in Sources */,
-				B37629E824E6BD6B00EF924C /* tips1.swift in Sources */,
+				B37629E824E6BD6B00EF924C /* TipsBradycardia.swift in Sources */,
 				911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */,
 				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
 				96168F5425610FBC007A7489 /* SensorData.swift in Sources */,
@@ -476,8 +473,7 @@
 				911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
 				3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */,
-				911A622225620D72000DC74E /* KondisiKabinVC.swift in Sources */,
-				0D748EBE24E0FADE005E893E /* tips.swift in Sources */,
+				0D748EBE24E0FADE005E893E /* TipsDemam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
