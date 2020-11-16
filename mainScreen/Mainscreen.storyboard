@@ -1000,6 +1000,11 @@
                     <navigationItem key="navigationItem" title="Kondisi Bayi" id="8DO-YM-fjq">
                         <barButtonItem key="backBarButtonItem" title="Summary" id="aO7-y4-h1S"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="babyTempLabel" destination="KvP-P5-Ugb" id="vU1-la-S9Q"/>
+                        <outlet property="pulseLabel" destination="Jcf-cp-mO7" id="DDn-YB-3uS"/>
+                        <outlet property="weightLabel" destination="46c-F2-p36" id="sOb-1I-u47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQb-kk-rRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="5by-ad-Guu">
@@ -1019,7 +1024,7 @@
         <!--Kondisi Kabin-->
         <scene sceneID="ppb-qc-ZBd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="d6v-iI-GCO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KondisiKabinVC" modalPresentationStyle="fullScreen" id="d6v-iI-GCO" customClass="KondisiKabinVC" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e0p-RW-erZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1103,6 +1108,10 @@
                         <color key="backgroundColor" red="0.91385358569999997" green="0.93702810999999997" blue="0.94902223350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kondisi Kabin" id="WTU-qP-7Vp"/>
+                    <connections>
+                        <outlet property="cabinTempLabel" destination="PBB-Fe-A4j" id="R9u-Cr-M3C"/>
+                        <outlet property="humidityLabel" destination="yQ1-EC-81b" id="XHC-Ej-s76"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fw9-d5-L5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="9mH-Nz-5iw"/>
