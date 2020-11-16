@@ -31,6 +31,7 @@
 		3D3FBF9624E59A9800EDC927 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3FBF9524E59A9800EDC927 /* Charts */; };
 		911A620A25606513000DC74E /* SummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A620925606513000DC74E /* SummaryVC.swift */; };
 		911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A62142560F93C000DC74E /* KondisiBayiVC.swift */; };
+		911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A621C2561FCE6000DC74E /* ListTipsVC.swift */; };
 		96168F5425610FBC007A7489 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5125610FBC007A7489 /* SensorData.swift */; };
 		96168F5525610FBC007A7489 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5225610FBC007A7489 /* SensorManager.swift */; };
 		96168F5625610FBC007A7489 /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5325610FBC007A7489 /* SensorModel.swift */; };
@@ -91,6 +92,7 @@
 		3D3FBF6624E4FC2F00EDC927 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		911A620925606513000DC74E /* SummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryVC.swift; sourceTree = "<group>"; };
 		911A62142560F93C000DC74E /* KondisiBayiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiBayiVC.swift; sourceTree = "<group>"; };
+		911A621C2561FCE6000DC74E /* ListTipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTipsVC.swift; sourceTree = "<group>"; };
 		96168F5125610FBC007A7489 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		96168F5225610FBC007A7489 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
 		96168F5325610FBC007A7489 /* SensorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				B3EE63DF24E1185C00FBAFB5 /* Mainscreen.storyboard */,
 				911A620925606513000DC74E /* SummaryVC.swift */,
 				911A62142560F93C000DC74E /* KondisiBayiVC.swift */,
+				911A621C2561FCE6000DC74E /* ListTipsVC.swift */,
 			);
 			path = mainScreen;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			files = (
 				D550CC2024E858D50036181C /* DateEstimasi+CoreDataClass.swift in Sources */,
 				B37629E824E6BD6B00EF924C /* tips1.swift in Sources */,
+				911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */,
 				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
 				96168F5425610FBC007A7489 /* SensorData.swift in Sources */,
 				0D748EB224E0FA57005E893E /* mainScreen.swift in Sources */,
