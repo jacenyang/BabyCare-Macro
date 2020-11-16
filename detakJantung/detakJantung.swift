@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    var dataAPI = [feeds2]()
+    var dataAPI = [Feeds]()
     
     @IBOutlet weak var tblView: UITableView!
     
@@ -63,7 +63,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func fetchAPIthinkSpeak( onSuccess : @escaping () -> Void){
-        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/1116535/feeds.json?api_key=3W5C5093JVUEH036") else{return}
+        guard let apiURL = URL(string: "https://api.thingspeak.com/channels/592779/feeds.json") else{return}
         URLSession.shared.dataTask(with: apiURL) {(data, response, error) in
             
             
@@ -71,7 +71,7 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
             
             do {
                 let decoder = JSONDecoder()
-                let thinkSpeakData = try decoder.decode(ThinkSpeakAPI2.self, from: data)
+                let thinkSpeakData = try decoder.decode(SensorData.self, from: data)
                 //print(thinkSpeakData.feeds)
                 self.dataAPI = thinkSpeakData.feeds ?? []
                 //print(self.dataAPI)

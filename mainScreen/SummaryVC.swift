@@ -79,7 +79,7 @@ class SummaryVC: ViewController, SensorManagerDelegate {
     }
     
     func didFailWithError(error: Error) {
-        print("ERROR : \(error)")
+        print(error)
     }
     
     func retrieve(){
@@ -114,7 +114,9 @@ class SummaryVC: ViewController, SensorManagerDelegate {
                 self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
                 
             }
-        }catch let err{
+            
+        }
+        catch let err {
             print(err)
         }
         
