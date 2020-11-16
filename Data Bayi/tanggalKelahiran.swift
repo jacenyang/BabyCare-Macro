@@ -21,8 +21,15 @@ class tanggalKelahiran: UIViewController {
     var dateData = [DataModel]()
     
     
-    @IBOutlet var estimasiLahir: UITextField!
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet var estimasiLahirTxtField: UITextField!
+    @IBOutlet weak var namaIbuTxtField: UITextField!
+    @IBOutlet weak var tanggalLahirBayiTxtField: UITextField!
+    
     let datePicker = UIDatePicker()
+    
+    var namaIbu = String()
+    var tglLahirBayi = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +39,10 @@ class tanggalKelahiran: UIViewController {
     
     func bottomline (){
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: estimasiLahir.frame.height - 2 , width: estimasiLahir.frame.width , height: 2)
+        bottomLine.frame = CGRect(x: 0, y: estimasiLahirTxtField.frame.height - 2 , width: estimasiLahirTxtField.frame.width , height: 2)
         bottomLine.backgroundColor = UIColor.init(red: 56/255, green: 87/255, blue: 81/255, alpha: 1).cgColor
-        estimasiLahir.borderStyle = .none
-        estimasiLahir.layer.addSublayer(bottomLine)
+        estimasiLahirTxtField.borderStyle = .none
+        estimasiLahirTxtField.layer.addSublayer(bottomLine)
     }
     
     func createDatePicker (){
@@ -48,10 +55,10 @@ class tanggalKelahiran: UIViewController {
         toolbar.setItems([doneBtn], animated: true)
         
         //assign toolbar
-        estimasiLahir.inputAccessoryView = toolbar
+        estimasiLahirTxtField.inputAccessoryView = toolbar
        
         //assign Datepicker
-        estimasiLahir.inputView = datePicker
+        estimasiLahirTxtField.inputView = datePicker
         
         //date picker Mode
         datePicker.datePickerMode = .date
@@ -61,16 +68,16 @@ class tanggalKelahiran: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "d MMMM yyyy"
         let estimasiLhr = datePicker.date
-        estimasiLahir.text = formatter.string(from: estimasiLhr)
+        estimasiLahirTxtField.text = formatter.string(from: estimasiLhr)
                 self.view.endEditing(true)
     }
 
     
     
     public var completion: ((Date) -> Void)?
-    @IBOutlet var lblAge: UILabel!
+
     @IBAction func btnCalculateHandler(_ sender: UIButton) {
-        if let isi = estimasiLahir.text, !isi.isEmpty
+        if let isi = estimasiLahirTxtField.text, !isi.isEmpty
             {
             let estimasi = datePicker.date
                 let new = DataModel(estimasiDate: estimasi)
