@@ -93,7 +93,7 @@
                                                 <rect key="frame" x="8" y="628" width="398" height="140"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyn-6P-h6H">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyn-6P-h6H">
                                                         <rect key="frame" x="8" y="8" width="195" height="124"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -108,7 +108,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="tv7-ol-QbF" appends="YES" id="tuT-fN-jQb"/>
+                                                    <outletCollection property="gestureRecognizers" destination="4uT-KW-nek" appends="YES" id="ISZ-iW-FVu"/>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-wx-wXf">
@@ -189,9 +189,9 @@
                         <segue destination="Mab-5p-mEc" kind="show" id="1QI-kP-LkC"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="tv7-ol-QbF">
+                <tapGestureRecognizer id="4uT-KW-nek">
                     <connections>
-                        <segue destination="13a-Jz-KUC" kind="show" id="bBu-TE-dbd"/>
+                        <segue destination="13a-Jz-KUC" kind="show" id="AOu-OJ-0fk"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -456,6 +456,9 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xa8-TU-4ft" appends="YES" id="ekz-nI-3zy"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -549,6 +552,11 @@
                         <segue destination="EMU-zp-Oou" kind="show" id="KpN-IQ-LrP"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="xa8-TU-4ft">
+                    <connections>
+                        <segue destination="OTk-7h-cg6" kind="show" id="Ogw-lz-K87"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1785.5072463768117" y="1322.5446428571429"/>
         </scene>
@@ -598,7 +606,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYe-n1-7Ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1455"/>
+            <point key="canvasLocation" x="2319" y="1416"/>
+        </scene>
+        <!--TipsLembab-->
+        <scene sceneID="R8X-4l-rg1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsLembab" id="OTk-7h-cg6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aMG-IV-hJZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpn-L3-MRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2309" y="1504"/>
         </scene>
         <!--Data Kondisi Bayi-->
         <scene sceneID="aWo-TI-SjZ">
