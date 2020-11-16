@@ -8,21 +8,20 @@
 
 import UIKit
 import Charts
+
 class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
     var dataAPI = [Feeds]()
     
     @IBOutlet weak var tblView: UITableView!
-    
     @IBOutlet weak var listchartview: LineChartView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.delegate = self
         tblView.dataSource = self
         
-        fetchAPIthinkSpeak{
+        fetchAPIthinkSpeak {
             DispatchQueue.main.async {
                 self.tblView.reloadData()
                 //print(self.dataAPI)

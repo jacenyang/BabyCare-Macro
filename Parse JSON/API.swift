@@ -8,15 +8,14 @@
 
 import Foundation
 struct ThinkSpeakAPI2: Decodable {
-   
+    
     let feeds: [feeds2]
     
-   
 }
 struct feeds2: Decodable {
-     
-      let field1: String?
-      let field2: String?
+    
+    let field1: String?
+    let field2: String?
     let created_at: String?
     
-  }
+}

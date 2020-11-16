@@ -14,7 +14,7 @@ protocol SensorManagerDelegate {
 
 struct SensorManager {
     
-    let sensorURL = "https://api.thingspeak.com/channels/1229232/feeds.json"
+    let sensorURL = "https://api.thingspeak.com/channels/592779/feeds.json"
     
     var delegate: SensorManagerDelegate?
     

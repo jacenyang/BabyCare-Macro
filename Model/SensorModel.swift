@@ -8,6 +8,7 @@
 import UIKit
 
 struct SensorModel {
+    
     var isoDate: String
     let cabinTemp: String
     let humidity: String
@@ -30,7 +31,7 @@ struct SensorModel {
         case 33.0:
             return "Menuju rendah"
         case 33.1..<35.0:
-            return "Normak"
+            return "Normal"
         case 35.0:
             return "Menuju tinggi"
         case 35.0...40.0:
