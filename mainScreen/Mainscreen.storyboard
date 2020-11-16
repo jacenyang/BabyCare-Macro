@@ -49,7 +49,7 @@
                                                 <rect key="frame" x="8" y="332" width="398" height="140"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zT-ej-COi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berat badan bayi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zT-ej-COi">
                                                         <rect key="frame" x="8" y="8" width="195" height="124"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,6 +62,10 @@
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="hJQ-vx-Ri2" appends="YES" id="D3r-LK-8fT"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-rd-IG7">
                                                 <rect key="frame" x="8" y="480" width="398" height="140"/>
@@ -167,6 +171,11 @@
                         <segue destination="ckF-iI-Qcu" kind="show" id="Uau-Oo-7Pa"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="hJQ-vx-Ri2">
+                    <connections>
+                        <segue destination="6Pj-cG-W4D" kind="show" id="OaC-YB-J4Z"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1784" y="2032"/>
         </scene>
@@ -179,6 +188,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02f-BD-iHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2364" y="1922"/>
+        </scene>
+        <!--TipsBeratBadan-->
+        <scene sceneID="X2G-f1-nqg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TipsBeratBadan" id="6Pj-cG-W4D" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4hh-Dz-gU4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOI-dX-UlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2367" y="2040"/>
         </scene>
         <!--TipsBradycardia-->
         <scene sceneID="JRm-ZS-2RO">
@@ -323,6 +342,9 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gDB-NF-zo8" appends="YES" id="jhG-ch-Nxi"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -496,6 +518,11 @@
                         <segue destination="SBx-EY-nD0" kind="show" id="pow-hl-G4k"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="gDB-NF-zo8">
+                    <connections>
+                        <segue destination="OMW-jG-W2I" kind="show" id="l9R-cf-xg3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1785.5072463768117" y="1322.5446428571429"/>
         </scene>
@@ -526,6 +553,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Plk-ta-PDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2338" y="1280"/>
+        </scene>
+        <!--TipsBeratBadan-->
+        <scene sceneID="2xr-tD-AXh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TipsBeratBadan" id="OMW-jG-W2I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pb2-m9-7lG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIn-Ob-P2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="1359"/>
         </scene>
         <!--Data Kondisi Bayi-->
         <scene sceneID="aWo-TI-SjZ">
