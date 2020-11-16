@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tips: UIViewController {
+class TipsDemam: UIViewController {
 
     @IBOutlet weak var scrollViewtps: UIScrollView!
     

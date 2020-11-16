@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,10 +12,10 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="onBoarding" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-Mj-nXC">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-Mj-nXC">
                                 <rect key="frame" x="53" y="701" width="306" height="35.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.3411764706" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -36,10 +36,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HSI-od-fx0">
-                                <rect key="frame" x="54" y="260" width="306" height="376"/>
+                                <rect key="frame" x="54" y="216" width="492" height="168"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNH-50-uP7">
-                                        <rect key="frame" x="0.0" y="0.0" width="306" height="125.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="492" height="56"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-heart-monitor-64" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Jw-BsR">
                                                 <rect key="frame" x="20" y="25" width="64" height="64"/>
@@ -60,10 +60,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peb-dh-d4z">
-                                        <rect key="frame" x="0.0" y="125.5" width="306" height="125"/>
+                                        <rect key="frame" x="0.0" y="56" width="492" height="56"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-topic-push-notification-64" translatesAutoresizingMaskIntoConstraints="NO" id="L2P-66-dSh">
                                                 <rect key="frame" x="20" y="31" width="64" height="64"/>
@@ -84,10 +84,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-F2-ytb">
-                                        <rect key="frame" x="0.0" y="250.5" width="306" height="125.5"/>
+                                        <rect key="frame" x="0.0" y="112" width="492" height="56"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-clipboard-64" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-79-cWd">
                                                 <rect key="frame" x="20" y="31" width="64" height="64"/>
@@ -108,12 +108,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSI-od-fx0" secondAttribute="trailing" constant="54" id="2MR-v1-TtL"/>
                             <constraint firstItem="HSI-od-fx0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="216" id="4Fj-M2-xRz"/>
@@ -121,7 +122,6 @@
                             <constraint firstItem="HSI-od-fx0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Urh-MY-rjh"/>
                             <constraint firstItem="HSI-od-fx0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kyi-kZ-MSs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,10 +133,10 @@
             <objects>
                 <viewController id="mdh-Na-2Q3" customClass="mainScreen" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SZA-OE-ey6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Wyx-46-NMu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1z-F2-m43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -148,10 +148,10 @@
             <objects>
                 <viewController id="jZD-LB-1Lg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jp-BR-UX3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7H2-7A-bOF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHo-MU-pog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -163,25 +163,25 @@
             <objects>
                 <viewController id="lnY-Od-D77" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DRU-5s-wVQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IaW-Qs-hDK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5h-AD-Ms4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2051" y="874"/>
         </scene>
-        <!--Tips-->
+        <!--Tips Demam-->
         <scene sceneID="obu-5m-rR1">
             <objects>
-                <viewController id="Lna-Z9-g7F" customClass="tips" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lna-Z9-g7F" customClass="TipsDemam" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="raP-tI-ZLl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4VK-QA-7Ow"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbV-iM-D9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -193,7 +193,7 @@
             <objects>
                 <viewController id="ZXM-aa-gOY" customClass="detakJantung" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CNi-mZ-IhN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="O78-Vf-xTg">
@@ -219,7 +219,7 @@
                                     </navigationBar>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tod-CJ-De0">
                                         <rect key="frame" x="56" y="684.5" width="323" height="83"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="83" id="6zr-l8-lpk"/>
                                             <constraint firstAttribute="width" constant="323" id="cQk-QK-yTH"/>
@@ -227,7 +227,7 @@
                                         <string key="text">
 
 Mulai ada tanda detak jantung lemah, segera cek bayi anda</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -239,11 +239,11 @@ Mulai ada tanda detak jantung lemah, segera cek bayi anda</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Azw-hY-HOk">
                                         <rect key="frame" x="56" y="578" width="323" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">
 
 Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -271,7 +271,7 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Juli 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np6-FY-AZY">
-                                        <rect key="frame" x="282" y="580" width="91" height="21"/>
+                                        <rect key="frame" x="282.5" y="580" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -293,8 +293,8 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detak jantung hari ini sama dengan rata-rata detak jantung kemarin" textAlignment="natural" id="hva-ly-ME7">
                                         <rect key="frame" x="56" y="365" width="323" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -304,6 +304,7 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="FfB-Yx-fVT"/>
                                 <color key="backgroundColor" red="0.89811486009999997" green="0.9215453267" blue="0.92156994339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="AOQ-Ua-NjS" firstAttribute="centerY" secondItem="O78-Vf-xTg" secondAttribute="centerY" constant="149" id="7hK-Bn-VoZ"/>
@@ -317,11 +318,10 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                     <constraint firstItem="eqb-Rq-3fX" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="120.5" id="fFc-o1-mFc"/>
                                     <constraint firstItem="tod-CJ-De0" firstAttribute="centerX" secondItem="O78-Vf-xTg" secondAttribute="centerX" constant="10.5" id="m2h-OQ-bpa"/>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="FfB-Yx-fVT"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rgn-Kd-6fk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQc-M4-uOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -333,11 +333,11 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
             <objects>
                 <viewController id="FYP-Iq-n4U" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38I-hm-Fya">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiS-WN-ILK">
-                                <rect key="frame" x="32" y="119" width="234" height="41"/>
+                                <rect key="frame" x="32" y="75" width="420" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -348,8 +348,8 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-HW-HoN">
-                                <rect key="frame" x="55" y="772" width="310" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-HW-HoN">
+                                <rect key="frame" x="55" y="772" width="496" height="44"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.29411764709999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Simpan"/>
@@ -363,17 +363,18 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tanggal Lahir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebi-lb-91m" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="32" y="295" width="347" height="34"/>
+                                <rect key="frame" x="32" y="295" width="533" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimasi Kelahiran Bayi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNy-lK-oRR" customClass="SkyFloatingLabelTextField" customModule="BabyCare_MC3" customModuleProvider="target">
-                                <rect key="frame" x="32" y="242" width="347" height="34"/>
+                                <rect key="frame" x="32" y="242" width="533" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zFs-bJ-VZe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kNy-lK-oRR" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="32" id="4z9-jl-QN6"/>
                             <constraint firstItem="kNy-lK-oRR" firstAttribute="top" secondItem="pfO-7p-huq" secondAttribute="bottom" constant="10" id="5Cu-cS-2vm"/>
@@ -387,7 +388,6 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                             <constraint firstItem="zFs-bJ-VZe" firstAttribute="trailing" secondItem="8uk-HW-HoN" secondAttribute="trailing" constant="49" id="vDd-Ur-okb"/>
                             <constraint firstItem="Ebi-lb-91m" firstAttribute="leading" secondItem="zFs-bJ-VZe" secondAttribute="leading" constant="32" id="yIi-Zf-Dln"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zFs-bJ-VZe"/>
                     </view>
                     <connections>
                         <outlet property="estimasiKelahiran" destination="kNy-lK-oRR" id="1aj-ux-cFi"/>
@@ -404,10 +404,10 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
             <objects>
                 <viewController id="toD-zI-Ndx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zE-d4-gCs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ALQ-Bj-ncb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ip-wR-FFO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -419,10 +419,10 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
             <objects>
                 <viewController id="OWF-aN-jUq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gde-4E-fN3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pJG-KA-Xwv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dl-7w-xF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -434,7 +434,7 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
             <objects>
                 <viewController id="6W7-dK-dLV" customClass="suhu" customModule="BabyCare_MC3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZT7-ow-7ts">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SST-Uh-Yfg">
@@ -448,15 +448,15 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                 </segments>
                             </segmentedControl>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-de-bcl">
-                                <rect key="frame" x="0.0" y="65" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="65" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Suhu" id="R0p-VF-eIJ"/>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-a7-nBP">
-                                <rect key="frame" x="76" y="696" width="323" height="80"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="169" y="548" width="323" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="323" id="h5i-2J-hNQ"/>
                                     <constraint firstAttribute="height" constant="80" id="swt-0t-Buh"/>
@@ -464,7 +464,7 @@ Detak jantung lemah, segera hubungi pusat kesehatan terdekat</string>
                                 <string key="text">
 
 Mulai Ada Kenaikan Suhu,Segera cek bayi anda</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -476,11 +476,11 @@ Mulai Ada Kenaikan Suhu,Segera cek bayi anda</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-mm-UEC">
                                 <rect key="frame" x="56" y="599" width="323" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">
 
 Segera lakukan tindakan demam</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -530,8 +530,8 @@ Segera lakukan tindakan demam</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Suhu Hari Ini Lebih Tinggi dari rata rata suhu kemarin" textAlignment="natural" id="hkj-Xd-lTN">
                                 <rect key="frame" x="56" y="386" width="323" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -541,6 +541,7 @@ Segera lakukan tindakan demam</string>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0jx-xj-GL3"/>
                         <color key="backgroundColor" red="0.89420515300000003" green="0.92154330019999997" blue="0.92157012220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="oK1-a7-nBP" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="288" id="CSo-H6-DGR"/>
@@ -554,7 +555,6 @@ Segera lakukan tindakan demam</string>
                             <constraint firstItem="vyc-uI-KQw" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="262.5" id="fs3-ki-zmB"/>
                             <constraint firstItem="zvF-UJ-Fea" firstAttribute="centerY" secondItem="ZT7-ow-7ts" secondAttribute="centerY" constant="152.5" id="p07-qO-iqk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0jx-xj-GL3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpL-ff-ZET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -566,5 +566,11 @@ Segera lakukan tindakan demam</string>
         <image name="icons8-clipboard-64" width="64" height="64"/>
         <image name="icons8-heart-monitor-64" width="64" height="64"/>
         <image name="icons8-topic-push-notification-64" width="64" height="64"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

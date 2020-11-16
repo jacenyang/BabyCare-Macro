@@ -33,7 +33,10 @@ class mainScreen: UIViewController{
     @IBOutlet weak var gambar2: UIImageView!
     
     @IBOutlet weak var lblcoba2: UILabel!
-    @IBOutlet weak var lblcoba1: UILabel!
+//    @IBOutlet weak var lblcoba1: UILabel!
+    
+    var lblcoba1 = String()
+    
     var dataAPI = [feeds2]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +62,7 @@ class mainScreen: UIViewController{
                 
                 
                 
-                let myint = Double(self.lblcoba1.text!)
+                let myint = Double(self.lblcoba1)
                 let myrouded = ((myint! * 100).rounded() / 100)
                 self.lblSuhu.text = "\(myrouded)"
                 
@@ -163,7 +166,7 @@ class mainScreen: UIViewController{
                 //  print("ini data yang terakhir", thinkSpeakData.feeds?.last)
                 DispatchQueue.main.async {
                     
-                    self.lblcoba1.text = (thinkSpeakData.feeds.last?.field1)
+                    self.lblcoba1 = (thinkSpeakData.feeds.last?.field1)!
                     self.lblcoba2.text = thinkSpeakData.feeds.last?.field2
                     
                     onSuccess()

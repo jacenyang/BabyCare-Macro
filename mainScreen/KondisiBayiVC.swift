@@ -15,6 +15,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
     @IBOutlet weak var babyTempLabel: UILabel!
     @IBOutlet weak var pulseLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var cabinTempLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
     
     @IBOutlet weak var suhuBayiView: UIView!
     @IBOutlet weak var detakView: UIView!
@@ -40,6 +42,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
             self.pulseLabel.text = sensor.pulseString
             self.babyTempLabel.text = sensor.babyTempString
             self.weightLabel.text = sensor.weightToKgString
+            self.cabinTempLabel.text = sensor.cabinTempString
+            self.humidityLabel.text = sensor.humidityString
         }
     }
     
