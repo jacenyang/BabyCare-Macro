@@ -683,6 +683,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NQL-z3-tec" appends="YES" id="a8R-Je-9ry"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Poz-WC-6js">
                                 <rect key="frame" x="20" y="663" width="374" height="129"/>
@@ -717,6 +720,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="paq-zg-tEi" appends="YES" id="h6h-Hp-2hI"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BlA-uS-Zc2"/>
@@ -729,8 +735,10 @@
                         <outlet property="babyTempLabel" destination="KvP-P5-Ugb" id="vU1-la-S9Q"/>
                         <outlet property="beratBadanView" destination="bHb-yY-Cml" id="REa-iW-xxB"/>
                         <outlet property="cabinTempLabel" destination="MmC-dt-zrE" id="Y4V-ed-imV"/>
+                        <outlet property="cabinTempView" destination="n10-Zs-Wyi" id="p0h-Di-Yj0"/>
                         <outlet property="detakView" destination="VB5-If-daR" id="aN2-CB-nlh"/>
                         <outlet property="humidityLabel" destination="gpP-rz-tbm" id="Pe4-GS-fzF"/>
+                        <outlet property="humidityView" destination="Poz-WC-6js" id="uxf-PL-aoa"/>
                         <outlet property="pulseLabel" destination="Jcf-cp-mO7" id="DDn-YB-3uS"/>
                         <outlet property="suhuBayiView" destination="cxV-sR-8ep" id="9YB-Cx-LgM"/>
                         <outlet property="weightLabel" destination="46c-F2-p36" id="sOb-1I-u47"/>
@@ -747,7 +755,21 @@
                         <segue destination="Wwt-wT-ihl" kind="show" id="7NI-pG-awA"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="jgl-h4-OEv"/>
+                <tapGestureRecognizer id="jgl-h4-OEv">
+                    <connections>
+                        <segue destination="5v5-SZ-F2Z" kind="show" id="Paj-bw-Pew"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NQL-z3-tec">
+                    <connections>
+                        <segue destination="Hu0-km-vL0" kind="show" id="rS4-cP-Wmz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="paq-zg-tEi">
+                    <connections>
+                        <segue destination="gXv-WA-sWV" kind="show" id="W1L-Mx-XVP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2841" y="1323"/>
         </scene>
@@ -759,7 +781,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pex-fb-o7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3280" y="1114"/>
+            <point key="canvasLocation" x="3447" y="1086"/>
         </scene>
         <!--DetakJantung-->
         <scene sceneID="pb4-sa-WaY">
@@ -769,7 +791,37 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSz-0H-u5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3320" y="1202"/>
+            <point key="canvasLocation" x="3612" y="1169"/>
+        </scene>
+        <!--Weight-->
+        <scene sceneID="71P-uI-6t8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Weight" id="5v5-SZ-F2Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nwQ-re-z47"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agk-do-ncI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3530" y="1318"/>
+        </scene>
+        <!--CabinTemp-->
+        <scene sceneID="udg-AT-Bxo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CabinTemp" id="Hu0-km-vL0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oz5-z1-Uph"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyc-Dz-anr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3564" y="1392"/>
+        </scene>
+        <!--Humidity-->
+        <scene sceneID="7dn-OI-vWh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Humidity" id="gXv-WA-sWV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VNe-hA-ne1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nd0-Xx-DF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3505" y="1461"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ykq-mI-dMk">
@@ -826,6 +878,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQ3-eH-lYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="2032"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="qnd-ao-mp4">
+            <objects>
+                <viewControllerPlaceholder id="Mab-5p-mEc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6P-jn-ta9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2795" y="961"/>
         </scene>
     </scenes>
     <resources>

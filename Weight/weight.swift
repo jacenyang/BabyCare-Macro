@@ -8,7 +8,8 @@
 
 import UIKit
 import Charts
-class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+class weight: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var dataAPI = [Feeds]()
     let animal = ["cat","dog"]
     @IBOutlet weak var tblView: UITableView!
@@ -39,12 +40,12 @@ class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
         var arr : [ChartDataEntry] = []
         var i = 0
         for da in dataAPI{
-            let d = Double("\(da.field4 ?? "0.0")")
+            let d = Double("\(da.field5 ?? "0.0")")
             arr.append(ChartDataEntry(x: Double(i), y: d ?? 0.0))
             i+=1
         }
         print(arr)
-        let set1 = LineChartDataSet(entries: arr, label: "Suhu")
+        let set1 = LineChartDataSet(entries: arr, label: "Berat")
         
         set1.axisDependency = .left
         set1.setColor(UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1))
@@ -102,11 +103,13 @@ class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! SuhuTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! WeightTableViewCell
         
-        let suhuDouble = Double(dataAPI.reversed()[indexPath.row].field4!)
-        let suhuString = String(format: "%.1f", suhuDouble!) + " ℃"
-        cell.angkaLabel.text = suhuString
+        let weightDouble = Double(dataAPI.reversed()[indexPath.row].field5!)
+        let weightToKgDouble = weightDouble! / 1000
+        let weightToKgString = String(format: "%.1f", weightToKgDouble) + " kg"
+        
+        cell.angkaLabel.text = weightToKgString
         
         let tanggal = dataAPI.reversed()[indexPath.row].created_at
         let splits = tanggal?.components(separatedBy: "T")
@@ -115,7 +118,5 @@ class suhu: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         return cell
     }
-    
-    
     
 }

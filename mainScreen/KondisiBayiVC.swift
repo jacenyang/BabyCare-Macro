@@ -21,6 +21,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
     @IBOutlet weak var suhuBayiView: UIView!
     @IBOutlet weak var detakView: UIView!
     @IBOutlet weak var beratBadanView: UIView!
+    @IBOutlet weak var cabinTempView: UIView!
+    @IBOutlet weak var humidityView: UIView!
     
     var sensorManager = SensorManager()
     
@@ -35,6 +37,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
         suhuBayiView.layer.cornerRadius = 15
         detakView.layer.cornerRadius = 15
         beratBadanView.layer.cornerRadius = 15
+        cabinTempView.layer.cornerRadius = 15
+        humidityView.layer.cornerRadius = 15
     }
     
     func didUpdateSensor(_ sensorManager: SensorManager, sensor: SensorModel) {

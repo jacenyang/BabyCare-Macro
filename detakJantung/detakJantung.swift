@@ -40,12 +40,12 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         var arr : [ChartDataEntry] = []
         var i = 0
         for da in dataAPI{
-            let d = Double("\(da.field2 ?? "0.0")")
+            let d = Double("\(da.field3 ?? "0.0")")
             arr.append(ChartDataEntry(x: Double(i), y: d ?? 0.0))
             i+=1
         }
         print(arr)
-        let set1 = LineChartDataSet(entries: arr, label: "Suhu")
+        let set1 = LineChartDataSet(entries: arr, label: "Detak Jantung")
         set1.axisDependency = .left
         set1.setColor(UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1))
         set1.setCircleColor(UIColor(red: 56/255, green: 87/255, blue: 81/255, alpha: 1))
@@ -85,14 +85,6 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
                     onSuccess()
                 }
                 
-                
-                
-                
-                
-                
-                
-                
-                
             } catch let err {
                 print("error", err)
             }
@@ -112,8 +104,8 @@ class detakJantung: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! DetakTableViewCell
         
-        let detakDouble = Double(dataAPI.reversed()[indexPath.row].field2!)
-        let detakString = String(format: "%.0f", detakDouble!)
+        let detakDouble = Double(dataAPI.reversed()[indexPath.row].field3!)
+        let detakString = String(format: "%.0f", detakDouble!) + " BPM"
         
         cell.angkaLabel.text = detakString
         //cell.tanggalLabel.text = dataAPI[indexPath.row].created_at
