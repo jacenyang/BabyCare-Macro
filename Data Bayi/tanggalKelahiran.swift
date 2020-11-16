@@ -35,6 +35,8 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         customTxtFieldKelahiranBayi()
         customTxtFieldNamaIbu()
+        customTxtFieldTglLahir()
+        
         createDatePicker()
         
         self.namaIbuTxtField.delegate = self
@@ -55,7 +57,13 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         namaIbuTxtField.borderStyle = .none
         namaIbuTxtField.layer.addSublayer(bottomLine)
     }
-    
+    func customTxtFieldTglLahir (){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: tanggalLahirBayiTxtField.frame.height - 2 , width: tanggalLahirBayiTxtField.frame.width , height: 2)
+        bottomLine.backgroundColor = UIColor.init(red: 56/255, green: 87/255, blue: 81/255, alpha: 1).cgColor
+        tanggalLahirBayiTxtField.borderStyle = .none
+        tanggalLahirBayiTxtField.layer.addSublayer(bottomLine)
+    }
     
     func createDatePicker (){
         //Toolbar
@@ -136,8 +144,3 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
     }
     
 }
-
-
-
-
-
