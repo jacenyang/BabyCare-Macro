@@ -47,8 +47,7 @@
 		964197E6256302BD00CA81BF /* Humidity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964197E5256302BD00CA81BF /* Humidity.storyboard */; };
 		964197EB256302F900CA81BF /* humidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197EA256302F900CA81BF /* humidity.swift */; };
 		964197F02563034300CA81BF /* HumidityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197EF2563034300CA81BF /* HumidityTableViewCell.swift */; };
-		964197F52563216F00CA81BF /* TipsKering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197F42563216F00CA81BF /* TipsKering.swift */; };
-		964197FA256322E800CA81BF /* TipsBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197F9256322E800CA81BF /* TipsBasah.swift */; };
+		964197FA256322E800CA81BF /* TipsLembab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197F9256322E800CA81BF /* TipsLembab.swift */; };
 		B373DE5324EA6F7600492318 /* SuhuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */; };
 		B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373DE5424EA726900492318 /* DetakTableViewCell.swift */; };
 		B37629E824E6BD6B00EF924C /* TipsBradycardia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37629E724E6BD6B00EF924C /* TipsBradycardia.swift */; };
@@ -121,8 +120,7 @@
 		964197E5256302BD00CA81BF /* Humidity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Humidity.storyboard; sourceTree = "<group>"; };
 		964197EA256302F900CA81BF /* humidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = humidity.swift; sourceTree = "<group>"; };
 		964197EF2563034300CA81BF /* HumidityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityTableViewCell.swift; sourceTree = "<group>"; };
-		964197F42563216F00CA81BF /* TipsKering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsKering.swift; sourceTree = "<group>"; };
-		964197F9256322E800CA81BF /* TipsBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsBasah.swift; sourceTree = "<group>"; };
+		964197F9256322E800CA81BF /* TipsLembab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsLembab.swift; sourceTree = "<group>"; };
 		964197FE2563253D00CA81BF /* BabyCare-MC3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BabyCare-MC3.entitlements"; sourceTree = "<group>"; };
 		B373DE5224EA6F7600492318 /* SuhuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuhuTableViewCell.swift; sourceTree = "<group>"; };
 		B373DE5424EA726900492318 /* DetakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetakTableViewCell.swift; sourceTree = "<group>"; };
@@ -289,8 +287,7 @@
 				B37629E924E6BD8200EF924C /* TipsScreen.storyboard */,
 				91FA990D256315780095C123 /* TipsBeratBadan.swift */,
 				91FA991E256321530095C123 /* TipsSuhuKabinVC.swift */,
-				964197F42563216F00CA81BF /* TipsKering.swift */,
-				964197F9256322E800CA81BF /* TipsBasah.swift */,
+				964197F9256322E800CA81BF /* TipsLembab.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -519,11 +516,10 @@
 				964197D9256301B100CA81BF /* weight.swift in Sources */,
 				0D748E8124E0F821005E893E /* ViewController.swift in Sources */,
 				B373DE5524EA726900492318 /* DetakTableViewCell.swift in Sources */,
-				964197FA256322E800CA81BF /* TipsBasah.swift in Sources */,
+				964197FA256322E800CA81BF /* TipsLembab.swift in Sources */,
 				D5D32EF624E6784600D2C923 /* tanggal.xcdatamodeld in Sources */,
 				911A620A25606513000DC74E /* SummaryVC.swift in Sources */,
 				96168F5625610FBC007A7489 /* SensorModel.swift in Sources */,
-				964197F52563216F00CA81BF /* TipsKering.swift in Sources */,
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				964197F02563034300CA81BF /* HumidityTableViewCell.swift in Sources */,

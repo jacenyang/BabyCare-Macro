@@ -106,6 +106,10 @@
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tv7-ol-QbF" appends="YES" id="tuT-fN-jQb"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-wx-wXf">
                                                 <rect key="frame" x="8" y="36" width="398" height="140"/>
@@ -183,6 +187,11 @@
                 <tapGestureRecognizer id="ItZ-dp-eev">
                     <connections>
                         <segue destination="Mab-5p-mEc" kind="show" id="1QI-kP-LkC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tv7-ol-QbF">
+                    <connections>
+                        <segue destination="13a-Jz-KUC" kind="show" id="bBu-TE-dbd"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -952,6 +961,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6P-jn-ta9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2373" y="2140"/>
+        </scene>
+        <!--TipsLembab-->
+        <scene sceneID="qf2-dA-jg9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsLembab" id="13a-Jz-KUC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jkU-2t-3bN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZe-YQ-GVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="2211"/>
         </scene>
     </scenes>
     <resources>

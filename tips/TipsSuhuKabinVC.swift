@@ -20,6 +20,7 @@ class TipsSuhuKabinVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        suhuKabin()
     }
     
     func suhuKabin() {

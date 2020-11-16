@@ -37,7 +37,7 @@ struct SensorModel {
         case 35.0...40.0:
             return "Terlalu tinggi"
         default:
-            return "Error"
+            return "Not available"
         }
     }
     
@@ -82,7 +82,7 @@ struct SensorModel {
         case 61..<100:
             return "Terlalu Lembab"
         default:
-            return "Error"
+            return "Not available"
         }
     }
     
@@ -127,7 +127,7 @@ struct SensorModel {
         case 191..<300:
             return "Terlalu Cepat"
         default:
-            return "Error"
+            return "Not available"
         }
     }
     
@@ -172,7 +172,7 @@ struct SensorModel {
         case 37.6..<40:
             return "Demam"
         default:
-            return "Error"
+            return "Not available"
         }
     }
     
@@ -213,7 +213,7 @@ struct SensorModel {
         case 2.5..<5:
             return "Lulus"
         default:
-            return "Error"
+            return "Not available"
         }
     }
     
