@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -252,7 +253,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di0-8f-oLX">
-                                                <rect key="frame" x="20" y="662" width="374" height="49"/>
+                                                <rect key="frame" x="20" y="661.5" width="374" height="49"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lihat semua data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB4-9c-LG4">
                                                         <rect key="frame" x="8" y="14" width="131" height="21"/>
@@ -293,7 +294,7 @@
                                                         <color key="textColor" red="0.27531319859999998" green="0.46706676479999998" blue="0.43921649460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ket. Bayi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK3-HY-kjd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ket. Bayi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK3-HY-kjd">
                                                         <rect key="frame" x="8" y="37" width="358" height="49"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -468,11 +469,13 @@
                                                     <constraint firstItem="R2Z-jm-4r5" firstAttribute="leading" secondItem="cLz-mW-yvE" secondAttribute="leading" id="O7l-xC-jHZ"/>
                                                     <constraint firstItem="R2Z-jm-4r5" firstAttribute="top" secondItem="mK3-HY-kjd" secondAttribute="bottom" constant="8" symbolic="YES" id="O9o-ti-h01"/>
                                                     <constraint firstItem="cLz-mW-yvE" firstAttribute="leading" secondItem="VJ9-IE-a5C" secondAttribute="leading" id="QIE-q3-jOy"/>
+                                                    <constraint firstAttribute="height" constant="301" id="U7d-6B-2JV"/>
                                                     <constraint firstItem="mK3-HY-kjd" firstAttribute="centerX" secondItem="R2Z-jm-4r5" secondAttribute="centerX" id="XsR-lQ-nqQ"/>
                                                     <constraint firstItem="cLz-mW-yvE" firstAttribute="trailing" secondItem="VJ9-IE-a5C" secondAttribute="trailing" id="Zgp-Z9-lxF"/>
                                                     <constraint firstItem="R2Z-jm-4r5" firstAttribute="leading" secondItem="WNg-wQ-OII" secondAttribute="leading" id="aIh-wD-a8G"/>
                                                     <constraint firstItem="R2Z-jm-4r5" firstAttribute="trailing" secondItem="cLz-mW-yvE" secondAttribute="trailing" id="bk7-06-fyc"/>
                                                     <constraint firstAttribute="bottom" secondItem="VJ9-IE-a5C" secondAttribute="bottom" constant="20" id="cak-0W-RCf"/>
+                                                    <constraint firstAttribute="width" constant="374" id="d4b-0X-yMD"/>
                                                     <constraint firstItem="mK3-HY-kjd" firstAttribute="top" secondItem="TW5-4k-ZZp" secondAttribute="bottom" constant="8" symbolic="YES" id="fjT-iV-VWi"/>
                                                     <constraint firstItem="VJ9-IE-a5C" firstAttribute="top" secondItem="cLz-mW-yvE" secondAttribute="bottom" constant="8" symbolic="YES" id="jZS-lv-BHr"/>
                                                     <constraint firstItem="cLz-mW-yvE" firstAttribute="top" secondItem="R2Z-jm-4r5" secondAttribute="bottom" constant="8" symbolic="YES" id="r4o-aH-dX8"/>
@@ -480,7 +483,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmm-GC-HYl">
-                                                <rect key="frame" x="20" y="392" width="374" height="241"/>
+                                                <rect key="frame" x="20" y="392" width="374" height="240.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kondisi Kabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-19-IwH">
                                                         <rect key="frame" x="8" y="8" width="103" height="21"/>
@@ -488,14 +491,14 @@
                                                         <color key="textColor" red="0.27531319859999998" green="0.46706676479999998" blue="0.43921649460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ket. Kabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-Iw-rU2">
-                                                        <rect key="frame" x="8" y="48" width="358" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ket. Kabin" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-Iw-rU2">
+                                                        <rect key="frame" x="8" y="48" width="358" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-rc-UhL">
-                                                        <rect key="frame" x="0.0" y="99" width="374" height="57"/>
+                                                        <rect key="frame" x="0.0" y="98.5" width="374" height="57"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suhu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2a-qA-18G">
                                                                 <rect key="frame" x="8" y="0.0" width="39" height="21"/>
@@ -548,7 +551,7 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-jc-xGR">
-                                                        <rect key="frame" x="0.0" y="164" width="374" height="57"/>
+                                                        <rect key="frame" x="0.0" y="163.5" width="374" height="57"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU6-mi-ern">
                                                                 <rect key="frame" x="8" y="0.0" width="69" height="21"/>
@@ -612,7 +615,9 @@
                                                     <constraint firstItem="jH2-19-IwH" firstAttribute="leading" secondItem="hG5-Iw-rU2" secondAttribute="leading" id="Wz3-is-dW2"/>
                                                     <constraint firstItem="Rcg-rc-UhL" firstAttribute="trailing" secondItem="BcA-jc-xGR" secondAttribute="trailing" id="Xs6-49-cOM"/>
                                                     <constraint firstItem="Rcg-rc-UhL" firstAttribute="top" secondItem="hG5-Iw-rU2" secondAttribute="bottom" constant="30" id="Ydy-1a-VLO"/>
+                                                    <constraint firstAttribute="height" constant="240.5" id="ap4-Xi-fWH"/>
                                                     <constraint firstItem="hG5-Iw-rU2" firstAttribute="top" secondItem="jH2-19-IwH" secondAttribute="bottom" constant="19" id="jm5-zm-hDw"/>
+                                                    <constraint firstAttribute="width" constant="374" id="kjg-c5-wNd"/>
                                                     <constraint firstItem="Rcg-rc-UhL" firstAttribute="leading" secondItem="BcA-jc-xGR" secondAttribute="leading" id="t0J-z6-kNm"/>
                                                     <constraint firstAttribute="bottom" secondItem="BcA-jc-xGR" secondAttribute="bottom" constant="20" id="uLP-cG-HNb"/>
                                                     <constraint firstItem="hG5-Iw-rU2" firstAttribute="centerX" secondItem="Rcg-rc-UhL" secondAttribute="centerX" id="vYC-d4-K9k"/>
@@ -657,11 +662,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kondisi Hari Ini" largeTitleDisplayMode="always" id="PJc-2o-3qh">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="JN4-x3-8Ta">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jhh-M1-FUr">
-                                <rect key="frame" x="345" y="1.5" width="49" height="41"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="JN4-x3-8Ta">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jhh-M1-FUr">
+                                <rect key="frame" x="361" y="6" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&quot;profil&quot;"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="person.circle" catalog="system" renderingMode="original"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large" weight="semibold"/>
+                                </state>
                                 <connections>
                                     <segue destination="Fgx-BL-1vb" kind="presentation" id="9SS-Lx-gNL"/>
                                 </connections>
@@ -820,7 +829,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-ZN-Z9X">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-ZN-Z9X">
                                                         <rect key="frame" x="8" y="79" width="358" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -875,7 +884,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep4-uD-7mX">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep4-uD-7mX">
                                                         <rect key="frame" x="8" y="79" width="358" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -930,7 +939,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jew-LR-Fo3">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jew-LR-Fo3">
                                                         <rect key="frame" x="8" y="79" width="358" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -985,7 +994,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w16-gU-ZDA">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w16-gU-ZDA">
                                                         <rect key="frame" x="8" y="79" width="358" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1040,7 +1049,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-h7-CfQ">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Keterangan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-h7-CfQ">
                                                         <rect key="frame" x="8" y="79" width="358" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1299,6 +1308,7 @@
         <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
