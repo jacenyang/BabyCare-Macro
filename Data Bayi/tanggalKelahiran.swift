@@ -25,7 +25,6 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet var estimasiLahirTxtField: UITextField!
     @IBOutlet weak var namaIbuTxtField: UITextField!
-    @IBOutlet weak var tanggalLahirBayiTxtField: UITextField!
     
     let datePicker = UIDatePicker()
     
@@ -36,12 +35,10 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         customTxtFieldKelahiranBayi()
         customTxtFieldNamaIbu()
-        customTxtFieldTglLahir()
         
-        createDatePicker()
+        estimatedDatePicker()
         
         self.namaIbuTxtField.delegate = self
-        self.tanggalLahirBayiTxtField.delegate = self
     }
     
     func customTxtFieldKelahiranBayi (){
@@ -58,21 +55,14 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         namaIbuTxtField.borderStyle = .none
         namaIbuTxtField.layer.addSublayer(bottomLine)
     }
-    func customTxtFieldTglLahir (){
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: tanggalLahirBayiTxtField.frame.height - 2 , width: tanggalLahirBayiTxtField.frame.width , height: 2)
-        bottomLine.backgroundColor = UIColor.init(red: 56/255, green: 87/255, blue: 81/255, alpha: 1).cgColor
-        tanggalLahirBayiTxtField.borderStyle = .none
-        tanggalLahirBayiTxtField.layer.addSublayer(bottomLine)
-    }
     
-    func createDatePicker (){
+    func estimatedDatePicker (){
         //Toolbar
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
         //bar Button
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePress))
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(didPressedDone))
         toolbar.setItems([doneBtn], animated: true)
         
         //assign toolbar
@@ -83,19 +73,20 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         
         //date picker Mode
         datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.locale = Locale(identifier: "id")
         
     }
     
-    @objc func donePress(){
+    @objc func didPressedDone(){
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "id")
         formatter.dateFormat = "d MMMM yyyy"
-        let estimasiLhr = datePicker.date
-        estimasiLahirTxtField.text = formatter.string(from: estimasiLhr)
+        let perkiraanTanggal = datePicker.date
+        estimasiLahirTxtField.text = formatter.string(from: perkiraanTanggal)
         self.view.endEditing(true)
     }
-    
-    
-    
+        
     public var completion: ((Date) -> Void)?
     
     @IBAction func btnCalculateHandler(_ sender: UIButton) {
@@ -114,7 +105,6 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
             
             self.defaults.set(estimasiLahirTxtField.text, forKey: "estimasiLahir")
             self.defaults.set(namaIbuTxtField.text, forKey: "namaIbu")
-            self.defaults.set(tanggalLahirBayiTxtField.text, forKey: "realisasiLahir")
         }
         func textFieldShouldReturn( textField: UITextField) ->Bool{
             textField.resignFirstResponder()
