@@ -10,6 +10,8 @@ import UIKit
 
 class TipsBeratBadan: ViewController {
     
+    @IBOutlet weak var tipsScrollView: UIScrollView!
+    
     @IBOutlet weak var funfactLabel: UILabel!
     @IBOutlet weak var caraLabel: UILabel!
     @IBOutlet weak var tahapanLabel: UILabel!
@@ -29,7 +31,9 @@ class TipsBeratBadan: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        berat() 
+        tipsScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: isiButuh3Label.bottomAnchor).isActive = true
+        
+        berat()
         
     }
     

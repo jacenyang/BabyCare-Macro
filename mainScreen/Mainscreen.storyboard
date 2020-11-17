@@ -171,27 +171,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGg-8A-g1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="p1U-tz-UWc">
                     <connections>
-                        <segue destination="etw-y2-tkC" kind="show" id="oLw-d3-Sme"/>
+                        <segue destination="etw-y2-tkC" kind="presentation" id="oLw-d3-Sme"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="UL7-OT-9Iv">
                     <connections>
-                        <segue destination="ckF-iI-Qcu" kind="show" id="Uau-Oo-7Pa"/>
+                        <segue destination="ckF-iI-Qcu" kind="presentation" id="Uau-Oo-7Pa"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="hJQ-vx-Ri2">
                     <connections>
-                        <segue destination="6Pj-cG-W4D" kind="show" id="OaC-YB-J4Z"/>
+                        <segue destination="6Pj-cG-W4D" kind="presentation" id="OaC-YB-J4Z"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="ItZ-dp-eev">
                     <connections>
-                        <segue destination="Mab-5p-mEc" kind="show" id="1QI-kP-LkC"/>
+                        <segue destination="Mab-5p-mEc" kind="presentation" id="1QI-kP-LkC"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="4uT-KW-nek">
                     <connections>
-                        <segue destination="13a-Jz-KUC" kind="show" id="AOu-OJ-0fk"/>
+                        <segue destination="13a-Jz-KUC" kind="presentation" id="AOu-OJ-0fk"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -420,7 +420,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Osl-4P-JOA" appends="YES" id="8zL-Id-wIH"/>
+                                            <outletCollection property="gestureRecognizers" destination="qwX-SK-KtU" appends="YES" id="jok-oh-YDL"/>
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-jc-xGR">
@@ -534,27 +534,27 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="9Vw-Dv-XBR">
                     <connections>
-                        <segue destination="JeT-nS-Mci" kind="show" id="B8c-or-LQw"/>
+                        <segue destination="JeT-nS-Mci" kind="presentation" id="B8c-or-LQw"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="fbi-JV-3rK">
                     <connections>
-                        <segue destination="SBx-EY-nD0" kind="show" id="pow-hl-G4k"/>
+                        <segue destination="SBx-EY-nD0" kind="presentation" id="pow-hl-G4k"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="gDB-NF-zo8">
                     <connections>
-                        <segue destination="OMW-jG-W2I" kind="show" id="l9R-cf-xg3"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Osl-4P-JOA">
-                    <connections>
-                        <segue destination="EMU-zp-Oou" kind="show" id="KpN-IQ-LrP"/>
+                        <segue destination="OMW-jG-W2I" kind="presentation" id="l9R-cf-xg3"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="xa8-TU-4ft">
                     <connections>
-                        <segue destination="OTk-7h-cg6" kind="show" id="Ogw-lz-K87"/>
+                        <segue destination="OTk-7h-cg6" kind="presentation" id="Ogw-lz-K87"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qwX-SK-KtU">
+                    <connections>
+                        <segue destination="Zd9-tf-ZLv" kind="presentation" id="dTX-ok-tN7"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -598,15 +598,13 @@
             </objects>
             <point key="canvasLocation" x="2336" y="1359"/>
         </scene>
-        <!--TipsSuhuKabinVC-->
-        <scene sceneID="eD4-cD-oxt">
+        <!--TipsSuhuKabin-->
+        <scene sceneID="zah-hY-QqA">
             <objects>
-                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsSuhuKabinVC" id="EMU-zp-Oou" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5bO-hB-mXM"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KYe-n1-7Ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsSuhuKabin" id="Zd9-tf-ZLv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6P-1b-8or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="1416"/>
+            <point key="canvasLocation" x="2345" y="1437"/>
         </scene>
         <!--TipsLembab-->
         <scene sceneID="R8X-4l-rg1">
@@ -970,10 +968,10 @@
             </objects>
             <point key="canvasLocation" x="874" y="2032"/>
         </scene>
-        <!--TipsSuhuKabinVC-->
+        <!--TipsSuhuKabin-->
         <scene sceneID="qnd-ao-mp4">
             <objects>
-                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsSuhuKabinVC" id="Mab-5p-mEc" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TipsScreen" referencedIdentifier="TipsSuhuKabin" id="Mab-5p-mEc" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="f6L-x3-qfO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6P-jn-ta9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
