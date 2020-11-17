@@ -936,7 +936,7 @@
         <scene sceneID="5bT-kM-h2g">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yOW-es-ONY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Summary" id="xlF-qH-EJu"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="bolt.heart.fill" catalog="system" id="xlF-qH-EJu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="clg-CR-GsP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -955,7 +955,7 @@
         <scene sceneID="hOm-I5-O2E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xcT-bm-koM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tips" id="EZ6-BW-Bcc"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="lightbulb.fill" catalog="system" id="EZ6-BW-Bcc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IfW-yo-Tsc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -992,7 +992,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -113,19 +113,25 @@ class SummaryVC: ViewController, SensorManagerDelegate {
                 let ageDays = components.day
                 
                 if ageMonths == 0 && ageDays! > 0 {
-                    self.correctedAgeLabel.text = "Usia koreksi \(ageDays!) hari"
+                    self.correctedAgeLabel.text = "Usia koreksi \(abs(ageDays!)) hari"
                 }
                 else if ageMonths == 0 && ageDays! < 0 {
-                    self.correctedAgeLabel.text = "\(ageDays!) hari dari kelahiran normal"
+                    self.correctedAgeLabel.text = "\(abs(ageDays!)) hari dari kelahiran normal"
                 }
-                else if ageMonths! > 0 {
-                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                else if ageDays == 0 && ageMonths! > 0 {
+                    self.correctedAgeLabel.text = "Usia koreksi \(abs(ageMonths!)) bulan"
                 }
-                else if ageMonths! < 0 {
-                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                else if ageDays == 0 && ageMonths! < 0{
+                    self.correctedAgeLabel.text = "\(abs(ageMonths!)) bulan dari kelahiran normal"
+                }
+                else if ageDays! > 0 && ageMonths! > 0 {
+                    self.correctedAgeLabel.text = "Usia koreksi \(abs(ageMonths!)) bulan \(abs(ageDays!)) hari"
+                }
+                else if ageDays! < 0 && ageMonths! < 0{
+                    self.correctedAgeLabel.text = "\(abs(ageMonths!)) bulan \(abs(ageMonths!)) hari dari kelahiran normal"
                 }
                 else {
-                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                    self.correctedAgeLabel.text = "Error Usia koreksi \(abs(ageMonths!)) bulan \(abs(ageDays!)) hari"
                 }
                 
             }
