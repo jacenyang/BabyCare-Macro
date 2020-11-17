@@ -25,7 +25,6 @@ class ProfilDataVC: ViewController {
         
         namaIbuLabel.text = defaults.string(forKey: "namaIbu")
         estimasiLahirBayiLabel.text = defaults.string(forKey: "estimasiLahir")
-        tglLahirLabel.text = defaults.string(forKey: "realisasiLahir")
     }
     
     @IBAction func btnTutupTapped(_ sender: Any) {
