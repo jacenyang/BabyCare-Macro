@@ -12,6 +12,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    @IBOutlet weak var dataScrollView: UIScrollView!
+    
     @IBOutlet weak var babyTempLabel: UILabel!
     @IBOutlet weak var pulseLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -28,6 +30,8 @@ class KondisiBayiVC: ViewController, SensorManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: humidityView.bottomAnchor).isActive = true
         
         navigationItem.largeTitleDisplayMode = .never
         

@@ -15,6 +15,8 @@ class SummaryVC: ViewController, SensorManagerDelegate {
     var DataEstimasis = [DateEstimasi]()
     var dateData = [DataModel]()
     
+    @IBOutlet weak var summaryScrollView: UIScrollView!
+    
     @IBOutlet weak var babyConditionView: UIView!
     @IBOutlet weak var cabinConditionView: UIView!
     @IBOutlet weak var allDataView: UIView!
@@ -39,6 +41,8 @@ class SummaryVC: ViewController, SensorManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        summaryScrollView.contentLayoutGuide.topAnchor.constraint(equalTo: correctedAgeLabel.topAnchor).isActive = true
+        summaryScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: allDataView.bottomAnchor).isActive = true
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
