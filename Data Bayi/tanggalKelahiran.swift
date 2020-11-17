@@ -139,4 +139,14 @@ class tanggalKelahiran: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // for hide keyboard by touch view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    // for hide keyboard by return
+    private func textViewShouldReturn(_ textView: UITextView) -> Bool {
+        textView.resignFirstResponder()
+        return (true)
+    }
+    
 }

@@ -34,7 +34,7 @@
 		91FA98F62562CE710095C123 /* ProfilData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FA98F52562CE710095C123 /* ProfilData.storyboard */; };
 		91FA98FE2562D2FD0095C123 /* ProfilDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA98FD2562D2FD0095C123 /* ProfilDataVC.swift */; };
 		91FA990E256315780095C123 /* TipsBeratBadan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA990D256315780095C123 /* TipsBeratBadan.swift */; };
-		91FA991F256321530095C123 /* TipsSuhuKabinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA991E256321530095C123 /* TipsSuhuKabinVC.swift */; };
+		91FA991F256321530095C123 /* TipsSuhuKabin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA991E256321530095C123 /* TipsSuhuKabin.swift */; };
 		96120BEA2562FB0500616C0E /* CabinTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96120BE92562FB0500616C0E /* CabinTemp.storyboard */; };
 		96168F5425610FBC007A7489 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5125610FBC007A7489 /* SensorData.swift */; };
 		96168F5525610FBC007A7489 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96168F5225610FBC007A7489 /* SensorManager.swift */; };
@@ -107,7 +107,7 @@
 		91FA98F52562CE710095C123 /* ProfilData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilData.storyboard; sourceTree = "<group>"; };
 		91FA98FD2562D2FD0095C123 /* ProfilDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilDataVC.swift; sourceTree = "<group>"; };
 		91FA990D256315780095C123 /* TipsBeratBadan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsBeratBadan.swift; sourceTree = "<group>"; };
-		91FA991E256321530095C123 /* TipsSuhuKabinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsSuhuKabinVC.swift; sourceTree = "<group>"; };
+		91FA991E256321530095C123 /* TipsSuhuKabin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsSuhuKabin.swift; sourceTree = "<group>"; };
 		96120BE92562FB0500616C0E /* CabinTemp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CabinTemp.storyboard; sourceTree = "<group>"; };
 		96168F5125610FBC007A7489 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		96168F5225610FBC007A7489 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 				B37629E724E6BD6B00EF924C /* TipsBradycardia.swift */,
 				B37629E924E6BD8200EF924C /* TipsScreen.storyboard */,
 				91FA990D256315780095C123 /* TipsBeratBadan.swift */,
-				91FA991E256321530095C123 /* TipsSuhuKabinVC.swift */,
+				91FA991E256321530095C123 /* TipsSuhuKabin.swift */,
 				964197F9256322E800CA81BF /* TipsLembab.swift */,
 			);
 			path = tips;
@@ -523,7 +523,7 @@
 				0D748EB924E0FAA8005E893E /* onBoarding.swift in Sources */,
 				0D748E7D24E0F821005E893E /* AppDelegate.swift in Sources */,
 				964197F02563034300CA81BF /* HumidityTableViewCell.swift in Sources */,
-				91FA991F256321530095C123 /* TipsSuhuKabinVC.swift in Sources */,
+				91FA991F256321530095C123 /* TipsSuhuKabin.swift in Sources */,
 				0D748E7F24E0F821005E893E /* SceneDelegate.swift in Sources */,
 				91FA98FE2562D2FD0095C123 /* ProfilDataVC.swift in Sources */,
 				0D748EBB24E0FABC005E893E /* tanggalKelahiran.swift in Sources */,

@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TipsSuhuKabinVC: UIViewController {
+class TipsSuhuKabin: UIViewController {
+    
+    @IBOutlet weak var tipsScrollView: UIScrollView!
     
     @IBOutlet weak var deskripLabel: UILabel!
     @IBOutlet weak var deskripLabel2: UILabel!
@@ -20,7 +22,13 @@ class TipsSuhuKabinVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tipsScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: step3Label.bottomAnchor).isActive = true
         suhuKabin()
+    }
+    
+    @IBAction func btnTutupTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     func suhuKabin() {
@@ -35,7 +43,4 @@ class TipsSuhuKabinVC: UIViewController {
         step3Label.text = "Kebanyakan bayi prematur membutuhkan 8 sampai 10 kali menyusui dalam sehari. \nUntuk bayi prematur yang lahir di usia kehamilan 33 minggu atau lebih, kenaikan berat badan yang diharapkan adalah 20-30 gram per hari \nSedangkan untuk bayi prematur yang lahir di usia kehamilan 24-33 minggu, kenaikan berat badan yang diharapkan adalah 5 gram per hari. \nSecara umum, berat badan bayi prematur diharapkan naik rata-rata 15 gram per hari untuk setiap 1 kg berat badannya."
     }
     
-    @IBAction func btnTutupTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
 }

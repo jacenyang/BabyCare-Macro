@@ -27,6 +27,9 @@ class TipsDemam: UIViewController {
         
     }
 
+    @IBAction func btnTutupTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     func showTips(){
         judulLabel.text = "Demam Pada Bayi Prematur"

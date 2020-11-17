@@ -10,29 +10,28 @@ import UIKit
 
 class TipsLembab: UIViewController {
 
+    @IBOutlet weak var tipsScrollView: UIScrollView!
+    
     @IBOutlet weak var judul1: UILabel!
     @IBOutlet weak var judul2: UILabel!
     @IBOutlet weak var judul3: UILabel!
+    
     @IBOutlet weak var desc1: UILabel!
     @IBOutlet weak var desc2: UILabel!
     @IBOutlet weak var desc3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tipsScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: desc3.bottomAnchor).isActive = true
+        
         showTips()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnTutupTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
     func showTips(){
         judul1.text = "Kering"
         
