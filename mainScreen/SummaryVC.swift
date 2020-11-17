@@ -111,7 +111,22 @@ class SummaryVC: ViewController, SensorManagerDelegate {
                 //let ageYears = components.year
                 let ageMonths = components.month
                 let ageDays = components.day
-                self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan, \(ageDays!) hari"
+                
+                if ageMonths == 0 && ageDays! > 0 {
+                    self.correctedAgeLabel.text = "Usia koreksi \(ageDays!) hari"
+                }
+                else if ageMonths == 0 && ageDays! < 0 {
+                    self.correctedAgeLabel.text = "\(ageDays!) hari dari kelahiran normal"
+                }
+                else if ageMonths! > 0 {
+                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                }
+                else if ageMonths! < 0 {
+                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                }
+                else {
+                    self.correctedAgeLabel.text = "Usia koreksi \(ageMonths!) bulan \(ageDays!) hari"
+                }
                 
             }
             

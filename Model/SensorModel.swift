@@ -37,7 +37,7 @@ struct SensorModel {
         case 35.0...40.0:
             return "Terlalu tinggi"
         default:
-            return "Not available"
+            return "Tidak tersedia"
         }
     }
     
@@ -82,7 +82,7 @@ struct SensorModel {
         case 61..<100:
             return "Terlalu Lembab"
         default:
-            return "Not available"
+            return "Tidak tersedia"
         }
     }
     
@@ -127,7 +127,7 @@ struct SensorModel {
         case 191..<300:
             return "Terlalu Cepat"
         default:
-            return "Not available"
+            return "Tidak tersedia"
         }
     }
     
@@ -172,7 +172,7 @@ struct SensorModel {
         case 37.6..<40:
             return "Demam"
         default:
-            return "Not available"
+            return "Tidak tersedia"
         }
     }
     
@@ -213,7 +213,7 @@ struct SensorModel {
         case 2.5..<5:
             return "Lulus"
         default:
-            return "Not available"
+            return "Tidak tersedia"
         }
     }
     
