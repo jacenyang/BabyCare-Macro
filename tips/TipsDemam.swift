@@ -12,10 +12,9 @@ class TipsDemam: UIViewController {
 
     @IBOutlet weak var scrollViewtps: UIScrollView!
     
-    @IBOutlet weak var judulLabel: UILabel!
     @IBOutlet weak var pengertianLabel: UILabel!
     @IBOutlet weak var harusLabel: UILabel!
-    @IBOutlet weak var janganLabel: UILabel!
+    @IBOutlet weak var hindariLabel: UILabel!
     @IBOutlet weak var penyakitLabel: UILabel!    
 
     override func viewDidLoad() {
@@ -32,7 +31,6 @@ class TipsDemam: UIViewController {
     }
     
     func showTips(){
-        judulLabel.text = "Demam Pada Bayi Prematur"
         
         pengertianLabel.text = "Demam adalah keadaan ketika suhu badan lebih dari 37.5 ˚C dan dapat menjadi gejala dari masalah yang lebih serius."
         
@@ -42,7 +40,7 @@ class TipsDemam: UIViewController {
         3. Perhatikan tanda-tanda dehidrasi pada bayi seperti menangis tanpa air mata dan mulut yang kering.
         """
 
-        janganLabel.text = """
+        hindariLabel.text = """
         1. Menggunakan obat rumahan
         2. Mengompres bayi dengan air dingin karena menyebabkan bayi menggigil
         3. Berhenti menyusui bayi karena bayi demam lebih cepat mengalami dehidrasi
@@ -64,9 +62,5 @@ class TipsDemam: UIViewController {
 
         """
     }
-    
-
-    
-    
 
 }
