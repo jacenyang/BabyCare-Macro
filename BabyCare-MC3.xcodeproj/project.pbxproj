@@ -31,6 +31,9 @@
 		911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A62142560F93C000DC74E /* KondisiBayiVC.swift */; };
 		911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A621C2561FCE6000DC74E /* ListTipsVC.swift */; };
 		911A622825621A7D000DC74E /* QRCodeScannerr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */; };
+		91A93BC62566F2720040EB39 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A93BC52566F2720040EB39 /* QRCodeScannerVC.swift */; };
+		91A93BCE2566F5DA0040EB39 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A93BCD2566F5DA0040EB39 /* QRData.swift */; };
+		91A93BD42566F6930040EB39 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A93BD32566F6930040EB39 /* QRScannerView.swift */; };
 		91FA98F62562CE710095C123 /* ProfilData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FA98F52562CE710095C123 /* ProfilData.storyboard */; };
 		91FA98FE2562D2FD0095C123 /* ProfilDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA98FD2562D2FD0095C123 /* ProfilDataVC.swift */; };
 		91FA990E256315780095C123 /* TipsBeratBadan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA990D256315780095C123 /* TipsBeratBadan.swift */; };
@@ -104,6 +107,9 @@
 		911A62142560F93C000DC74E /* KondisiBayiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondisiBayiVC.swift; sourceTree = "<group>"; };
 		911A621C2561FCE6000DC74E /* ListTipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTipsVC.swift; sourceTree = "<group>"; };
 		911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeScannerr.storyboard; sourceTree = "<group>"; };
+		91A93BC52566F2720040EB39 /* QRCodeScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerVC.swift; sourceTree = "<group>"; };
+		91A93BCD2566F5DA0040EB39 /* QRData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
+		91A93BD32566F6930040EB39 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		91FA98F52562CE710095C123 /* ProfilData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilData.storyboard; sourceTree = "<group>"; };
 		91FA98FD2562D2FD0095C123 /* ProfilDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilDataVC.swift; sourceTree = "<group>"; };
 		91FA990D256315780095C123 /* TipsBeratBadan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsBeratBadan.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 		0D748E7024E0F821005E893E = {
 			isa = PBXGroup;
 			children = (
+				91A93BC42566F2520040EB39 /* QR Code Scanner */,
 				96168F5025610FBC007A7489 /* Model */,
 				D5D32EF324E6782500D2C923 /* CoreData */,
 				3D3FBF6524E4FBFF00EDC927 /* Parse JSON */,
@@ -199,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				964197FE2563253D00CA81BF /* BabyCare-MC3.entitlements */,
-				911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */,
 				0D748E7C24E0F821005E893E /* AppDelegate.swift */,
 				0D748E7E24E0F821005E893E /* SceneDelegate.swift */,
 				0D748E8024E0F821005E893E /* ViewController.swift */,
@@ -298,6 +304,25 @@
 				3D3FBF6624E4FC2F00EDC927 /* API.swift */,
 			);
 			path = "Parse JSON";
+			sourceTree = "<group>";
+		};
+		91A93BC42566F2520040EB39 /* QR Code Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				91A93BD22566F6000040EB39 /* Model */,
+				911A622725621A7D000DC74E /* QRCodeScannerr.storyboard */,
+				91A93BC52566F2720040EB39 /* QRCodeScannerVC.swift */,
+				91A93BD32566F6930040EB39 /* QRScannerView.swift */,
+			);
+			path = "QR Code Scanner";
+			sourceTree = "<group>";
+		};
+		91A93BD22566F6000040EB39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91A93BCD2566F5DA0040EB39 /* QRData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		96120BE62562FA9C00616C0E /* Weight */ = {
@@ -505,8 +530,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D550CC2024E858D50036181C /* DateEstimasi+CoreDataClass.swift in Sources */,
+				91A93BC62566F2720040EB39 /* QRCodeScannerVC.swift in Sources */,
 				B37629E824E6BD6B00EF924C /* TipsBradycardia.swift in Sources */,
 				964197DE2563023800CA81BF /* WeightTableViewCell.swift in Sources */,
+				91A93BD42566F6930040EB39 /* QRScannerView.swift in Sources */,
 				911A621D2561FCE6000DC74E /* ListTipsVC.swift in Sources */,
 				9632FD2E2562FE78009BCE8F /* CabinTempTableViewCell.swift in Sources */,
 				0D748EB724E0FA91005E893E /* suhu.swift in Sources */,
@@ -535,6 +562,7 @@
 				911A62152560F93C000DC74E /* KondisiBayiVC.swift in Sources */,
 				0D748EB424E0FA6E005E893E /* detakJantung.swift in Sources */,
 				3D3FBF6724E4FC2F00EDC927 /* API.swift in Sources */,
+				91A93BCE2566F5DA0040EB39 /* QRData.swift in Sources */,
 				0D748EBE24E0FADE005E893E /* TipsDemam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,7 +733,7 @@
 				CODE_SIGN_ENTITLEMENTS = "BabyCare-MC3/BabyCare-MC3.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R8X64JCXMP;
+				DEVELOPMENT_TEAM = V9WZSQKJ6P;
 				INFOPLIST_FILE = "BabyCare-MC3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,7 +755,7 @@
 				CODE_SIGN_ENTITLEMENTS = "BabyCare-MC3/BabyCare-MC3.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R8X64JCXMP;
+				DEVELOPMENT_TEAM = V9WZSQKJ6P;
 				INFOPLIST_FILE = "BabyCare-MC3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (

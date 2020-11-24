@@ -38,13 +38,24 @@
                         <color key="backgroundColor" red="0.91385358569999997" green="0.93702810999999997" blue="0.94902223350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="videoPreview" destination="mbp-I8-mzb" id="NIQ-y7-scf"/>
+                        <outlet property="scannerView" destination="mbp-I8-mzb" id="Re1-gN-YG6"/>
+                        <segue destination="H5F-u0-neM" kind="show" identifier="sendAPISegue" id="QAz-E6-Nr1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1V-eN-PFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="FbZ-wM-Ij2"/>
             </objects>
             <point key="canvasLocation" x="-807.24637681159425" y="6.6964285714285712"/>
+        </scene>
+        <!--TanggalKelahiran-->
+        <scene sceneID="6DW-Lv-VfA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TanggalKelahiran" id="H5F-u0-neM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rbx-Pt-rQt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nq6-kQ-rdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248" y="-53"/>
         </scene>
     </scenes>
     <resources>
